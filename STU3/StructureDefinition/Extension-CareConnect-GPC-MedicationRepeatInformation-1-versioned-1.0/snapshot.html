@@ -1,0 +1,508 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <style>tr,
+.fhir-table-title {
+	font-size: 11px;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	vertical-align: top;
+	border: 0
+}
+.fhir-table-title {
+	padding: 0px 4px
+}
+td {
+	padding: 5px 4px
+}
+.fhir-panel-heading-box {
+	margin: -15px -15px 15px;
+	padding: 10px 15px;
+	background-color: #f0f0f0;
+	border-bottom: 1px solid #808080;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px
+}
+.fhir-panel-heading-text {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 17.5px;
+	font-weight: 500
+}
+tr {
+	padding: 3px;
+	line-height: 1.66em
+}
+.fhir-table-header-row {
+	border: 1px solid #f0f0f0
+}
+tr,
+fhir-table-title,
+td,
+tr,
+fhir-table-title,
+td {
+	text-align: left;
+	text-align: left
+}
+fhir-table-title,
+td,
+fhir-table-title,
+td {
+	vertical-align: top;
+	vertical-align: top
+}
+table {
+	width: 100%;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	border-collapse: collapse
+}
+.fhir-panel * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+.fhir-table.fhir-tree-table tbody:before {
+	content: '-';
+	display: block;
+	line-height: 1em;
+	color: transparent
+}
+.fhir-tree-table {
+	table-layout: fixed;
+	width: 100%
+}
+.fhir-panel {
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.4;
+	width: 95%;
+	max-width: 100%;
+	word-wrap: break-word
+}
+.fhir-panel {
+	padding: 15px;
+	margin-bottom: 20;
+	background-color: #ffffff;
+	border: 1px solid #808080;
+	border-radius: 4px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05)
+}
+.fhir-panel .fhir-link {
+	text-decoration: none;
+	color: #005eb8
+}
+.fhir-panel-subheading {
+	color: #474747;
+	font-weight: bold;
+	font-size: 13
+}
+.fhir-info-name-bold {
+	font-weight: bold;
+	color: #474747
+}
+.fhir-text-italic {
+	font-style: italic;
+	color: #474747
+}
+.fhir-info-plain {
+	color: #474747
+}
+.fhir-resource-info-cell {
+	padding: 5px 4px;
+	border-bottom: 1px solid #f0f0f0
+}
+.fhir-indent-wrapped-text {
+	margin-left: 3em;
+	text-indent: -3em
+}
+.fhir-link {
+	text-decoration: none;
+	color: #005eb8
+}
+.fhir-text-faded {
+	opacity: 0.4
+}
+.fhir-text-strikethrough {
+	text-decoration: line-through
+}
+.fhir-data-cell {
+	border: 1px solid #f0f0f0
+}
+.fhir-data-label,
+.fhir-telecom-name {
+	color: #474747;
+	font-weight: bold;
+	font-size: 13
+}
+.fhir-data-label-empty {
+	color: #474747;
+	font-weight: normal
+}
+.fhir-data-value,
+.fhir-telecom-value {
+	color: #474747;
+	font-size: 13
+}
+.fhir-data-value-smalltext {
+	font-size: 10
+}
+.fhir-data-block-title {
+	color: #808080;
+	font-weight: bold;
+	text-decoration: underline;
+	font-size: 13
+}
+.fhirtreebg-dotted-1 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR4nO3OIRIAIAwDwf41/38DRSJBIbqZWRdxlaRu7a2XPwAAwOl7AAAAMEcDVN1AgPyAV0EAAAAASUVORK5CYII=);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-11 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAMUlEQVR4nO3OwQkAIAwDwO6a/WdQR1AoiHiB+yWQSlK7VsZJv3sPAAC87foBAADgHxNKW0BW4z7WCQAAAABJRU5ErkJggg==);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-100 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR4nO3OIRIAIAwDwf41/38DRSJBIbqZWRdxlaRu7a2XPwAAwOl7AAAAMEcDVN1AgPyAV0EAAAAASUVORK5CYII=);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-00 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4nO3OIQEAAAgDsHd9/w60AMHE/NI2AAAAG84DAADAHwNp30Cqb/h6OAAAAABJRU5ErkJggg==);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-110 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAMUlEQVR4nO3OwQkAIAwDwO6a/WdQR1AoiHiB+yWQSlK7VsZJv3sPAAC87foBAADgHxNKW0BW4z7WCQAAAABJRU5ErkJggg==);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-10 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR4nO3OIRIAIAwDwf41/38DRSJBIbqZWRdxlaRu7a2XPwAAwOl7AAAAMEcDVN1AgPyAV0EAAAAASUVORK5CYII=);
+	background-repeat: repeat-y
+}
+.fhir-tree-resource-icon {
+	padding-right: 4px;
+	background-color: white;
+	border: 0;
+	width: 20;
+	height: 16
+}
+img.fhir-tree-icon {
+	background-color: white;
+	border: 0;
+	width: 16;
+	height: 22
+}
+.fhir-tree-icons {
+	padding: 0 4px;
+	border-collapse: collapse
+}
+.fhir-tree-icons img {
+	vertical-align: top;
+	float: left;
+	border-collapse: collapse
+}
+.fhir-table,
+.fhir-table tbody tr {
+	border-collapse: collapse;
+	vertical-align: top;
+	border-style: none
+}
+.fhir-tree-icons,
+.fhir-tree-icons img,
+.fhir-table {
+	-webkit-border-horizontal-spacing: 0;
+	-webkit-border-vertical-spacing: 0
+}
+.fhir-tree-cell {
+	padding: 5px 4px
+}</style>
+  </head>
+  <body>
+    <div class="fhir-panel">
+      <div class="fhir-panel-body">
+        <table class="fhir-table fhir-tree-table">
+          <thead>
+            <tr class="fhir-table-header-row">
+              <th title="The logical name of the element" style="width: 25%" class="fhir-table-title">Name</th>
+              <th title="Features of the element" style="width: 5%; max-width: 60px" class="fhir-table-title">Flags</th>
+              <th title="Minimum and maximum # of times the element can appear in the instance" style="width: 5%; max-width: 40px" class="fhir-table-title">Card.</th>
+              <th title="Reference to the type of the element" style="width: 15%; max-width: 80px" class="fhir-table-title">Type</th>
+              <th title="Additional information about the element" style="width: 50%" class="fhir-table-title">Description/Constraints</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="fhirtreebg-dotted-1 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/icon_resource.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Extension" title="Medication repeat information." class="fhir-tree-cell fhir-link tabLink">Extension</a>
+              </td>
+              <td class="fhir-resource-flag">
+                <span title="This element has or is affected by some invariants">I</span>
+              </td>
+              <td class="fhir-tree-cell">&#8203;</td>
+              <td class="fhir-tree-cell" />
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">Medication repeat information</div>
+                <div class="fhir-indent-wrapped-text fhir-info-plain">Constraint (ele-1): All FHIR elements must have a @value or children</div>
+                <div class="fhir-indent-wrapped-text fhir-info-plain">Constraint (ext-1): Must have either extensions or value[x], not both</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Extension.id" title="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." class="fhir-tree-cell fhir-link tabLink">id</a>
+              </td>
+              <td class="fhir-resource-flag">
+                <span title="This element has or is affected by some invariants">I</span>
+              </td>
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">xml:id (or equivalent in JSON)</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-11 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_datatype.gif" class="fhir-tree-resource-icon" />
+                <a href="details.html#Extension.extension(numberOfRepeatPrescriptionsAllowed)" title="Number of repeat prescriptions authorised." class="fhir-tree-cell fhir-link tabLink">extension (numberOfRepeatPrescriptionsAllowed)</a>
+              </td>
+              <td class="fhir-resource-flag">
+                <span title="This element has or is affected by some invariants">I</span>
+              </td>
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/extensibility.html#Extension">Extension</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">Number of repeat prescriptions authorised</div>
+                <div class="fhir-indent-wrapped-text fhir-info-plain">Constraint (ext-1): Must have either extensions or value[x], not both</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Extension.extension(numberOfRepeatPrescriptionsAllowed).id" title="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." class="fhir-tree-cell fhir-link tabLink">id</a>
+              </td>
+              <td class="fhir-resource-flag">
+                <span title="This element has or is affected by some invariants">I</span>
+              </td>
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">xml:id (or equivalent in JSON)</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Extension.extension(numberOfRepeatPrescriptionsAllowed).url" title="Source of the definition for the extension code - a logical name or a URL." class="fhir-tree-cell fhir-link tabLink">url</a>
+              </td>
+              <td class="fhir-resource-flag">
+                <span title="This element has or is affected by some invariants">I</span>
+              </td>
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#uri">Uri</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">Identifies The Meaning Of The Extension</div>
+                <div class="fhir-indent-wrapped-text fhir-info-plain">Fixed Value: numberOfRepeatPrescriptionsAllowed</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-100 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin_end.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Extension.extension(numberOfRepeatPrescriptionsAllowed).valuePositiveInt" title="Number of issues authorised." class="fhir-tree-cell fhir-link tabLink">valuePositiveInt</a>
+              </td>
+              <td class="fhir-resource-flag">
+                <span title="This element has or is affected by some invariants">I</span>
+              </td>
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#positiveint">positiveInt</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">Number of issues authorised</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-11 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_datatype.gif" class="fhir-tree-resource-icon" />
+                <a href="details.html#Extension.extension(numberOfRepeatPrescriptionsIssued)" title="Number of repeat prescriptions issued." class="fhir-tree-cell fhir-link tabLink">extension (numberOfRepeatPrescriptionsIssued)</a>
+              </td>
+              <td class="fhir-resource-flag">
+                <span title="This element has or is affected by some invariants">I</span>
+              </td>
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/extensibility.html#Extension">Extension</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">Number of repeat prescriptions issued</div>
+                <div class="fhir-indent-wrapped-text fhir-info-plain">Constraint (ext-1): Must have either extensions or value[x], not both</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Extension.extension(numberOfRepeatPrescriptionsIssued).id" title="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." class="fhir-tree-cell fhir-link tabLink">id</a>
+              </td>
+              <td class="fhir-resource-flag">
+                <span title="This element has or is affected by some invariants">I</span>
+              </td>
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">xml:id (or equivalent in JSON)</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Extension.extension(numberOfRepeatPrescriptionsIssued).url" title="Source of the definition for the extension code - a logical name or a URL." class="fhir-tree-cell fhir-link tabLink">url</a>
+              </td>
+              <td class="fhir-resource-flag">
+                <span title="This element has or is affected by some invariants">I</span>
+              </td>
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#uri">Uri</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">Identifies The Meaning Of The Extension</div>
+                <div class="fhir-indent-wrapped-text fhir-info-plain">Fixed Value: numberOfRepeatPrescriptionsIssued</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-100 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin_end.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Extension.extension(numberOfRepeatPrescriptionsIssued).valuePositiveInt" title="Number of issues issued." class="fhir-tree-cell fhir-link tabLink">valuePositiveInt</a>
+              </td>
+              <td class="fhir-resource-flag">
+                <span title="This element has or is affected by some invariants">I</span>
+              </td>
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#positiveint">positiveInt</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">Number of issues issued</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-11 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_datatype.gif" class="fhir-tree-resource-icon" />
+                <a href="details.html#Extension.extension(authorisationExpiryDate)" title="Repeat prescription review date." class="fhir-tree-cell fhir-link tabLink">extension (authorisationExpiryDate)</a>
+              </td>
+              <td class="fhir-resource-flag">
+                <span title="This element has or is affected by some invariants">I</span>
+              </td>
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/extensibility.html#Extension">Extension</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">Repeat prescription review date</div>
+                <div class="fhir-indent-wrapped-text fhir-info-plain">Constraint (ext-1): Must have either extensions or value[x], not both</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Extension.extension(authorisationExpiryDate).id" title="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." class="fhir-tree-cell fhir-link tabLink">id</a>
+              </td>
+              <td class="fhir-resource-flag">
+                <span title="This element has or is affected by some invariants">I</span>
+              </td>
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">xml:id (or equivalent in JSON)</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Extension.extension(authorisationExpiryDate).url" title="Source of the definition for the extension code - a logical name or a URL." class="fhir-tree-cell fhir-link tabLink">url</a>
+              </td>
+              <td class="fhir-resource-flag">
+                <span title="This element has or is affected by some invariants">I</span>
+              </td>
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#uri">Uri</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">Identifies The Meaning Of The Extension</div>
+                <div class="fhir-indent-wrapped-text fhir-info-plain">Fixed Value: authorisationExpiryDate</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-100 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin_end.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Extension.extension(authorisationExpiryDate).valueDateTime" title="Repeat review date." class="fhir-tree-cell fhir-link tabLink">valueDateTime</a>
+              </td>
+              <td class="fhir-resource-flag">
+                <span title="This element has or is affected by some invariants">I</span>
+              </td>
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#datetime">dateTime</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">Repeat review date</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-00 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin_end.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Extension.url" title="Source of the definition for the extension code - a logical name or a URL." class="fhir-tree-cell fhir-link tabLink">url</a>
+              </td>
+              <td class="fhir-resource-flag">
+                <span title="This element has or is affected by some invariants">I</span>
+              </td>
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#uri">Uri</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">Identifies The Meaning Of The Extension</div>
+                <div class="fhir-indent-wrapped-text fhir-info-plain">
+                  Fixed Value:
+                  <a href="/STU3/StructureDefinition/Extension-CareConnect-GPC-MedicationRepeatInformation-1" class="fhir-link">https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-MedicationRepeatInformation-1</a>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

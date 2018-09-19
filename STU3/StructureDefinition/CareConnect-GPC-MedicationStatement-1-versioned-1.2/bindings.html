@@ -1,0 +1,488 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <style>tr,
+.fhir-table-title {
+	font-size: 11px;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	vertical-align: top;
+	border: 0
+}
+.fhir-table-title {
+	padding: 0px 4px
+}
+td {
+	padding: 5px 4px
+}
+.fhir-panel-heading-box {
+	margin: -15px -15px 15px;
+	padding: 10px 15px;
+	background-color: #f0f0f0;
+	border-bottom: 1px solid #808080;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px
+}
+.fhir-panel-heading-text {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 17.5px;
+	font-weight: 500
+}
+tr {
+	padding: 3px;
+	line-height: 1.66em
+}
+.fhir-table-header-row {
+	border: 1px solid #f0f0f0
+}
+tr,
+fhir-table-title,
+td,
+tr,
+fhir-table-title,
+td {
+	text-align: left;
+	text-align: left
+}
+fhir-table-title,
+td,
+fhir-table-title,
+td {
+	vertical-align: top;
+	vertical-align: top
+}
+table {
+	width: 100%;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	border-collapse: collapse
+}
+.fhir-panel * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+.fhir-table.fhir-tree-table tbody:before {
+	content: '-';
+	display: block;
+	line-height: 1em;
+	color: transparent
+}
+.fhir-tree-table {
+	table-layout: fixed;
+	width: 100%
+}
+.fhir-panel {
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.4;
+	width: 95%;
+	max-width: 100%;
+	word-wrap: break-word
+}
+.fhir-panel {
+	padding: 15px;
+	margin-bottom: 20;
+	background-color: #ffffff;
+	border: 1px solid #808080;
+	border-radius: 4px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05)
+}
+.fhir-panel .fhir-link {
+	text-decoration: none;
+	color: #005eb8
+}
+.fhir-panel-subheading {
+	color: #474747;
+	font-weight: bold;
+	font-size: 13
+}
+.fhir-info-name-bold {
+	font-weight: bold;
+	color: #474747
+}
+.fhir-text-italic {
+	font-style: italic;
+	color: #474747
+}
+.fhir-info-plain {
+	color: #474747
+}
+.fhir-resource-info-cell {
+	padding: 5px 4px;
+	border-bottom: 1px solid #f0f0f0
+}
+.fhir-indent-wrapped-text {
+	margin-left: 3em;
+	text-indent: -3em
+}
+.fhir-link {
+	text-decoration: none;
+	color: #005eb8
+}
+.fhir-text-faded {
+	opacity: 0.4
+}
+.fhir-text-strikethrough {
+	text-decoration: line-through
+}
+.fhir-data-cell {
+	border: 1px solid #f0f0f0
+}
+.fhir-data-label,
+.fhir-telecom-name {
+	color: #474747;
+	font-weight: bold;
+	font-size: 13
+}
+.fhir-data-label-empty {
+	color: #474747;
+	font-weight: normal
+}
+.fhir-data-value,
+.fhir-telecom-value {
+	color: #474747;
+	font-size: 13
+}
+.fhir-data-value-smalltext {
+	font-size: 10
+}
+.fhir-data-block-title {
+	color: #808080;
+	font-weight: bold;
+	text-decoration: underline;
+	font-size: 13
+}</style>
+  </head>
+  <body>
+    <div class="fhir-panel">
+      <div class="fhir-panel-heading-box">
+        <h3 class="fhir-panel-heading-text">Bindings</h3>
+      </div>
+      <div class="fhir-panel-body">
+        <table class="fhir-table">
+          <thead>
+            <tr class="fhir-table-header-row">
+              <th title="Identifies the bound node within the StructureDefinition" style="width: 20%" class="fhir-table-title">Path</th>
+              <th title="Node description" style="width: 40%" class="fhir-table-title">Definition</th>
+              <th title="Type of binding." style="width: 10%" class="fhir-table-title">Type</th>
+              <th title="ValueSet containing permitted codes." style="width: 30%" class="fhir-table-title">Reference</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#MedicationStatement.meta.security">MedicationStatement.meta.security</a>
+              </td>
+              <td class="fhir-tree-cell">Security labels applied to this resource. These tags connect specific resources to the overall security policy and infrastructure.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Extensible">Extensible</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-security-labels.html">
+                  http://hl7.org/fhir/stu3/valueset-security-labels.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#MedicationStatement.meta.tag">MedicationStatement.meta.tag</a>
+              </td>
+              <td class="fhir-tree-cell">Tags applied to this resource. Tags are intended to be used to identify and relate resources to process and workflow, and applications are not required to consider the tags when interpreting the meaning of a resource.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Example">Example</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-common-tags.html">
+                  http://hl7.org/fhir/stu3/valueset-common-tags.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#MedicationStatement.language">MedicationStatement.language</a>
+              </td>
+              <td class="fhir-tree-cell">The base language in which the resource is written.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Extensible">Extensible</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-languages.html">
+                  http://hl7.org/fhir/stu3/valueset-languages.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#MedicationStatement.identifier(crossCareSettingIdentifier).use">MedicationStatement.identifier(crossCareSettingIdentifier).use</a>
+              </td>
+              <td class="fhir-tree-cell">The purpose of this identifier.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-identifier-use.html">
+                  http://hl7.org/fhir/stu3/valueset-identifier-use.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#MedicationStatement.identifier(crossCareSettingIdentifier).type">MedicationStatement.identifier(crossCareSettingIdentifier).type</a>
+              </td>
+              <td class="fhir-tree-cell">A coded type for the identifier that can be used to determine which identifier to use for a specific purpose.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Extensible">Extensible</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-identifier-type.html">
+                  http://hl7.org/fhir/stu3/valueset-identifier-type.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#MedicationStatement.identifier(identifier).use">MedicationStatement.identifier(identifier).use</a>
+              </td>
+              <td class="fhir-tree-cell">The purpose of this identifier.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-identifier-use.html">
+                  http://hl7.org/fhir/stu3/valueset-identifier-use.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#MedicationStatement.identifier(identifier).type">MedicationStatement.identifier(identifier).type</a>
+              </td>
+              <td class="fhir-tree-cell">A coded type for the identifier that can be used to determine which identifier to use for a specific purpose.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Extensible">Extensible</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-identifier-type.html">
+                  http://hl7.org/fhir/stu3/valueset-identifier-type.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#MedicationStatement.status">MedicationStatement.status</a>
+              </td>
+              <td class="fhir-tree-cell">A code representing the patient or other source's judgment about the state of the medication used that this statement is about.  Generally this will be active or completed.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-medication-statement-status.html">
+                  http://hl7.org/fhir/stu3/valueset-medication-statement-status.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#MedicationStatement.category">MedicationStatement.category</a>
+              </td>
+              <td class="fhir-tree-cell">Indicates where type of medication statement and where the medication is expected to be consumed or administered.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Preferred">Preferred</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-medication-statement-category.html">
+                  http://hl7.org/fhir/stu3/valueset-medication-statement-category.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#MedicationStatement.medicationReference">MedicationStatement.medicationReference</a>
+              </td>
+              <td class="fhir-tree-cell">Identifies the medication being administered. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code that identifies the medication from a known list of medications.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Example">Example</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-medication-codes.html">
+                  http://hl7.org/fhir/stu3/valueset-medication-codes.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#MedicationStatement.taken">MedicationStatement.taken</a>
+              </td>
+              <td class="fhir-tree-cell">Indicator of the certainty of whether the medication was taken by the patient.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-medication-statement-taken.html">
+                  http://hl7.org/fhir/stu3/valueset-medication-statement-taken.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#MedicationStatement.reasonNotTaken">MedicationStatement.reasonNotTaken</a>
+              </td>
+              <td class="fhir-tree-cell">A code indicating why the medication was not taken.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Example">Example</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-reason-medication-not-taken-codes.html">
+                  http://hl7.org/fhir/stu3/valueset-reason-medication-not-taken-codes.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#MedicationStatement.reasonCode">MedicationStatement.reasonCode</a>
+              </td>
+              <td class="fhir-tree-cell">A reason for why the medication is being/was taken.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Example">Example</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-condition-code.html">
+                  http://hl7.org/fhir/stu3/valueset-condition-code.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#MedicationStatement.dosage.additionalInstruction">MedicationStatement.dosage.additionalInstruction</a>
+              </td>
+              <td class="fhir-tree-cell">Supplemental instruction - e.g. "with meals".</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Example">Example</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-additional-instruction-codes.html">
+                  http://hl7.org/fhir/stu3/valueset-additional-instruction-codes.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#MedicationStatement.dosage.asNeeded[x]">MedicationStatement.dosage.asNeeded[x]</a>
+              </td>
+              <td class="fhir-tree-cell">Indicates whether the Medication is only taken when needed within a specific dosing schedule (Boolean option), or it indicates the precondition for taking the Medication (CodeableConcept).</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Example">Example</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-medication-as-needed-reason.html">
+                  http://hl7.org/fhir/stu3/valueset-medication-as-needed-reason.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#MedicationStatement.dosage.site">MedicationStatement.dosage.site</a>
+              </td>
+              <td class="fhir-tree-cell">Body site to administer to.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Example">Example</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-approach-site-codes.html">
+                  http://hl7.org/fhir/stu3/valueset-approach-site-codes.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#MedicationStatement.dosage.route">MedicationStatement.dosage.route</a>
+              </td>
+              <td class="fhir-tree-cell">How drug should enter body.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Example">Example</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-route-codes.html">
+                  http://hl7.org/fhir/stu3/valueset-route-codes.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#MedicationStatement.dosage.route.coding(snomedCT)">MedicationStatement.dosage.route.coding(snomedCT)</a>
+              </td>
+              <td class="fhir-tree-cell">A reference to a code defined by a terminology system.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Example">Example</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="/STU3/ValueSet/CareConnect-MedicationDosageRoute-1">https://fhir.nhs.uk/STU3/ValueSet/CareConnect-MedicationDosageRoute-1</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#MedicationStatement.dosage.method">MedicationStatement.dosage.method</a>
+              </td>
+              <td class="fhir-tree-cell">Technique for administering medication.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Example">Example</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-administration-method-codes.html">
+                  http://hl7.org/fhir/stu3/valueset-administration-method-codes.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4" class="fhir-data-label fhir-tree-cell">Inherited via referenced resource: https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-MedicationChangeSummary-1</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#MedicationStatement.extension(changeSummary)">MedicationStatement.extension(changeSummary)</a>
+              </td>
+              <td class="fhir-tree-cell">Indicates the change information of a medication item</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="/STU3/ValueSet/CareConnect-MedicationChangeStatus-1">https://fhir.nhs.uk/STU3/ValueSet/CareConnect-MedicationChangeStatus-1</a>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4" class="fhir-data-label fhir-tree-cell">Inherited via referenced resource: https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-PrescribingAgency-1</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#MedicationStatement.extension(prescribingAgency)">MedicationStatement.extension(prescribingAgency)</a>
+              </td>
+              <td class="fhir-tree-cell">The type of organisation/setting responsible for authorising and issuing a medication outside of a GP system</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="/STU3/ValueSet/CareConnect-PrescribingAgency-1">https://fhir.nhs.uk/STU3/ValueSet/CareConnect-PrescribingAgency-1</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

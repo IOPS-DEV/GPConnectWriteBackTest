@@ -1,0 +1,3282 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <style>.fhir-details-header-row {
+	font-size: 12px;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	padding: 3px;
+	vertical-align: top;
+	line-height: 1.4em;
+	font-weight: normal;
+	text-align: left;
+	border-bottom: 1px solid #cccccc;
+	background: #f0f0f0
+}
+.fhir-details-data-row,
+.fhir-details-data-cell {
+	padding: 3px;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	line-height: 1.2em;
+	font-weight: normal;
+	vertical-align: top;
+	text-align: left
+}
+.fhir-details-header-cell {
+	font-size: 12px;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	padding: 3px;
+	vertical-align: top;
+	line-height: 1.2em;
+	font-weight: bold;
+	border-bottom: 1px solid #cccccc;
+	background: #f0f0f0
+}
+tr,
+.fhir-table-title {
+	font-size: 11px;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	vertical-align: top;
+	border: 0
+}
+.fhir-table-title {
+	padding: 0px 4px
+}
+td {
+	padding: 5px 4px
+}
+.fhir-panel-heading-box {
+	margin: -15px -15px 15px;
+	padding: 10px 15px;
+	background-color: #f0f0f0;
+	border-bottom: 1px solid #808080;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px
+}
+.fhir-panel-heading-text {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 17.5px;
+	font-weight: 500
+}
+tr {
+	padding: 3px;
+	line-height: 1.66em
+}
+.fhir-table-header-row {
+	border: 1px solid #f0f0f0
+}
+tr,
+fhir-table-title,
+td,
+tr,
+fhir-table-title,
+td {
+	text-align: left;
+	text-align: left
+}
+fhir-table-title,
+td,
+fhir-table-title,
+td {
+	vertical-align: top;
+	vertical-align: top
+}
+table {
+	width: 100%;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	border-collapse: collapse
+}
+.fhir-panel * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+.fhir-table.fhir-tree-table tbody:before {
+	content: '-';
+	display: block;
+	line-height: 1em;
+	color: transparent
+}
+.fhir-tree-table {
+	table-layout: fixed;
+	width: 100%
+}
+.fhir-panel {
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.4;
+	width: 95%;
+	max-width: 100%;
+	word-wrap: break-word
+}
+.fhir-panel {
+	padding: 15px;
+	margin-bottom: 20;
+	background-color: #ffffff;
+	border: 1px solid #808080;
+	border-radius: 4px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05)
+}
+.fhir-panel .fhir-link {
+	text-decoration: none;
+	color: #005eb8
+}
+.fhir-panel-subheading {
+	color: #474747;
+	font-weight: bold;
+	font-size: 13
+}
+.fhir-link {
+	text-decoration: none;
+	color: #005eb8
+}
+.fhir-text-faded {
+	opacity: 0.4
+}
+.fhir-text-strikethrough {
+	text-decoration: line-through
+}
+.fhir-list {
+	margin: 0px
+}</style>
+  </head>
+  <body>
+    <div class="fhir-panel">
+      <div class="fhir-panel-heading-box">
+        <h3 class="fhir-panel-heading-text">Details</h3>
+      </div>
+      <div class="fhir-panel-body">
+        <table class="fhir-table">
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson" />
+              RelatedPerson
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">Information about a person that is involved in the care for a patient, but who is not the target of healthcare, nor has a formal responsibility in the care process.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..*</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell">&#8203;</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Invariants</td>
+            <td class="fhir-details-data-cell">
+              <b>Affect this element</b>
+              <br />
+              <b>dom-2:</b>
+              If the resource is contained in another resource, it SHALL NOT contain nested Resources (xpath: not(parent::f:contained and f:contained)) severity: Error
+              <br />
+              <b>dom-1:</b>
+              If the resource is contained in another resource, it SHALL NOT contain any narrative (xpath: not(parent::f:contained and f:text)) severity: Error
+              <br />
+              <b>dom-4:</b>
+              If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated (xpath: not(exists(f:contained/*/f:meta/f:versionId)) and not(exists(f:contained/*/f:meta/f:lastUpdated))) severity: Error
+              <br />
+              <b>dom-3:</b>
+              If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource (xpath: not(exists(for $id in f:contained/*/@id return $id[not(ancestor::f:contained/parent::*/descendant::f:reference/@value=concat('#', $id))]))) severity: Error
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Mappings</td>
+            <td class="fhir-details-data-cell">
+              <b>rim:</b>
+              Entity. Role, or Act
+              <br />
+              <b>rim:</b>
+              role
+              <br />
+              <b>w5:</b>
+              administrative.individual
+            </td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.id" />
+              RelatedPerson.id
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#id">Id</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/search.html#summary" class="fhir-link">Summary</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">The only time that a resource does not have an id is when it is being submitted to the server using a create operation.</td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.meta" />
+              RelatedPerson.meta
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/resource.html#Meta">Meta</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/search.html#summary" class="fhir-link">Summary</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.implicitRules" />
+              RelatedPerson.implicitRules
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#uri">Uri</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/search.html#summary" class="fhir-link">Summary</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#ismodifier" class="fhir-link">Modifier</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However, the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element. 
+
+This element is labelled as a modifier because the implicit rules may provide additional knowledge about the resource that modifies it's meaning or interpretation.</td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.language" />
+              RelatedPerson.language
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">The base language in which the resource is written.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/terminologies.html" class="fhir-link">Binding</a>
+            </td>
+            <td class="fhir-details-data-cell">ValuesetLanguages.html: A human language. (Extensible)</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#code">Code</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource  Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute).</td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.text" />
+              RelatedPerson.text
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it "clinically safe" for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/narrative.html#Narrative">Narrative</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Alternate Names</td>
+            <td class="fhir-details-data-cell">narrative; html; xhtml; display</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative. In some cases, a resource may only have text with little or no additional discrete data (as long as all minOccurs=1 elements are satisfied).  This may be necessary for data from legacy systems where information is captured as a "text blob" or where text is additionally entered raw or narrated and encoded in formation is added later.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Mappings</td>
+            <td class="fhir-details-data-cell">
+              <b>rim:</b>
+              Act.text?
+            </td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.contained" />
+              RelatedPerson.contained
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..*</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/resource.html">Resource</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Alternate Names</td>
+            <td class="fhir-details-data-cell">inline resources; anonymous resources; contained resources</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Mappings</td>
+            <td class="fhir-details-data-cell">
+              <b>rim:</b>
+              Entity. Role, or Act
+            </td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.extension(householdMember)" />
+              RelatedPerson.extension(householdMember)
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">The household member information for a person related to the Patient</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/extensibility.html#Extension">Extension</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Alternate Names</td>
+            <td class="fhir-details-data-cell">extensions; user content</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Invariants</td>
+            <td class="fhir-details-data-cell">
+              <b>Affect this element</b>
+              <br />
+              <b>ext-1:</b>
+              Must have either extensions or value[x], not both (xpath: exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])) severity: Error
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Extension</td>
+            <td class="fhir-details-data-cell">
+              <a href="/STU3/StructureDefinition/Extension-DCH-HouseholdMember-1" class="fhir-link">https://fhir.nhs.uk/STU3/StructureDefinition/Extension-DCH-HouseholdMember-1</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.extension(link)" />
+              RelatedPerson.extension(link)
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">Link to a Patient resource for a Related Person</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/extensibility.html#Extension">Extension</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Alternate Names</td>
+            <td class="fhir-details-data-cell">extensions; user content</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Invariants</td>
+            <td class="fhir-details-data-cell">
+              <b>Affect this element</b>
+              <br />
+              <b>ext-1:</b>
+              Must have either extensions or value[x], not both (xpath: exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])) severity: Error
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Extension</td>
+            <td class="fhir-details-data-cell">
+              <a href="/STU3/StructureDefinition/Extension-DCH-Link-1" class="fhir-link">https://fhir.nhs.uk/STU3/StructureDefinition/Extension-DCH-Link-1</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.extension(parentalResponsibility)" />
+              RelatedPerson.extension(parentalResponsibility)
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">Whether the related or significant person has parental responsibility</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/extensibility.html#Extension">Extension</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Alternate Names</td>
+            <td class="fhir-details-data-cell">extensions; user content</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Invariants</td>
+            <td class="fhir-details-data-cell">
+              <b>Affect this element</b>
+              <br />
+              <b>ext-1:</b>
+              Must have either extensions or value[x], not both (xpath: exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])) severity: Error
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Extension</td>
+            <td class="fhir-details-data-cell">
+              <a href="/STU3/StructureDefinition/Extension-DCH-ParentalResponsibility-1" class="fhir-link">https://fhir.nhs.net/STU3/StructureDefinition/Extension-DCH-ParentalResponsibility-1</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.extension(significantIndividual)" />
+              RelatedPerson.extension(significantIndividual)
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">Whether an individual related to the child is deemed as key by family</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..*</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/extensibility.html#Extension">Extension</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Alternate Names</td>
+            <td class="fhir-details-data-cell">extensions; user content</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Invariants</td>
+            <td class="fhir-details-data-cell">
+              <b>Affect this element</b>
+              <br />
+              <b>ext-1:</b>
+              Must have either extensions or value[x], not both (xpath: exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])) severity: Error
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Extension</td>
+            <td class="fhir-details-data-cell">
+              <a href="/STU3/StructureDefinition/Extension-DCH-SignificantIndividual-1" class="fhir-link">https://fhir.nhs.uk/STU3/StructureDefinition/Extension-DCH-SignificantIndividual-1</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.modifierExtension" />
+              RelatedPerson.modifierExtension
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..*</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/extensibility.html#Extension">Extension</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Alternate Names</td>
+            <td class="fhir-details-data-cell">extensions; user content</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#ismodifier" class="fhir-link">Modifier</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Invariants</td>
+            <td class="fhir-details-data-cell">
+              <b>Affect this element</b>
+              <br />
+              <b>ext-1:</b>
+              Must have either extensions or value[x], not both (xpath: exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])) severity: Error
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Slicing</td>
+            <td class="fhir-details-data-cell">
+              This element introduces a set of slices. The slicing rules are:
+              <ul class="fhir-list">
+                <li>Extensions are always sliced by (at least) url</li>
+                <li>unordered</li>
+                <li>Open</li>
+                <li>discriminators: url</li>
+              </ul>
+            </td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.identifier" />
+              RelatedPerson.identifier
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">Identifier for a person within a particular scope.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#identifier">Identifier</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Requirements</td>
+            <td class="fhir-details-data-cell">People are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the patient. Examples are national person identifier and local identifier.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/search.html#summary" class="fhir-link">Summary</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Mappings</td>
+            <td class="fhir-details-data-cell">
+              <b>v2:</b>
+              CX / EI (occasionally, more often EI maps to a resource id or a URL)
+              <br />
+              <b>rim:</b>
+              II - see see identifier pattern at http://wiki.hl7.org/index.php?title=Common_Design_Patterns#Identifier_Pattern for relevant discussion. The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT]
+              <br />
+              <b>servd:</b>
+              Identifier
+              <br />
+              <b>v2:</b>
+              NK1-33
+              <br />
+              <b>rim:</b>
+              .id
+              <br />
+              <b>w5:</b>
+              id
+            </td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.identifier.id" />
+              RelatedPerson.identifier.id
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">Note that FHIR strings may not exceed 1MB in size</td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.identifier.system" />
+              RelatedPerson.identifier.system
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">Establishes the namespace for the value - that is, a URL that describes a set values that are unique.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">1..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#uri">Uri</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Requirements</td>
+            <td class="fhir-details-data-cell">There are many sets  of identifiers.  To perform matching of two identifiers, we need to know what set we're dealing with. The system identifies a particular set of unique identifiers.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/search.html#summary" class="fhir-link">Summary</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">see http://en.wikipedia.org/wiki/Uniform_resource_identifier</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Mappings</td>
+            <td class="fhir-details-data-cell">
+              <b>v2:</b>
+              CX.4 / EI-2-4
+              <br />
+              <b>rim:</b>
+              II.root or Role.id.root
+              <br />
+              <b>servd:</b>
+              ./IdentifierType
+            </td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.identifier.value" />
+              RelatedPerson.identifier.value
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">The portion of the identifier typically relevant to the user and which is unique within the context of the system.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">1..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/search.html#summary" class="fhir-link">Summary</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986.  The value's primary purpose is computational mapping.  As a result, it may be normalized for comparison purposes (e.g. removing non-significant whitespace, dashes, etc.)  A value formatted for human display can be conveyed using the [Rendered Value extension](extension-rendered-value.html).</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Mappings</td>
+            <td class="fhir-details-data-cell">
+              <b>v2:</b>
+              CX.1 / EI.1
+              <br />
+              <b>rim:</b>
+              II.extension or II.root if system indicates OID or GUID (Or Role.id.extension or root)
+              <br />
+              <b>servd:</b>
+              ./Value
+            </td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.patient" />
+              RelatedPerson.patient
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">The patient this person is related to.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">1..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/references.html">Reference</a>
+              (
+              <a class="fhir-link" href="/STU3/StructureDefinition/CareConnect-DCH-Patient-1">CareConnect-DCH-Patient-1</a>
+              )
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Requirements</td>
+            <td class="fhir-details-data-cell">We need to know which patient this RelatedPerson is related to.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/search.html#summary" class="fhir-link">Summary</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Invariants</td>
+            <td class="fhir-details-data-cell">
+              <b>Affect this element</b>
+              <br />
+              <b>ref-1:</b>
+              SHALL have a contained resource if a local reference is provided (xpath: not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])) severity: Error
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Mappings</td>
+            <td class="fhir-details-data-cell">
+              <b>rim:</b>
+              The target of a resource reference is a RIM entry point (Act, Role, or Entity)
+              <br />
+              <b>v2:</b>
+              PID-3
+              <br />
+              <b>rim:</b>
+              scoper[classCode=PSN|ANM and determinerCode='INSTANCE']/playedRole[classCode='PAT']/id
+            </td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.patient.id" />
+              RelatedPerson.patient.id
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">Note that FHIR strings may not exceed 1MB in size</td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.patient.reference" />
+              RelatedPerson.patient.reference
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">1..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/search.html#summary" class="fhir-link">Summary</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure "/[type]/[id]" then it should be assumed that the reference is to a FHIR RESTful server.</td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.patient.identifier" />
+              RelatedPerson.patient.identifier
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">An identifier for the other resource. This is used when there is no way to reference the other resource directly, either because the entity is not available through a FHIR server, or because there is no way for the author of the resource to convert a known identifier to an actual location. There is no requirement that a Reference.identifier point to something that is actually exposed as a FHIR instance, but it SHALL point to a business concept that would be expected to be exposed as a FHIR instance, and that instance would need to be of a FHIR resource type allowed by the reference.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#identifier">Identifier</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/search.html#summary" class="fhir-link">Summary</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">When an identifier is provided in place of a reference, any system processing the reference will only be able to resolve the identifier to a reference if it understands the business context in which the identifier is used. Sometimes this is global (e.g. a national identifier) but often it is not. For this reason, none of the useful mechanisms described for working with references (e.g. chaining, includes) are possible, nor should servers be expected to be able resolve the reference. Servers may accept an identifier based reference untouched, resolve it, and/or reject it - see CapabilityStatement.rest.resource.referencePolicy. 
+
+When both an identifier and a literal reference are provided, the literal reference is preferred. Applications processing the resource are allowed - but not required - to check that the identifier matches the literal reference
+
+Applications converting a logical reference to a literal reference may choose to leave the logical reference present, or remove it.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Mappings</td>
+            <td class="fhir-details-data-cell">
+              <b>v2:</b>
+              CX / EI (occasionally, more often EI maps to a resource id or a URL)
+              <br />
+              <b>rim:</b>
+              II - see see identifier pattern at http://wiki.hl7.org/index.php?title=Common_Design_Patterns#Identifier_Pattern for relevant discussion. The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT]
+              <br />
+              <b>servd:</b>
+              Identifier
+              <br />
+              <b>rim:</b>
+              .identifier
+            </td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.patient.display" />
+              RelatedPerson.patient.display
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">Plain text narrative that identifies the resource in addition to the resource reference.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/search.html#summary" class="fhir-link">Summary</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.</td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.relationship" />
+              RelatedPerson.relationship
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">The nature of the relationship between a patient and the related person.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">1..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/terminologies.html" class="fhir-link">Binding</a>
+            </td>
+            <td class="fhir-details-data-cell">DCHPersonRelationshipType1: The nature of the relationship between a patient and the related person (Extensible)</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#codeableconcept">CodeableConcept</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Requirements</td>
+            <td class="fhir-details-data-cell">We need to know the relationship with the patient since it influences the interpretation of the information attributed to this person.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/search.html#summary" class="fhir-link">Summary</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Mappings</td>
+            <td class="fhir-details-data-cell">
+              <b>v2:</b>
+              CE/CNE/CWE
+              <br />
+              <b>rim:</b>
+              CD
+              <br />
+              <b>orim:</b>
+              fhir:CodeableConcept rdfs:subClassOf dt:CD
+              <br />
+              <b>v2:</b>
+              NK1-3
+              <br />
+              <b>rim:</b>
+              code
+              <br />
+              <b>w5:</b>
+              class
+            </td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.relationship.id" />
+              RelatedPerson.relationship.id
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">Note that FHIR strings may not exceed 1MB in size</td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.relationship.coding" />
+              RelatedPerson.relationship.coding
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">A reference to a code defined by a terminology system.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">1..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#coding">Coding</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Requirements</td>
+            <td class="fhir-details-data-cell">Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/search.html#summary" class="fhir-link">Summary</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Mappings</td>
+            <td class="fhir-details-data-cell">
+              <b>v2:</b>
+              CE/CNE/CWE subset one of the sets of component 1-3 or 4-6
+              <br />
+              <b>rim:</b>
+              CV
+              <br />
+              <b>orim:</b>
+              fhir:Coding rdfs:subClassOf dt:CDCoding
+              <br />
+              <b>v2:</b>
+              C*E.1-8, C*E.10-22
+              <br />
+              <b>rim:</b>
+              union(., ./translation)
+              <br />
+              <b>orim:</b>
+              fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding
+            </td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.relationship.coding.id" />
+              RelatedPerson.relationship.coding.id
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">Note that FHIR strings may not exceed 1MB in size</td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.relationship.coding.system" />
+              RelatedPerson.relationship.coding.system
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">The identification of the code system that defines the meaning of the symbol in the code.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">1..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#uri">Uri</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Requirements</td>
+            <td class="fhir-details-data-cell">Need to be unambiguous about the source of the definition of the symbol.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/search.html#summary" class="fhir-link">Summary</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Mappings</td>
+            <td class="fhir-details-data-cell">
+              <b>v2:</b>
+              C*E.3
+              <br />
+              <b>rim:</b>
+              ./codeSystem
+              <br />
+              <b>orim:</b>
+              fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem
+            </td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.relationship.coding.code" />
+              RelatedPerson.relationship.coding.code
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">1..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#code">Code</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Requirements</td>
+            <td class="fhir-details-data-cell">Need to refer to a particular code in the system.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/search.html#summary" class="fhir-link">Summary</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">Note that FHIR strings may not exceed 1MB in size</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Mappings</td>
+            <td class="fhir-details-data-cell">
+              <b>v2:</b>
+              C*E.1
+              <br />
+              <b>rim:</b>
+              ./code
+              <br />
+              <b>orim:</b>
+              fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code
+            </td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.relationship.coding.display" />
+              RelatedPerson.relationship.coding.display
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">A representation of the meaning of the code in the system, following the rules of the system.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">1..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Requirements</td>
+            <td class="fhir-details-data-cell">Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/search.html#summary" class="fhir-link">Summary</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">Note that FHIR strings may not exceed 1MB in size</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Mappings</td>
+            <td class="fhir-details-data-cell">
+              <b>v2:</b>
+              C*E.2 - but note this is not well followed
+              <br />
+              <b>rim:</b>
+              CV.displayName
+              <br />
+              <b>orim:</b>
+              fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName
+            </td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.name" />
+              RelatedPerson.name
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">A name associated with the person.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">1..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#humanname">HumanName</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Requirements</td>
+            <td class="fhir-details-data-cell">Related persons need to be identified by name, but it is uncommon to need details about multiple other names for that person.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/search.html#summary" class="fhir-link">Summary</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">Names may be changed, or repudiated, or people may have different names in different contexts. Names may be divided into parts of different type that have variable significance depending on context, though the division into parts does not always matter. With personal names, the different parts may or may not be imbued with some implicit meaning; various cultures associate different importance with the name parts and the degree to which systems must care about name parts around the world varies widely.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Mappings</td>
+            <td class="fhir-details-data-cell">
+              <b>v2:</b>
+              XPN
+              <br />
+              <b>rim:</b>
+              EN (actually, PN)
+              <br />
+              <b>servd:</b>
+              ProviderName
+              <br />
+              <b>v2:</b>
+              NK1-2
+              <br />
+              <b>rim:</b>
+              name
+            </td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.name.id" />
+              RelatedPerson.name.id
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">Note that FHIR strings may not exceed 1MB in size</td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.name.use" />
+              RelatedPerson.name.use
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">Identifies the purpose for this name.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/terminologies.html" class="fhir-link">Binding</a>
+            </td>
+            <td class="fhir-details-data-cell">ValuesetNameUse.html: The use of a human name (Required)</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#code">Code</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Requirements</td>
+            <td class="fhir-details-data-cell">Allows the appropriate name for a particular context of use to be selected from among a set of names.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/search.html#summary" class="fhir-link">Summary</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#ismodifier" class="fhir-link">Modifier</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">This is labeled as "Is Modifier" because applications should not mistake a temporary or old name etc.for a current/permanent one. Applications can assume that a name is current unless it explicitly says that it is temporary or old.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Mappings</td>
+            <td class="fhir-details-data-cell">
+              <b>v2:</b>
+              XPN.7, but often indicated by which field contains the name
+              <br />
+              <b>rim:</b>
+              unique(./use)
+              <br />
+              <b>servd:</b>
+              ./NamePurpose
+            </td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.name.text" />
+              RelatedPerson.name.text
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">A full text representation of the name.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Requirements</td>
+            <td class="fhir-details-data-cell">A renderable, unencoded form.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/search.html#summary" class="fhir-link">Summary</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">Can provide both a text representation and structured parts.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Mappings</td>
+            <td class="fhir-details-data-cell">
+              <b>v2:</b>
+              implied by XPN.11
+              <br />
+              <b>rim:</b>
+              ./formatted
+            </td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.name.family" />
+              RelatedPerson.name.family
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">The part of a name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Alternate Names</td>
+            <td class="fhir-details-data-cell">surname</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/search.html#summary" class="fhir-link">Summary</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">Family Name may be decomposed into specific parts using extensions (de, nl, es related cultures).</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Mappings</td>
+            <td class="fhir-details-data-cell">
+              <b>v2:</b>
+              XPN.1/FN.1
+              <br />
+              <b>rim:</b>
+              ./part[partType = FAM]
+              <br />
+              <b>servd:</b>
+              ./FamilyName
+            </td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.name.given" />
+              RelatedPerson.name.given
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">Given name.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..*</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Alternate Names</td>
+            <td class="fhir-details-data-cell">first name; middle name</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/search.html#summary" class="fhir-link">Summary</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">If only initials are recorded, they may be used in place of the full name.  Not called "first name" since given names do not always come first.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Mappings</td>
+            <td class="fhir-details-data-cell">
+              <b>v2:</b>
+              XPN.2 + XPN.3
+              <br />
+              <b>rim:</b>
+              ./part[partType = GIV]
+              <br />
+              <b>servd:</b>
+              ./GivenNames
+            </td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.name.prefix" />
+              RelatedPerson.name.prefix
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the start of the name.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..*</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/search.html#summary" class="fhir-link">Summary</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">Note that FHIR strings may not exceed 1MB in size</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Mappings</td>
+            <td class="fhir-details-data-cell">
+              <b>v2:</b>
+              XPN.5
+              <br />
+              <b>rim:</b>
+              ./part[partType = PFX]
+              <br />
+              <b>servd:</b>
+              ./TitleCode
+            </td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.name.suffix" />
+              RelatedPerson.name.suffix
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the end of the name.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..*</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/search.html#summary" class="fhir-link">Summary</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">Note that FHIR strings may not exceed 1MB in size</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Mappings</td>
+            <td class="fhir-details-data-cell">
+              <b>v2:</b>
+              XPN/4
+              <br />
+              <b>rim:</b>
+              ./part[partType = SFX]
+            </td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.name.period" />
+              RelatedPerson.name.period
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">Indicates the period of time when this name was valid for the named person.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#period">Period</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Requirements</td>
+            <td class="fhir-details-data-cell">Allows names to be placed in historical context.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/search.html#summary" class="fhir-link">Summary</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">This is not a duration - that's a measure of time (a separate type), but a duration that occurs at a fixed value of time. A Period specifies a range of time; the context of use will specify whether the entire range applies (e.g. "the patient was an inpatient of the hospital for this time range") or one value from the range applies (e.g. "give to the patient between these two times"). If duration is required, specify the type as Interval|Duration.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Invariants</td>
+            <td class="fhir-details-data-cell">
+              <b>Affect this element</b>
+              <br />
+              <b>per-1:</b>
+              If present, start SHALL have a lower value than end (xpath: not(exists(f:start)) or not(exists(f:end)) or (f:start/@value &lt;= f:end/@value)) severity: Error
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Mappings</td>
+            <td class="fhir-details-data-cell">
+              <b>v2:</b>
+              DR
+              <br />
+              <b>rim:</b>
+              IVL&lt;TS&gt;[lowClosed="true" and highClosed="true"] or URG&lt;TS&gt;[lowClosed="true" and highClosed="true"]
+              <br />
+              <b>v2:</b>
+              XPN.13 + XPN.14
+              <br />
+              <b>rim:</b>
+              ./usablePeriod[type="IVL&lt;TS&gt;"]
+              <br />
+              <b>servd:</b>
+              ./StartDate and ./EndDate
+            </td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.name.period.id" />
+              RelatedPerson.name.period.id
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">Note that FHIR strings may not exceed 1MB in size</td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.name.period.start" />
+              RelatedPerson.name.period.start
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">The start of the period. The boundary is inclusive.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#datetime">dateTime</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/search.html#summary" class="fhir-link">Summary</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">If the low element is missing, the meaning is that the low boundary is not known.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Mappings</td>
+            <td class="fhir-details-data-cell">
+              <b>v2:</b>
+              DR.1
+              <br />
+              <b>rim:</b>
+              ./low
+            </td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.name.period.end" />
+              RelatedPerson.name.period.end
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">The end of the period. If the end of the period is missing, it means that the period is ongoing. The start may be in the past, and the end date in the future, which means that period is expected/planned to end at that time.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#datetime">dateTime</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/search.html#summary" class="fhir-link">Summary</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">The high value includes any matching date/time. i.e. 2012-02-03T10:00:00 is in a period that has a end value of 2012-02-03.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Mappings</td>
+            <td class="fhir-details-data-cell">
+              <b>v2:</b>
+              DR.2
+              <br />
+              <b>rim:</b>
+              ./high
+            </td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.telecom" />
+              RelatedPerson.telecom
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">A contact detail for the person, e.g. a telephone number or an email address.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..*</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#contactpoint">ContactPoint</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Requirements</td>
+            <td class="fhir-details-data-cell">People have (primary) ways to contact them in some way such as phone, email.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/search.html#summary" class="fhir-link">Summary</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">Person may have multiple ways to be contacted with different uses or applicable periods.  May need to have options for contacting the person urgently, and also to help with identification.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Invariants</td>
+            <td class="fhir-details-data-cell">
+              <b>Affect this element</b>
+              <br />
+              <b>cpt-2:</b>
+              A system is required if a value is provided. (xpath: not(exists(f:value)) or exists(f:system)) severity: Error
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Mappings</td>
+            <td class="fhir-details-data-cell">
+              <b>v2:</b>
+              XTN
+              <br />
+              <b>rim:</b>
+              TEL
+              <br />
+              <b>servd:</b>
+              ContactPoint
+              <br />
+              <b>v2:</b>
+              NK1-5 / NK1-6 / NK1-40
+              <br />
+              <b>rim:</b>
+              telecom
+            </td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.telecom.id" />
+              RelatedPerson.telecom.id
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">Note that FHIR strings may not exceed 1MB in size</td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.telecom.system" />
+              RelatedPerson.telecom.system
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">Telecommunications form for contact point - what communications system is required to make use of the contact.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/terminologies.html" class="fhir-link">Binding</a>
+            </td>
+            <td class="fhir-details-data-cell">ValuesetContactPointSystem.html: Telecommunications form for contact point (Required)</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#code">Code</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/search.html#summary" class="fhir-link">Summary</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">Note that FHIR strings may not exceed 1MB in size</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Mappings</td>
+            <td class="fhir-details-data-cell">
+              <b>v2:</b>
+              XTN.3
+              <br />
+              <b>rim:</b>
+              ./scheme
+              <br />
+              <b>servd:</b>
+              ./ContactPointType
+            </td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.telecom.value" />
+              RelatedPerson.telecom.value
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">The actual contact point details, in a form that is meaningful to the designated communication system (i.e. phone number or email address).</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Requirements</td>
+            <td class="fhir-details-data-cell">Need to support legacy numbers that are not in a tightly controlled format.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/search.html#summary" class="fhir-link">Summary</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">Additional text data such as phone extension numbers, or notes about use of the contact are sometimes included in the value.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Mappings</td>
+            <td class="fhir-details-data-cell">
+              <b>v2:</b>
+              XTN.1 (or XTN.12)
+              <br />
+              <b>rim:</b>
+              ./url
+              <br />
+              <b>servd:</b>
+              ./Value
+            </td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.telecom.use" />
+              RelatedPerson.telecom.use
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">Identifies the purpose for the contact point.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/terminologies.html" class="fhir-link">Binding</a>
+            </td>
+            <td class="fhir-details-data-cell">ValuesetContactPointUse.html: Use of contact point (Required)</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#code">Code</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Requirements</td>
+            <td class="fhir-details-data-cell">Need to track the way a person uses this contact, so a user can choose which is appropriate for their purpose.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/search.html#summary" class="fhir-link">Summary</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#ismodifier" class="fhir-link">Modifier</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">This is labeled as "Is Modifier" because applications should not mistake a temporary or old contact etc.for a current/permanent one. Applications can assume that a contact is current unless it explicitly says that it is temporary or old.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Mappings</td>
+            <td class="fhir-details-data-cell">
+              <b>v2:</b>
+              XTN.2 - but often indicated by field
+              <br />
+              <b>rim:</b>
+              unique(./use)
+              <br />
+              <b>servd:</b>
+              ./ContactPointPurpose
+            </td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.telecom.rank" />
+              RelatedPerson.telecom.rank
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">Specifies a preferred order in which to use a set of contacts. Contacts are ranked with lower values coming before higher values.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#positiveint">positiveInt</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/search.html#summary" class="fhir-link">Summary</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">Note that rank does not necessarily follow the order in which the contacts are represented in the instance.</td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.telecom.period" />
+              RelatedPerson.telecom.period
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">Time period when the contact point was/is in use.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#period">Period</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/search.html#summary" class="fhir-link">Summary</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">This is not a duration - that's a measure of time (a separate type), but a duration that occurs at a fixed value of time. A Period specifies a range of time; the context of use will specify whether the entire range applies (e.g. "the patient was an inpatient of the hospital for this time range") or one value from the range applies (e.g. "give to the patient between these two times"). If duration is required, specify the type as Interval|Duration.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Invariants</td>
+            <td class="fhir-details-data-cell">
+              <b>Affect this element</b>
+              <br />
+              <b>per-1:</b>
+              If present, start SHALL have a lower value than end (xpath: not(exists(f:start)) or not(exists(f:end)) or (f:start/@value &lt;= f:end/@value)) severity: Error
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Mappings</td>
+            <td class="fhir-details-data-cell">
+              <b>v2:</b>
+              DR
+              <br />
+              <b>rim:</b>
+              IVL&lt;TS&gt;[lowClosed="true" and highClosed="true"] or URG&lt;TS&gt;[lowClosed="true" and highClosed="true"]
+              <br />
+              <b>rim:</b>
+              ./usablePeriod[type="IVL&lt;TS&gt;"]
+              <br />
+              <b>servd:</b>
+              ./StartDate and ./EndDate
+            </td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.telecom.period.id" />
+              RelatedPerson.telecom.period.id
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">Note that FHIR strings may not exceed 1MB in size</td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.telecom.period.start" />
+              RelatedPerson.telecom.period.start
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">The start of the period. The boundary is inclusive.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#datetime">dateTime</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/search.html#summary" class="fhir-link">Summary</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">If the low element is missing, the meaning is that the low boundary is not known.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Mappings</td>
+            <td class="fhir-details-data-cell">
+              <b>v2:</b>
+              DR.1
+              <br />
+              <b>rim:</b>
+              ./low
+            </td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.telecom.period.end" />
+              RelatedPerson.telecom.period.end
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">The end of the period. If the end of the period is missing, it means that the period is ongoing. The start may be in the past, and the end date in the future, which means that period is expected/planned to end at that time.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#datetime">dateTime</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/search.html#summary" class="fhir-link">Summary</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">The high value includes any matching date/time. i.e. 2012-02-03T10:00:00 is in a period that has a end value of 2012-02-03.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Mappings</td>
+            <td class="fhir-details-data-cell">
+              <b>v2:</b>
+              DR.2
+              <br />
+              <b>rim:</b>
+              ./high
+            </td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.gender" />
+              RelatedPerson.gender
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">Administrative Gender - the gender that the person is considered to have for administration and record keeping purposes.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/terminologies.html" class="fhir-link">Binding</a>
+            </td>
+            <td class="fhir-details-data-cell">CareConnectAdministrativeGender1: The gender of a person used for administrative purposes. (Required)</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#code">Code</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Requirements</td>
+            <td class="fhir-details-data-cell">Needed for identification of the person, in combination with (at least) name and birth date.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/search.html#summary" class="fhir-link">Summary</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">Note that FHIR strings may not exceed 1MB in size</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Mappings</td>
+            <td class="fhir-details-data-cell">
+              <b>v2:</b>
+              NK1-15
+              <br />
+              <b>rim:</b>
+              administrativeGender
+            </td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.birthDate" />
+              RelatedPerson.birthDate
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">The date on which the related person was born.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">1..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#date">Date</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/search.html#summary" class="fhir-link">Summary</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Mappings</td>
+            <td class="fhir-details-data-cell">
+              <b>rim:</b>
+              player.birthTime
+            </td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.address" />
+              RelatedPerson.address
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">Address where the related person can be contacted or visited.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..*</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#address">Address</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Requirements</td>
+            <td class="fhir-details-data-cell">Need to keep track where the related person can be contacted per postal mail or visited.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/search.html#summary" class="fhir-link">Summary</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">Note: address is for postal addresses, not physical locations.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Mappings</td>
+            <td class="fhir-details-data-cell">
+              <b>v2:</b>
+              XAD
+              <br />
+              <b>rim:</b>
+              AD
+              <br />
+              <b>servd:</b>
+              Address
+              <br />
+              <b>v2:</b>
+              NK1-4
+              <br />
+              <b>rim:</b>
+              addr
+            </td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.address.id" />
+              RelatedPerson.address.id
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">Note that FHIR strings may not exceed 1MB in size</td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.address.use" />
+              RelatedPerson.address.use
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">The purpose of this address.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/terminologies.html" class="fhir-link">Binding</a>
+            </td>
+            <td class="fhir-details-data-cell">ValuesetAddressUse.html: The use of an address (Required)</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#code">Code</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Requirements</td>
+            <td class="fhir-details-data-cell">Allows an appropriate address to be chosen from a list of many.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/search.html#summary" class="fhir-link">Summary</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#ismodifier" class="fhir-link">Modifier</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">This is labeled as "Is Modifier" because applications should not mistake a temporary or old address etc.for a current/permanent one. Applications can assume that an address is current unless it explicitly says that it is temporary or old.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Mappings</td>
+            <td class="fhir-details-data-cell">
+              <b>v2:</b>
+              XAD.7
+              <br />
+              <b>rim:</b>
+              unique(./use)
+              <br />
+              <b>servd:</b>
+              ./AddressPurpose
+            </td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.address.type" />
+              RelatedPerson.address.type
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">Distinguishes between physical addresses (those you can visit) and mailing addresses (e.g. PO Boxes and care-of addresses). Most addresses are both.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/terminologies.html" class="fhir-link">Binding</a>
+            </td>
+            <td class="fhir-details-data-cell">ValuesetAddressType.html: The type of an address (physical / postal) (Required)</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#code">Code</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/search.html#summary" class="fhir-link">Summary</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">Note that FHIR strings may not exceed 1MB in size</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Mappings</td>
+            <td class="fhir-details-data-cell">
+              <b>v2:</b>
+              XAD.18
+              <br />
+              <b>rim:</b>
+              unique(./use)
+              <br />
+              <b>vcard:</b>
+              address type parameter
+            </td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.address.text" />
+              RelatedPerson.address.text
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">A full text representation of the address.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Requirements</td>
+            <td class="fhir-details-data-cell">A renderable, unencoded form.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/search.html#summary" class="fhir-link">Summary</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">Can provide both a text representation and parts.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Mappings</td>
+            <td class="fhir-details-data-cell">
+              <b>v2:</b>
+              XAD.1 + XAD.2 + XAD.3 + XAD.4 + XAD.5 + XAD.6
+              <br />
+              <b>rim:</b>
+              ./formatted
+              <br />
+              <b>vcard:</b>
+              address label parameter
+            </td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.address.line" />
+              RelatedPerson.address.line
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">This component contains the house number, apartment number, street name, street direction,  P.O. Box number, delivery hints, and similar address information.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..*</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Requirements</td>
+            <td class="fhir-details-data-cell">home | work | temp | old - purpose of this address.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/search.html#summary" class="fhir-link">Summary</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">Note that FHIR strings may not exceed 1MB in size</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Mappings</td>
+            <td class="fhir-details-data-cell">
+              <b>v2:</b>
+              XAD.1 + XAD.2 (note: XAD.1 and XAD.2 have different meanings for a company address than for a person address)
+              <br />
+              <b>rim:</b>
+              AD.part[parttype = AL]
+              <br />
+              <b>vcard:</b>
+              street
+              <br />
+              <b>servd:</b>
+              ./StreetAddress (newline delimitted)
+            </td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.address.city" />
+              RelatedPerson.address.city
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">The name of the city, town, village or other community or delivery center.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Alternate Names</td>
+            <td class="fhir-details-data-cell">Municpality</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/search.html#summary" class="fhir-link">Summary</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">Note that FHIR strings may not exceed 1MB in size</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Mappings</td>
+            <td class="fhir-details-data-cell">
+              <b>v2:</b>
+              XAD.3
+              <br />
+              <b>rim:</b>
+              AD.part[parttype = CTY]
+              <br />
+              <b>vcard:</b>
+              locality
+              <br />
+              <b>servd:</b>
+              ./Jurisdiction
+            </td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.address.district" />
+              RelatedPerson.address.district
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">The name of the administrative area (county).</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Alternate Names</td>
+            <td class="fhir-details-data-cell">County</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/search.html#summary" class="fhir-link">Summary</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">District is sometimes known as county, but in some regions 'county' is used in place of city (municipality), so county name should be conveyed in city instead.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Mappings</td>
+            <td class="fhir-details-data-cell">
+              <b>v2:</b>
+              XAD.9
+              <br />
+              <b>rim:</b>
+              AD.part[parttype = CNT | CPA]
+            </td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.address.state" />
+              RelatedPerson.address.state
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">Sub-unit of a country with limited sovereignty in a federally organized country. A code may be used if codes are in common use (i.e. US 2 letter state codes).</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Alternate Names</td>
+            <td class="fhir-details-data-cell">Province; Territory</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/search.html#summary" class="fhir-link">Summary</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">Note that FHIR strings may not exceed 1MB in size</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Mappings</td>
+            <td class="fhir-details-data-cell">
+              <b>v2:</b>
+              XAD.4
+              <br />
+              <b>rim:</b>
+              AD.part[parttype = STA]
+              <br />
+              <b>vcard:</b>
+              region
+              <br />
+              <b>servd:</b>
+              ./Region
+            </td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.address.postalCode" />
+              RelatedPerson.address.postalCode
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">A postal code designating a region defined by the postal service.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Alternate Names</td>
+            <td class="fhir-details-data-cell">Zip</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/search.html#summary" class="fhir-link">Summary</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">Note that FHIR strings may not exceed 1MB in size</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Mappings</td>
+            <td class="fhir-details-data-cell">
+              <b>v2:</b>
+              XAD.5
+              <br />
+              <b>rim:</b>
+              AD.part[parttype = ZIP]
+              <br />
+              <b>vcard:</b>
+              code
+              <br />
+              <b>servd:</b>
+              ./PostalIdentificationCode
+            </td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.address.country" />
+              RelatedPerson.address.country
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">Country - a nation as commonly understood or generally accepted.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/search.html#summary" class="fhir-link">Summary</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">ISO 3166 3 letter codes can be used in place of a full country name.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Mappings</td>
+            <td class="fhir-details-data-cell">
+              <b>v2:</b>
+              XAD.6
+              <br />
+              <b>rim:</b>
+              AD.part[parttype = CNT]
+              <br />
+              <b>vcard:</b>
+              country
+              <br />
+              <b>servd:</b>
+              ./Country
+            </td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.address.period" />
+              RelatedPerson.address.period
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">Time period when address was/is in use.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#period">Period</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Requirements</td>
+            <td class="fhir-details-data-cell">Allows addresses to be placed in historical context.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/search.html#summary" class="fhir-link">Summary</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">This is not a duration - that's a measure of time (a separate type), but a duration that occurs at a fixed value of time. A Period specifies a range of time; the context of use will specify whether the entire range applies (e.g. "the patient was an inpatient of the hospital for this time range") or one value from the range applies (e.g. "give to the patient between these two times"). If duration is required, specify the type as Interval|Duration.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Invariants</td>
+            <td class="fhir-details-data-cell">
+              <b>Affect this element</b>
+              <br />
+              <b>per-1:</b>
+              If present, start SHALL have a lower value than end (xpath: not(exists(f:start)) or not(exists(f:end)) or (f:start/@value &lt;= f:end/@value)) severity: Error
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Mappings</td>
+            <td class="fhir-details-data-cell">
+              <b>v2:</b>
+              DR
+              <br />
+              <b>rim:</b>
+              IVL&lt;TS&gt;[lowClosed="true" and highClosed="true"] or URG&lt;TS&gt;[lowClosed="true" and highClosed="true"]
+              <br />
+              <b>v2:</b>
+              XAD.12 / XAD.13 + XAD.14
+              <br />
+              <b>rim:</b>
+              ./usablePeriod[type="IVL&lt;TS&gt;"]
+              <br />
+              <b>servd:</b>
+              ./StartDate and ./EndDate
+            </td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.address.period.id" />
+              RelatedPerson.address.period.id
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">Note that FHIR strings may not exceed 1MB in size</td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.address.period.start" />
+              RelatedPerson.address.period.start
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">The start of the period. The boundary is inclusive.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#datetime">dateTime</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/search.html#summary" class="fhir-link">Summary</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">If the low element is missing, the meaning is that the low boundary is not known.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Mappings</td>
+            <td class="fhir-details-data-cell">
+              <b>v2:</b>
+              DR.1
+              <br />
+              <b>rim:</b>
+              ./low
+            </td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="RelatedPerson.address.period.end" />
+              RelatedPerson.address.period.end
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">The end of the period. If the end of the period is missing, it means that the period is ongoing. The start may be in the past, and the end date in the future, which means that period is expected/planned to end at that time.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#datetime">dateTime</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/search.html#summary" class="fhir-link">Summary</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">The high value includes any matching date/time. i.e. 2012-02-03T10:00:00 is in a period that has a end value of 2012-02-03.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Mappings</td>
+            <td class="fhir-details-data-cell">
+              <b>v2:</b>
+              DR.2
+              <br />
+              <b>rim:</b>
+              ./high
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

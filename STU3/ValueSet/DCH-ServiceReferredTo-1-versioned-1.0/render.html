@@ -1,0 +1,453 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <style>tr,
+.fhir-table-title {
+	font-size: 11px;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	vertical-align: top;
+	border: 0
+}
+.fhir-table-title {
+	padding: 0px 4px
+}
+td {
+	padding: 5px 4px
+}
+.fhir-panel-heading-box {
+	margin: -15px -15px 15px;
+	padding: 10px 15px;
+	background-color: #f0f0f0;
+	border-bottom: 1px solid #808080;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px
+}
+.fhir-panel-heading-text {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 17.5px;
+	font-weight: 500
+}
+tr {
+	padding: 3px;
+	line-height: 1.66em
+}
+.fhir-table-header-row {
+	border: 1px solid #f0f0f0
+}
+tr,
+fhir-table-title,
+td,
+tr,
+fhir-table-title,
+td {
+	text-align: left;
+	text-align: left
+}
+fhir-table-title,
+td,
+fhir-table-title,
+td {
+	vertical-align: top;
+	vertical-align: top
+}
+table {
+	width: 100%;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	border-collapse: collapse
+}
+.fhir-panel * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+.fhir-table.fhir-tree-table tbody:before {
+	content: '-';
+	display: block;
+	line-height: 1em;
+	color: transparent
+}
+.fhir-tree-table {
+	table-layout: fixed;
+	width: 100%
+}
+.fhir-panel {
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.4;
+	width: 95%;
+	max-width: 100%;
+	word-wrap: break-word
+}
+.fhir-panel {
+	padding: 15px;
+	margin-bottom: 20;
+	background-color: #ffffff;
+	border: 1px solid #808080;
+	border-radius: 4px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05)
+}
+.fhir-panel .fhir-link {
+	text-decoration: none;
+	color: #005eb8
+}
+.fhir-panel-subheading {
+	color: #474747;
+	font-weight: bold;
+	font-size: 13
+}
+.fhir-link {
+	text-decoration: none;
+	color: #005eb8
+}
+.fhir-text-faded {
+	opacity: 0.4
+}
+.fhir-text-strikethrough {
+	text-decoration: line-through
+}
+.fhir-data-cell {
+	border: 1px solid #f0f0f0
+}
+.fhir-data-label,
+.fhir-telecom-name {
+	color: #474747;
+	font-weight: bold;
+	font-size: 13
+}
+.fhir-data-label-empty {
+	color: #474747;
+	font-weight: normal
+}
+.fhir-data-value,
+.fhir-telecom-value {
+	color: #474747;
+	font-size: 13
+}
+.fhir-data-value-smalltext {
+	font-size: 10
+}
+.fhir-data-block-title {
+	color: #808080;
+	font-weight: bold;
+	text-decoration: underline;
+	font-size: 13
+}</style>
+  </head>
+  <body>
+    <div class="fhir-panel">
+      <div class="fhir-panel-heading-box">
+        <h3 class="fhir-panel-heading-text">ValueSet: DCH Service Referred To</h3>
+      </div>
+      <div class="fhir-panel-body">
+        <table class="fhir-table">
+          <colgroup>
+            <col width="25%" />
+            <col width="25%" />
+            <col width="25%" />
+            <col width="25%" />
+          </colgroup>
+          <tr>
+            <td class="fhir-data-cell" colspan="2">
+              <span class="fhir-data-label">Name:</span>
+              <span class="fhir-data-value">DCH Service Referred To</span>
+            </td>
+            <td class="fhir-data-cell" colspan="2">
+              <span class="fhir-data-label">URL:</span>
+              <span class="fhir-data-value">
+                <a class="fhir-link" href="/STU3/ValueSet/DCH-ServiceReferredTo-1">https://fhir.nhs.uk/STU3/ValueSet/DCH-ServiceReferredTo-1</a>
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td class="fhir-data-cell" colspan="1">
+              <span class="fhir-data-label">Version:</span>
+              <span class="fhir-data-value">1.0.0</span>
+            </td>
+            <td class="fhir-data-cell" colspan="1">
+              <span class="fhir-data-label">Status:</span>
+              <span class="fhir-data-value">Draft</span>
+            </td>
+            <td class="fhir-data-cell" colspan="1">
+              <span class="fhir-data-label">Last updated:</span>
+              <span class="fhir-data-value">24/01/18</span>
+            </td>
+            <td class="fhir-data-cell" colspan="1">
+              <span class="fhir-data-label fhir-data-label-empty">Experimental:</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="fhir-data-cell" colspan="4">
+              <span class="fhir-data-label">Description:</span>
+              <span class="fhir-data-value">A code from the SNOMED Clinical Terminology UK coding system that describes the service the patient has been referred to.</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="fhir-data-cell" colspan="4">
+              <span class="fhir-data-label">Publisher:</span>
+              <span class="fhir-data-value">NHS Digital</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="fhir-data-cell" colspan="4">
+              <span class="fhir-data-label">Contacts</span>
+              <br />
+              <span class="fhir-telecom-name">Interoperability Team</span>
+              <span class="fhir-telecom-name">:</span>
+              <span class="fhir-data-value">interoperabilityteam@nhs.net</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="fhir-data-cell" colspan="4">
+              <span class="fhir-data-label">Copyright:</span>
+              <span class="fhir-data-value">This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.</span>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="fhir-panel">
+      <div class="fhir-panel-heading-box">
+        <h3 class="fhir-panel-heading-text">Value set concepts</h3>
+      </div>
+      <div class="fhir-panel-body">
+        <table class="fhir-table">
+          <thead>
+            <tr class="fhir-table-header-row">
+              <th title="System that the following concepts belong to" style="width: 25%" class="fhir-table-title">CodeSystem</th>
+              <th title="Identifier for this concept" style="width: 10%" class="fhir-table-title">Code</th>
+              <th title="Human-friendly name" style="width: 65%" class="fhir-table-title">Display</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">http://snomed.info/sct</td>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1052711000000100</td>
+              <td class="fhir-tree-cell fhir-data-cell">Referred to health visitor</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1067191000000100</td>
+              <td class="fhir-tree-cell fhir-data-cell">Referral to family support clinic</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1092771000000108</td>
+              <td class="fhir-tree-cell fhir-data-cell">Referral to long term conditions case management service</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">11091311000000108</td>
+              <td class="fhir-tree-cell fhir-data-cell">Referral to end of life care service</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">170229004</td>
+              <td class="fhir-tree-cell fhir-data-cell">Referral of child to school nurse</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">183518005</td>
+              <td class="fhir-tree-cell fhir-data-cell">Referral to dermatology service</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">183523005</td>
+              <td class="fhir-tree-cell fhir-data-cell">Referral to gastroenterology service</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">183544005</td>
+              <td class="fhir-tree-cell fhir-data-cell">Referral to ear, nose and throat service</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">25121000000108</td>
+              <td class="fhir-tree-cell fhir-data-cell">Referral to intermediate care</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">306109009</td>
+              <td class="fhir-tree-cell fhir-data-cell">Referral to pain management service</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">306114008</td>
+              <td class="fhir-tree-cell fhir-data-cell">Referral to respiratory medicine service</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">306127007</td>
+              <td class="fhir-tree-cell fhir-data-cell">Referral to rheumatology service</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">306129005</td>
+              <td class="fhir-tree-cell fhir-data-cell">Referral to community paediatric service</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">306130000</td>
+              <td class="fhir-tree-cell fhir-data-cell">Referral to paediatric neurology service</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">306140002</td>
+              <td class="fhir-tree-cell fhir-data-cell">Referral to clinical oncology service</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">306148009</td>
+              <td class="fhir-tree-cell fhir-data-cell">Referral to haematology service</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">306151002</td>
+              <td class="fhir-tree-cell fhir-data-cell">Referral to public health service</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">306154005</td>
+              <td class="fhir-tree-cell fhir-data-cell">Referral to arts therapy services</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">306160005</td>
+              <td class="fhir-tree-cell fhir-data-cell">Referral to podiatry service</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">306166004</td>
+              <td class="fhir-tree-cell fhir-data-cell">Referral to occupational therapy service</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">306170007</td>
+              <td class="fhir-tree-cell fhir-data-cell">Referral to physiotherapy service</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">306173009</td>
+              <td class="fhir-tree-cell fhir-data-cell">Referral to speech and language therapy service</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">306210008</td>
+              <td class="fhir-tree-cell fhir-data-cell">Referral to paediatric diagnostic audiology service</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">306225008</td>
+              <td class="fhir-tree-cell fhir-data-cell">Referral to counselling service</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">306228005</td>
+              <td class="fhir-tree-cell fhir-data-cell">Referral for diagnostic investigation</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">307374004</td>
+              <td class="fhir-tree-cell fhir-data-cell">Referral to rehabilitation service</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">308436005</td>
+              <td class="fhir-tree-cell fhir-data-cell">Referral to district nurse</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">308454009</td>
+              <td class="fhir-tree-cell fhir-data-cell">Referral to orthoptist</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">309625004</td>
+              <td class="fhir-tree-cell fhir-data-cell">Referral to psychology service</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">310519005</td>
+              <td class="fhir-tree-cell fhir-data-cell">Referral to appliance service</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">327121000000104</td>
+              <td class="fhir-tree-cell fhir-data-cell">Referral to dental service (procedure)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">342041000000105</td>
+              <td class="fhir-tree-cell fhir-data-cell">Referral to children's respite care</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">344761000000102</td>
+              <td class="fhir-tree-cell fhir-data-cell">Referral to children's community nurse</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">514091000000100</td>
+              <td class="fhir-tree-cell fhir-data-cell">Referral to multidisciplinary nutrition team</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">715159005</td>
+              <td class="fhir-tree-cell fhir-data-cell">Referral to diabetes service</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">769071000000100</td>
+              <td class="fhir-tree-cell fhir-data-cell">Child in need referral to social services</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">785761000000105</td>
+              <td class="fhir-tree-cell fhir-data-cell">Referral to community cardiology service (procedure)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">820371000000103</td>
+              <td class="fhir-tree-cell fhir-data-cell">Referral to community treatment room</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">835351000000103</td>
+              <td class="fhir-tree-cell fhir-data-cell">Referral to community phlebotomist</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">841261000000105</td>
+              <td class="fhir-tree-cell fhir-data-cell">Referral to community musculoskeletal service</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">892101000000102</td>
+              <td class="fhir-tree-cell fhir-data-cell">Referral to tissue viability service</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">913611000000107</td>
+              <td class="fhir-tree-cell fhir-data-cell">Referral for multidisciplinary case management</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">New code needed</td>
+              <td class="fhir-tree-cell fhir-data-cell">Referral for vulnerable adult investigation</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell"> 514371000000102</td>
+              <td class="fhir-tree-cell fhir-data-cell">Referral to continence service</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

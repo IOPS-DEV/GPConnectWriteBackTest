@@ -1,0 +1,762 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <style>tr,
+.fhir-table-title {
+	font-size: 11px;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	vertical-align: top;
+	border: 0
+}
+.fhir-table-title {
+	padding: 0px 4px
+}
+td {
+	padding: 5px 4px
+}
+.fhir-panel-heading-box {
+	margin: -15px -15px 15px;
+	padding: 10px 15px;
+	background-color: #f0f0f0;
+	border-bottom: 1px solid #808080;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px
+}
+.fhir-panel-heading-text {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 17.5px;
+	font-weight: 500
+}
+tr {
+	padding: 3px;
+	line-height: 1.66em
+}
+.fhir-table-header-row {
+	border: 1px solid #f0f0f0
+}
+tr,
+fhir-table-title,
+td,
+tr,
+fhir-table-title,
+td {
+	text-align: left;
+	text-align: left
+}
+fhir-table-title,
+td,
+fhir-table-title,
+td {
+	vertical-align: top;
+	vertical-align: top
+}
+table {
+	width: 100%;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	border-collapse: collapse
+}
+.fhir-panel * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+.fhir-table.fhir-tree-table tbody:before {
+	content: '-';
+	display: block;
+	line-height: 1em;
+	color: transparent
+}
+.fhir-tree-table {
+	table-layout: fixed;
+	width: 100%
+}
+.fhir-panel {
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.4;
+	width: 95%;
+	max-width: 100%;
+	word-wrap: break-word
+}
+.fhir-panel {
+	padding: 15px;
+	margin-bottom: 20;
+	background-color: #ffffff;
+	border: 1px solid #808080;
+	border-radius: 4px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05)
+}
+.fhir-panel .fhir-link {
+	text-decoration: none;
+	color: #005eb8
+}
+.fhir-panel-subheading {
+	color: #474747;
+	font-weight: bold;
+	font-size: 13
+}
+.fhir-info-name-bold {
+	font-weight: bold;
+	color: #474747
+}
+.fhir-text-italic {
+	font-style: italic;
+	color: #474747
+}
+.fhir-info-plain {
+	color: #474747
+}
+.fhir-resource-info-cell {
+	padding: 5px 4px;
+	border-bottom: 1px solid #f0f0f0
+}
+.fhir-indent-wrapped-text {
+	margin-left: 3em;
+	text-indent: -3em
+}
+.fhir-link {
+	text-decoration: none;
+	color: #005eb8
+}
+.fhir-text-faded {
+	opacity: 0.4
+}
+.fhir-text-strikethrough {
+	text-decoration: line-through
+}
+.fhir-data-cell {
+	border: 1px solid #f0f0f0
+}
+.fhir-data-label,
+.fhir-telecom-name {
+	color: #474747;
+	font-weight: bold;
+	font-size: 13
+}
+.fhir-data-label-empty {
+	color: #474747;
+	font-weight: normal
+}
+.fhir-data-value,
+.fhir-telecom-value {
+	color: #474747;
+	font-size: 13
+}
+.fhir-data-value-smalltext {
+	font-size: 10
+}
+.fhir-data-block-title {
+	color: #808080;
+	font-weight: bold;
+	text-decoration: underline;
+	font-size: 13
+}
+.fhirtreebg-dotted-1 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR4nO3OIRIAIAwDwf41/38DRSJBIbqZWRdxlaRu7a2XPwAAwOl7AAAAMEcDVN1AgPyAV0EAAAAASUVORK5CYII=);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-1000 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR4nO3OIRIAIAwDwf41/38DRSJBIbqZWRdxlaRu7a2XPwAAwOl7AAAAMEcDVN1AgPyAV0EAAAAASUVORK5CYII=);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-1010 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAMklEQVR4nO3OwQkAIAwDwO6a/WdQR1AU+vAC9wsklaR2rYyT/mvd+wAAwJ32AwAAwD8mVNtAVsYeLtoAAAAASUVORK5CYII=);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-11 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAMUlEQVR4nO3OwQkAIAwDwO6a/WdQR1AoiHiB+yWQSlK7VsZJv3sPAAC87foBAADgHxNKW0BW4z7WCQAAAABJRU5ErkJggg==);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-110 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAMUlEQVR4nO3OwQkAIAwDwO6a/WdQR1AoiHiB+yWQSlK7VsZJv3sPAAC87foBAADgHxNKW0BW4z7WCQAAAABJRU5ErkJggg==);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-01 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4nO3OwQkAMAwDsezq/WdoMkVaqAx6+ypJbZmdzT8AAOAt1wMAAIB/NF9dQIDlRTsJAAAAAElFTkSuQmCC);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-000 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4nO3OIQEAAAgDsHd9/w60AMHE/NI2AAAAG84DAADAHwNp30Cqb/h6OAAAAABJRU5ErkJggg==);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-101 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAMklEQVR4nO3OwQkAIAwDwO6a/WdQR1AU+vAC9wsklaR2rYyT/mvd+wAAwJ32AwAAwD8mVNtAVsYeLtoAAAAASUVORK5CYII=);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-010 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4nO3OwQkAMAwDsezq/WdoMkVaqAx6+ypJbZmdzT8AAOAt1wMAAIB/NF9dQIDlRTsJAAAAAElFTkSuQmCC);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-10 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR4nO3OIRIAIAwDwf41/38DRSJBIbqZWRdxlaRu7a2XPwAAwOl7AAAAMEcDVN1AgPyAV0EAAAAASUVORK5CYII=);
+	background-repeat: repeat-y
+}
+.fhir-tree-resource-icon {
+	padding-right: 4px;
+	background-color: white;
+	border: 0;
+	width: 20;
+	height: 16
+}
+img.fhir-tree-icon {
+	background-color: white;
+	border: 0;
+	width: 16;
+	height: 22
+}
+.fhir-tree-icons {
+	padding: 0 4px;
+	border-collapse: collapse
+}
+.fhir-tree-icons img {
+	vertical-align: top;
+	float: left;
+	border-collapse: collapse
+}
+.fhir-table,
+.fhir-table tbody tr {
+	border-collapse: collapse;
+	vertical-align: top;
+	border-style: none
+}
+.fhir-tree-icons,
+.fhir-tree-icons img,
+.fhir-table {
+	-webkit-border-horizontal-spacing: 0;
+	-webkit-border-vertical-spacing: 0
+}
+.fhir-tree-cell {
+	padding: 5px 4px
+}</style>
+  </head>
+  <body>
+    <div class="fhir-panel">
+      <div class="fhir-panel-body">
+        <table class="fhir-table fhir-tree-table">
+          <thead>
+            <tr class="fhir-table-header-row">
+              <th title="The logical name of the element" style="width: 25%" class="fhir-table-title">Name</th>
+              <th title="Features of the element" style="width: 5%; max-width: 60px" class="fhir-table-title">Flags</th>
+              <th title="Minimum and maximum # of times the element can appear in the instance" style="width: 5%; max-width: 40px" class="fhir-table-title">Card.</th>
+              <th title="Reference to the type of the element" style="width: 15%; max-width: 80px" class="fhir-table-title">Type</th>
+              <th title="Additional information about the element" style="width: 50%" class="fhir-table-title">Description/Constraints</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="fhirtreebg-dotted-1 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/icon_resource.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Subscription" title="The subscription resource is used to define a push based subscription from a server to another system. Once a subscription is registered with the server, the server checks every resource that is created or updated, and if the resource matches the given criteria, it sends a message on the defined &quot;channel&quot; so that another system is able to take an appropriate action." class="fhir-tree-cell fhir-link tabLink">Subscription</a>
+              </td>
+              <td class="fhir-resource-flag">
+                <span title="This element has or is affected by some invariants">I</span>
+              </td>
+              <td class="fhir-tree-cell">&#8203;</td>
+              <td class="fhir-tree-cell" />
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">A server push subscription criteria</div>
+                <div class="fhir-indent-wrapped-text fhir-info-plain">Constraint (dom-2): If the resource is contained in another resource, it SHALL NOT contain nested Resources</div>
+                <div class="fhir-indent-wrapped-text fhir-info-plain">Constraint (dom-1): If the resource is contained in another resource, it SHALL NOT contain any narrative</div>
+                <div class="fhir-indent-wrapped-text fhir-info-plain">Constraint (dom-4): If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated</div>
+                <div class="fhir-indent-wrapped-text fhir-info-plain">Constraint (dom-3): If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Subscription.id" title="The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes." class="fhir-tree-cell fhir-link tabLink">id</a>
+              </td>
+              <td class="fhir-resource-flag">
+                <span title="This element is included in summaries">&#931;</span>
+                <span title="This element has or is affected by some invariants">I</span>
+              </td>
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#id">Id</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">Logical id of this artifact</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_element.gif" class="fhir-tree-resource-icon" />
+                <a href="details.html#Subscription.meta" title="The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource." class="fhir-tree-cell fhir-link tabLink">meta</a>
+              </td>
+              <td class="fhir-resource-flag">
+                <span title="This element is included in summaries">&#931;</span>
+                <span title="This element has or is affected by some invariants">I</span>
+              </td>
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/resource.html#Meta">Meta</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">Metadata about the resource</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Subscription.implicitRules" title="A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content." class="fhir-tree-cell fhir-link tabLink">implicitRules</a>
+              </td>
+              <td class="fhir-resource-flag">
+                <span title="This element is included in summaries">&#931;</span>
+                <span title="This element is a modifier element">?!</span>
+                <span title="This element has or is affected by some invariants">I</span>
+              </td>
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#uri">Uri</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">A set of rules under which this content was created</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Subscription.language" title="The base language in which the resource is written." class="fhir-tree-cell fhir-link tabLink">language</a>
+              </td>
+              <td class="fhir-resource-flag">
+                <span title="This element has or is affected by some invariants">I</span>
+              </td>
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#code">Code</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">Language of the resource content</div>
+                <div class="fhir-indent-wrapped-text fhir-info-plain">
+                  Binding (extensible): A human language. (
+                  <a href="http://hl7.org/fhir/stu3/valueset-languages.html" class="fhir-link">http://hl7.org/fhir/stu3/valueset-languages.html</a>
+                  )
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_element.gif" class="fhir-tree-resource-icon" />
+                <a href="details.html#Subscription.text" title="A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety." class="fhir-tree-cell fhir-link tabLink">text</a>
+              </td>
+              <td class="fhir-resource-flag">
+                <span title="This element has or is affected by some invariants">I</span>
+              </td>
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/narrative.html#Narrative">Narrative</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">Text summary of the resource, for human interpretation</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_datatype.gif" class="fhir-tree-resource-icon" />
+                <a href="details.html#Subscription.contained" title="These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope." class="fhir-tree-cell fhir-link tabLink">contained</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">0..*</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/provenance.html">Provenance</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">Contained Provenance resource</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_slice.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Subscription.modifierExtension" title="May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions." class="fhir-tree-cell fhir-link tabLink">modifierExtension</a>
+              </td>
+              <td class="fhir-resource-flag">
+                <span title="This element is a modifier element">?!</span>
+                <span title="This element has or is affected by some invariants">I</span>
+              </td>
+              <td class="fhir-tree-cell">0..*</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/extensibility.html#Extension">Extension</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">Extensions that cannot be ignored</div>
+                <div class="fhir-indent-wrapped-text fhir-info-plain">Constraint (ext-1): Must have either extensions or value[x], not both</div>
+                <div class="fhir-indent-wrapped-text fhir-info-plain">Slicing: Description: Extensions are always sliced by (at least) url, Discriminator: url, Ordering: false, Rules: Open</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Subscription.status" title="The status of the subscription, which marks the server state for managing the subscription." class="fhir-tree-cell fhir-link tabLink">status</a>
+              </td>
+              <td class="fhir-resource-flag">
+                <span title="This element is included in summaries">&#931;</span>
+                <span title="This element is a modifier element">?!</span>
+                <span title="This element has or is affected by some invariants">I</span>
+              </td>
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#code">Code</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">requested | active | error | off</div>
+                <div class="fhir-indent-wrapped-text fhir-info-plain">
+                  Binding (required): The status of a subscription. (
+                  <a href="http://hl7.org/fhir/stu3/valueset-subscription-status.html" class="fhir-link">http://hl7.org/fhir/stu3/valueset-subscription-status.html</a>
+                  )
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-11 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_datatype.gif" class="fhir-tree-resource-icon" />
+                <a href="details.html#Subscription.contact" title="Contact details for a human to contact about the subscription. The primary use of this for system administrator troubleshooting." class="fhir-tree-cell fhir-link tabLink">contact</a>
+              </td>
+              <td class="fhir-resource-flag">
+                <span title="This element is included in summaries">&#931;</span>
+                <span title="This element has or is affected by some invariants">I</span>
+              </td>
+              <td class="fhir-tree-cell">1..*</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#contactpoint">ContactPoint</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">Contact details for source (e.g. troubleshooting)</div>
+                <div class="fhir-indent-wrapped-text fhir-info-plain">Constraint (cpt-2): A system is required if a value is provided.</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Subscription.contact.system" title="Telecommunications form for contact point - what communications system is required to make use of the contact." class="fhir-tree-cell fhir-link tabLink">system</a>
+              </td>
+              <td class="fhir-resource-flag">
+                <span title="This element is included in summaries">&#931;</span>
+                <span title="This element has or is affected by some invariants">I</span>
+              </td>
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#code">Code</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">phone | fax | email | pager | url | sms | other</div>
+                <div class="fhir-indent-wrapped-text fhir-info-plain">
+                  Binding (required): Telecommunications form for contact point (
+                  <a href="http://hl7.org/fhir/stu3/valueset-contact-point-system.html" class="fhir-link">http://hl7.org/fhir/stu3/valueset-contact-point-system.html</a>
+                  )
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Subscription.contact.value" title="The actual contact point details, in a form that is meaningful to the designated communication system (i.e. phone number or email address)." class="fhir-tree-cell fhir-link tabLink">value</a>
+              </td>
+              <td class="fhir-resource-flag">
+                <span title="This element is included in summaries">&#931;</span>
+                <span title="This element has or is affected by some invariants">I</span>
+              </td>
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">The actual contact point details</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Subscription.contact.use" title="Identifies the purpose for the contact point." class="fhir-tree-cell fhir-link tabLink">use</a>
+              </td>
+              <td class="fhir-resource-flag">
+                <span title="This element is included in summaries">&#931;</span>
+                <span title="This element is a modifier element">?!</span>
+                <span title="This element has or is affected by some invariants">I</span>
+              </td>
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#code">Code</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">home | work | temp | old | mobile - purpose of this contact point</div>
+                <div class="fhir-indent-wrapped-text fhir-info-plain">
+                  Binding (required): Use of contact point (
+                  <a href="http://hl7.org/fhir/stu3/valueset-contact-point-use.html" class="fhir-link">http://hl7.org/fhir/stu3/valueset-contact-point-use.html</a>
+                  )
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Subscription.contact.rank" title="Specifies a preferred order in which to use a set of contacts. Contacts are ranked with lower values coming before higher values." class="fhir-tree-cell fhir-link tabLink">rank</a>
+              </td>
+              <td class="fhir-resource-flag">
+                <span title="This element is included in summaries">&#931;</span>
+                <span title="This element has or is affected by some invariants">I</span>
+              </td>
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#positiveint">positiveInt</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">Specify preferred order of use (1 = highest)</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-101 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin_end.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_datatype.gif" class="fhir-tree-resource-icon" />
+                <a href="details.html#Subscription.contact.period" title="Time period when the contact point was/is in use." class="fhir-tree-cell fhir-link tabLink">period</a>
+              </td>
+              <td class="fhir-resource-flag">
+                <span title="This element is included in summaries">&#931;</span>
+                <span title="This element has or is affected by some invariants">I</span>
+              </td>
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#period">Period</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">Time period when the contact point was/is in use</div>
+                <div class="fhir-indent-wrapped-text fhir-info-plain">Constraint (per-1): If present, start SHALL have a lower value than end</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-1010 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_blank.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Subscription.contact.period.start" title="The start of the period. The boundary is inclusive." class="fhir-tree-cell fhir-link tabLink">start</a>
+              </td>
+              <td class="fhir-resource-flag">
+                <span title="This element is included in summaries">&#931;</span>
+                <span title="This element has or is affected by some invariants">I</span>
+              </td>
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#datetime">dateTime</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">Starting time with inclusive boundary</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-1000 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_blank.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin_end.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Subscription.contact.period.end" title="The end of the period. If the end of the period is missing, it means that the period is ongoing. The start may be in the past, and the end date in the future, which means that period is expected/planned to end at that time." class="fhir-tree-cell fhir-link tabLink">end</a>
+              </td>
+              <td class="fhir-resource-flag">
+                <span title="This element is included in summaries">&#931;</span>
+                <span title="This element has or is affected by some invariants">I</span>
+              </td>
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#datetime">dateTime</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">End time with inclusive boundary, if not ongoing</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Subscription.end" title="The time for the server to turn the subscription off." class="fhir-tree-cell fhir-link tabLink">end</a>
+              </td>
+              <td class="fhir-resource-flag">
+                <span title="This element is included in summaries">&#931;</span>
+                <span title="This element has or is affected by some invariants">I</span>
+              </td>
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#instant">Instant</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">When to automatically delete the subscription</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Subscription.reason" title="A description of why this subscription is defined." class="fhir-tree-cell fhir-link tabLink">reason</a>
+              </td>
+              <td class="fhir-resource-flag">
+                <span title="This element is included in summaries">&#931;</span>
+                <span title="This element has or is affected by some invariants">I</span>
+              </td>
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">Description of why this subscription was created</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Subscription.criteria" title="The rules that the server should use to determine when to generate notifications for this subscription." class="fhir-tree-cell fhir-link tabLink">criteria</a>
+              </td>
+              <td class="fhir-resource-flag">
+                <span title="This element is included in summaries">&#931;</span>
+                <span title="This element has or is affected by some invariants">I</span>
+              </td>
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">Rule for server push criteria</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-01 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin_end.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_datatype.gif" class="fhir-tree-resource-icon" />
+                <a href="details.html#Subscription.channel" title="Details where to send notifications when resources are received that meet the criteria." class="fhir-tree-cell fhir-link tabLink">channel</a>
+              </td>
+              <td class="fhir-resource-flag">
+                <span title="This element is included in summaries">&#931;</span>
+                <span title="This element has or is affected by some invariants">I</span>
+              </td>
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/backboneelement.html">BackboneElement</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">The channel on which to report matches to the criteria</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-010 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_blank.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_element.gif" class="fhir-tree-resource-icon" />
+                <a href="details.html#Subscription.channel.modifierExtension" title="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions." class="fhir-tree-cell fhir-link tabLink">modifierExtension</a>
+              </td>
+              <td class="fhir-resource-flag">
+                <span title="This element is included in summaries">&#931;</span>
+                <span title="This element is a modifier element">?!</span>
+                <span title="This element has or is affected by some invariants">I</span>
+              </td>
+              <td class="fhir-tree-cell">0..*</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/extensibility.html#Extension">Extension</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">Extensions that cannot be ignored</div>
+                <div class="fhir-indent-wrapped-text fhir-info-plain">Constraint (ext-1): Must have either extensions or value[x], not both</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-010 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_blank.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Subscription.channel.type" title="The type of channel to send notifications on." class="fhir-tree-cell fhir-link tabLink">type</a>
+              </td>
+              <td class="fhir-resource-flag">
+                <span title="This element is included in summaries">&#931;</span>
+                <span title="This element has or is affected by some invariants">I</span>
+              </td>
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#code">Code</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">rest-hook | websocket | email | sms | message</div>
+                <div class="fhir-indent-wrapped-text fhir-info-plain">
+                  Binding (required): The type of method used to execute a subscription. (
+                  <a href="http://hl7.org/fhir/stu3/valueset-subscription-channel-type.html" class="fhir-link">http://hl7.org/fhir/stu3/valueset-subscription-channel-type.html</a>
+                  )
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-010 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_blank.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Subscription.channel.endpoint" title="The uri that describes the actual end-point to send messages to." class="fhir-tree-cell fhir-link tabLink">endpoint</a>
+              </td>
+              <td class="fhir-resource-flag">
+                <span title="This element is included in summaries">&#931;</span>
+                <span title="This element has or is affected by some invariants">I</span>
+              </td>
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#uri">Uri</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">Where the channel points to</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-010 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_blank.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Subscription.channel.payload" title="The mime type to send the payload in - either application/fhir+xml, or application/fhir+json. If the payload is not present, then there is no payload in the notification, just a notification." class="fhir-tree-cell fhir-link tabLink">payload</a>
+              </td>
+              <td class="fhir-resource-flag">
+                <span title="This element is included in summaries">&#931;</span>
+                <span title="This element has or is affected by some invariants">I</span>
+              </td>
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">Mimetype to send, or omit for no payload</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-000 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_blank.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin_end.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Subscription.channel.header" title="Additional headers / information to send as part of the notification." class="fhir-tree-cell fhir-link tabLink">header</a>
+              </td>
+              <td class="fhir-resource-flag">
+                <span title="This element is included in summaries">&#931;</span>
+                <span title="This element has or is affected by some invariants">I</span>
+              </td>
+              <td class="fhir-tree-cell">0..*</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">Usage depends on the channel type</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,452 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <style>.fhir-data-cell {
+	border: 1px solid #f0f0f0
+}
+.fhir-data-label,
+.fhir-telecom-name {
+	color: #474747;
+	font-weight: bold;
+	font-size: 13
+}
+.fhir-data-label-empty {
+	color: #474747;
+	font-weight: normal
+}
+.fhir-data-value,
+.fhir-telecom-value {
+	color: #474747;
+	font-size: 13
+}
+.fhir-data-value-smalltext {
+	font-size: 10
+}
+.fhir-data-block-title {
+	color: #808080;
+	font-weight: bold;
+	text-decoration: underline;
+	font-size: 13
+}
+tr,
+.fhir-table-title {
+	font-size: 11px;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	vertical-align: top;
+	border: 0
+}
+.fhir-table-title {
+	padding: 0px 4px
+}
+td {
+	padding: 5px 4px
+}
+.fhir-panel-heading-box {
+	margin: -15px -15px 15px;
+	padding: 10px 15px;
+	background-color: #f0f0f0;
+	border-bottom: 1px solid #808080;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px
+}
+.fhir-panel-heading-text {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 17.5px;
+	font-weight: 500
+}
+tr {
+	padding: 3px;
+	line-height: 1.66em
+}
+.fhir-table-header-row {
+	border: 1px solid #f0f0f0
+}
+tr,
+fhir-table-title,
+td,
+tr,
+fhir-table-title,
+td {
+	text-align: left;
+	text-align: left
+}
+fhir-table-title,
+td,
+fhir-table-title,
+td {
+	vertical-align: top;
+	vertical-align: top
+}
+table {
+	width: 100%;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	border-collapse: collapse
+}
+.fhir-panel * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+.fhir-table.fhir-tree-table tbody:before {
+	content: '-';
+	display: block;
+	line-height: 1em;
+	color: transparent
+}
+.fhir-tree-table {
+	table-layout: fixed;
+	width: 100%
+}
+.fhir-panel {
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.4;
+	width: 95%;
+	max-width: 100%;
+	word-wrap: break-word
+}
+.fhir-panel {
+	padding: 15px;
+	margin-bottom: 20;
+	background-color: #ffffff;
+	border: 1px solid #808080;
+	border-radius: 4px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05)
+}
+.fhir-panel .fhir-link {
+	text-decoration: none;
+	color: #005eb8
+}
+.fhir-panel-subheading {
+	color: #474747;
+	font-weight: bold;
+	font-size: 13
+}
+.fhir-link {
+	text-decoration: none;
+	color: #005eb8
+}
+.fhir-text-faded {
+	opacity: 0.4
+}
+.fhir-text-strikethrough {
+	text-decoration: line-through
+}</style>
+  </head>
+  <body>
+    <div class="fhir-panel">
+      <div class="fhir-panel-heading-box">
+        <h3 class="fhir-panel-heading-text">CodeSystem definition: DCH Accommodation Status</h3>
+      </div>
+      <div class="fhir-panel-body">
+        <table class="fhir-table">
+          <colgroup>
+            <col width="25%" />
+            <col width="25%" />
+            <col width="25%" />
+            <col width="25%" />
+          </colgroup>
+          <tr>
+            <td class="fhir-data-cell" colspan="2">
+              <span class="fhir-data-label">Name:</span>
+              <span class="fhir-data-value">DCH Accommodation Status</span>
+            </td>
+            <td class="fhir-data-cell" colspan="2">
+              <span class="fhir-data-label">URL:</span>
+              <span class="fhir-data-value">
+                <a class="fhir-link" href="/STU3/CodeSystem/DCH-AccommodationStatus-1">https://fhir.nhs.uk/STU3/CodeSystem/DCH-AccommodationStatus-1</a>
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td class="fhir-data-cell" colspan="1">
+              <span class="fhir-data-label">Version:</span>
+              <span class="fhir-data-value">1.0.1</span>
+            </td>
+            <td class="fhir-data-cell" colspan="1">
+              <span class="fhir-data-label">Status:</span>
+              <span class="fhir-data-value">Draft</span>
+            </td>
+            <td class="fhir-data-cell" colspan="2">
+              <span class="fhir-data-label fhir-data-label-empty">Purpose:</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="fhir-data-cell" colspan="4">
+              <span class="fhir-data-label">Description:</span>
+              <span class="fhir-data-value">A CodeSystem to identify a type of accommodation.</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="fhir-data-cell" colspan="1">
+              <span class="fhir-data-label">Last updated:</span>
+              <span class="fhir-data-value">04/12/17</span>
+            </td>
+            <td class="fhir-data-cell" colspan="1">
+              <span class="fhir-data-label">Published by:</span>
+              <span class="fhir-data-value">NHS Digital</span>
+            </td>
+            <td class="fhir-data-cell" colspan="1">
+              <span class="fhir-data-label fhir-data-label-empty">Identifier system:</span>
+            </td>
+            <td class="fhir-data-cell" colspan="1">
+              <span class="fhir-data-label fhir-data-label-empty">Identifier:</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="fhir-data-cell" colspan="1">
+              <span class="fhir-data-label fhir-data-label-empty">Compositional:</span>
+            </td>
+            <td class="fhir-data-cell" colspan="1">
+              <span class="fhir-data-label">Content:</span>
+              <span class="fhir-data-value">Complete</span>
+            </td>
+            <td class="fhir-data-cell" colspan="1">
+              <span class="fhir-data-label">Experimental:</span>
+              <span class="fhir-data-value">no</span>
+            </td>
+            <td class="fhir-data-cell" colspan="1">
+              <span class="fhir-data-label">Case Sensitive:</span>
+              <span class="fhir-data-value">yes</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="fhir-data-cell" colspan="4">
+              <span class="fhir-data-label">Contacts</span>
+              <br />
+              <span class="fhir-telecom-name">Interoperability Team</span>
+              <span class="fhir-telecom-name">:</span>
+              <span class="fhir-data-value">interoperabilityteam@nhs.net</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="fhir-data-cell" colspan="4">
+              <span class="fhir-data-value fhir-data-value-smalltext">Copyright © 2017 NHS Digital</span>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="fhir-panel">
+      <div class="fhir-panel-heading-box">
+        <h3 class="fhir-panel-heading-text">Codes defined by DCH Accommodation Status</h3>
+      </div>
+      <div class="fhir-panel-body">
+        <div>
+          <div>System: https://fhir.nhs.uk/STU3/CodeSystem/DCH-AccommodationStatus-1</div>
+          <br />
+          <table class="fhir-table">
+            <thead>
+              <tr class="fhir-table-header-row">
+                <th title="Code that identifies the concept." style="width: 25%" class="fhir-table-title">Code</th>
+                <th title="User-friendly name" style="width: 75%" class="fhir-table-title">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">MA00</td>
+                <td class="fhir-tree-cell fhir-data-cell">Mainstream Housing</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">MA01</td>
+                <td class="fhir-tree-cell fhir-data-cell">Owner occupier</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">MA02</td>
+                <td class="fhir-tree-cell fhir-data-cell">Settled mainstream housing with family/friends</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">MA03</td>
+                <td class="fhir-tree-cell fhir-data-cell">Shared ownership scheme e.g. Social Homebuy Scheme (tenant purchase percentage of home value from landlord)</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">MA04</td>
+                <td class="fhir-tree-cell fhir-data-cell">Tenant - Local Authority/Arms Length Management Organisation/Registered Landlord</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">MA05</td>
+                <td class="fhir-tree-cell fhir-data-cell">Tenant - Housing Association</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">MA06</td>
+                <td class="fhir-tree-cell fhir-data-cell">Tenant - private landlord</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">MA09</td>
+                <td class="fhir-tree-cell fhir-data-cell">Other mainstream housing</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">HM00</td>
+                <td class="fhir-tree-cell fhir-data-cell">Homeless</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">HM01</td>
+                <td class="fhir-tree-cell fhir-data-cell">Rough sleeper</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">HM02</td>
+                <td class="fhir-tree-cell fhir-data-cell">Squatting</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">HM03</td>
+                <td class="fhir-tree-cell fhir-data-cell">Night shelter/emergency hostel/Direct access hostel (temporary accommodation accepting self referrals, no waiting list and relatively frequent vacancies)</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">HM04</td>
+                <td class="fhir-tree-cell fhir-data-cell">Sofa surfing (sleeps on different friends floor each night)</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">HM05</td>
+                <td class="fhir-tree-cell fhir-data-cell">Placed in temporary accommodation by Local Authority (including Homelessness resettlement service) e.g. Bed and Breakfast accommodation</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">HM06</td>
+                <td class="fhir-tree-cell fhir-data-cell">Staying with friends/family as a short term guest</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">HM07</td>
+                <td class="fhir-tree-cell fhir-data-cell">Other homeless</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">MH00</td>
+                <td class="fhir-tree-cell fhir-data-cell">Accommodation with mental health care support</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">MH01</td>
+                <td class="fhir-tree-cell fhir-data-cell">Supported accommodation (accommodation supported by staff or resident caretaker)</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">MH02</td>
+                <td class="fhir-tree-cell fhir-data-cell">Supported lodgings (lodgings supported by staff or resident caretaker)</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">MH03</td>
+                <td class="fhir-tree-cell fhir-data-cell">Supported group home (supported by staff or resident caretaker)</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">MH04</td>
+                <td class="fhir-tree-cell fhir-data-cell">Mental Health Registered Care Home</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">MH09</td>
+                <td class="fhir-tree-cell fhir-data-cell">Other accommodation with mental health care and support</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">HS00</td>
+                <td class="fhir-tree-cell fhir-data-cell">Acute/long stay healthcare residential facility/hospital</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">HS01</td>
+                <td class="fhir-tree-cell fhir-data-cell">NHS acute psychiatric ward</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">HS02</td>
+                <td class="fhir-tree-cell fhir-data-cell">Independent hospital/clinic</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">HS03</td>
+                <td class="fhir-tree-cell fhir-data-cell">Specialist rehabilitation/recovery</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">HS04</td>
+                <td class="fhir-tree-cell fhir-data-cell">Secure psychiatric unit</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">HS05</td>
+                <td class="fhir-tree-cell fhir-data-cell">Other NHS facilities/hospital</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">HS09</td>
+                <td class="fhir-tree-cell fhir-data-cell">Other acute/long stay healthcare residential facility/hospital</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">CH00</td>
+                <td class="fhir-tree-cell fhir-data-cell">Accommodation with other (not specialist mental health) care support</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">CH01</td>
+                <td class="fhir-tree-cell fhir-data-cell">Foyer - accommodation for young people aged 16-25 who are homeless or in housing need</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">CH02</td>
+                <td class="fhir-tree-cell fhir-data-cell">Refuge</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">CH03</td>
+                <td class="fhir-tree-cell fhir-data-cell">Non-Mental Health Registered Care Home</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">CH09</td>
+                <td class="fhir-tree-cell fhir-data-cell">Other accommodation with care and support (not specialist mental health)</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">CJ00</td>
+                <td class="fhir-tree-cell fhir-data-cell">Accommodation with criminal justice support</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">CJ01</td>
+                <td class="fhir-tree-cell fhir-data-cell">Bail/Probation hostel</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">CJ02</td>
+                <td class="fhir-tree-cell fhir-data-cell">Prison</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">CJ03</td>
+                <td class="fhir-tree-cell fhir-data-cell">Young Offenders Institute</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">CJ04</td>
+                <td class="fhir-tree-cell fhir-data-cell">Detention Centre</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">CJ09</td>
+                <td class="fhir-tree-cell fhir-data-cell">Other accommodation with criminal justice support such as ex-offender support</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">SH00</td>
+                <td class="fhir-tree-cell fhir-data-cell">Sheltered Housing (accommodation with a scheme manager or warden living on the premises or nearby, contactable by an alarm system if necessary)</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">SH01</td>
+                <td class="fhir-tree-cell fhir-data-cell">Sheltered housing for older persons</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">SH02</td>
+                <td class="fhir-tree-cell fhir-data-cell">Extra care sheltered housing (also known as 'very sheltered housing'. For people who are less able to manage on their own, but who do need an extra level of care. Services offered vary between schemes, but meals and some personal care are often provided.)</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">SH03</td>
+                <td class="fhir-tree-cell fhir-data-cell">Nursing Home for older persons</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">SH09</td>
+                <td class="fhir-tree-cell fhir-data-cell">Other sheltered housing</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">ML00</td>
+                <td class="fhir-tree-cell fhir-data-cell">Mobile accommodation</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">OC96</td>
+                <td class="fhir-tree-cell fhir-data-cell">Not elsewhere classified</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">OC97</td>
+                <td class="fhir-tree-cell fhir-data-cell">Not specified</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">OC98</td>
+                <td class="fhir-tree-cell fhir-data-cell">Not applicable</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">OC99</td>
+                <td class="fhir-tree-cell fhir-data-cell">Not known</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,188 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <style>tr,
+.fhir-table-title {
+	font-size: 11px;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	vertical-align: top;
+	border: 0
+}
+.fhir-table-title {
+	padding: 0px 4px
+}
+td {
+	padding: 5px 4px
+}
+.fhir-panel-heading-box {
+	margin: -15px -15px 15px;
+	padding: 10px 15px;
+	background-color: #f0f0f0;
+	border-bottom: 1px solid #808080;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px
+}
+.fhir-panel-heading-text {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 17.5px;
+	font-weight: 500
+}
+tr {
+	padding: 3px;
+	line-height: 1.66em
+}
+.fhir-table-header-row {
+	border: 1px solid #f0f0f0
+}
+tr,
+fhir-table-title,
+td,
+tr,
+fhir-table-title,
+td {
+	text-align: left;
+	text-align: left
+}
+fhir-table-title,
+td,
+fhir-table-title,
+td {
+	vertical-align: top;
+	vertical-align: top
+}
+table {
+	width: 100%;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	border-collapse: collapse
+}
+.fhir-panel * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+.fhir-table.fhir-tree-table tbody:before {
+	content: '-';
+	display: block;
+	line-height: 1em;
+	color: transparent
+}
+.fhir-tree-table {
+	table-layout: fixed;
+	width: 100%
+}
+.fhir-panel {
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.4;
+	width: 95%;
+	max-width: 100%;
+	word-wrap: break-word
+}
+.fhir-panel {
+	padding: 15px;
+	margin-bottom: 20;
+	background-color: #ffffff;
+	border: 1px solid #808080;
+	border-radius: 4px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05)
+}
+.fhir-panel .fhir-link {
+	text-decoration: none;
+	color: #005eb8
+}
+.fhir-panel-subheading {
+	color: #474747;
+	font-weight: bold;
+	font-size: 13
+}
+.fhir-info-name-bold {
+	font-weight: bold;
+	color: #474747
+}
+.fhir-text-italic {
+	font-style: italic;
+	color: #474747
+}
+.fhir-info-plain {
+	color: #474747
+}
+.fhir-resource-info-cell {
+	padding: 5px 4px;
+	border-bottom: 1px solid #f0f0f0
+}
+.fhir-indent-wrapped-text {
+	margin-left: 3em;
+	text-indent: -3em
+}
+.fhir-link {
+	text-decoration: none;
+	color: #005eb8
+}
+.fhir-text-faded {
+	opacity: 0.4
+}
+.fhir-text-strikethrough {
+	text-decoration: line-through
+}
+.fhir-data-cell {
+	border: 1px solid #f0f0f0
+}
+.fhir-data-label,
+.fhir-telecom-name {
+	color: #474747;
+	font-weight: bold;
+	font-size: 13
+}
+.fhir-data-label-empty {
+	color: #474747;
+	font-weight: normal
+}
+.fhir-data-value,
+.fhir-telecom-value {
+	color: #474747;
+	font-size: 13
+}
+.fhir-data-value-smalltext {
+	font-size: 10
+}
+.fhir-data-block-title {
+	color: #808080;
+	font-weight: bold;
+	text-decoration: underline;
+	font-size: 13
+}</style>
+  </head>
+  <body>
+    <div class="fhir-panel">
+      <div class="fhir-panel-heading-box">
+        <h3 class="fhir-panel-heading-text">Bindings</h3>
+      </div>
+      <div class="fhir-panel-body">
+        <table class="fhir-table">
+          <thead>
+            <tr class="fhir-table-header-row">
+              <th title="Identifies the bound node within the StructureDefinition" style="width: 20%" class="fhir-table-title">Path</th>
+              <th title="Node description" style="width: 40%" class="fhir-table-title">Definition</th>
+              <th title="Type of binding." style="width: 10%" class="fhir-table-title">Type</th>
+              <th title="ValueSet containing permitted codes." style="width: 30%" class="fhir-table-title">Reference</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Extension.valueCode">Extension.valueCode</a>
+              </td>
+              <td class="fhir-tree-cell">Specifies the episodicity of a condition.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="/STU3/ValueSet/CareConnect-ConditionEpisodicity-1">https://fhir.nhs.uk/STU3/ValueSet/CareConnect-ConditionEpisodicity-1</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,893 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <style>tr,
+.fhir-table-title {
+	font-size: 11px;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	vertical-align: top;
+	border: 0
+}
+.fhir-table-title {
+	padding: 0px 4px
+}
+td {
+	padding: 5px 4px
+}
+.fhir-panel-heading-box {
+	margin: -15px -15px 15px;
+	padding: 10px 15px;
+	background-color: #f0f0f0;
+	border-bottom: 1px solid #808080;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px
+}
+.fhir-panel-heading-text {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 17.5px;
+	font-weight: 500
+}
+tr {
+	padding: 3px;
+	line-height: 1.66em
+}
+.fhir-table-header-row {
+	border: 1px solid #f0f0f0
+}
+tr,
+fhir-table-title,
+td,
+tr,
+fhir-table-title,
+td {
+	text-align: left;
+	text-align: left
+}
+fhir-table-title,
+td,
+fhir-table-title,
+td {
+	vertical-align: top;
+	vertical-align: top
+}
+table {
+	width: 100%;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	border-collapse: collapse
+}
+.fhir-panel * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+.fhir-table.fhir-tree-table tbody:before {
+	content: '-';
+	display: block;
+	line-height: 1em;
+	color: transparent
+}
+.fhir-tree-table {
+	table-layout: fixed;
+	width: 100%
+}
+.fhir-panel {
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.4;
+	width: 95%;
+	max-width: 100%;
+	word-wrap: break-word
+}
+.fhir-panel {
+	padding: 15px;
+	margin-bottom: 20;
+	background-color: #ffffff;
+	border: 1px solid #808080;
+	border-radius: 4px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05)
+}
+.fhir-panel .fhir-link {
+	text-decoration: none;
+	color: #005eb8
+}
+.fhir-panel-subheading {
+	color: #474747;
+	font-weight: bold;
+	font-size: 13
+}
+.fhir-info-name-bold {
+	font-weight: bold;
+	color: #474747
+}
+.fhir-text-italic {
+	font-style: italic;
+	color: #474747
+}
+.fhir-info-plain {
+	color: #474747
+}
+.fhir-resource-info-cell {
+	padding: 5px 4px;
+	border-bottom: 1px solid #f0f0f0
+}
+.fhir-indent-wrapped-text {
+	margin-left: 3em;
+	text-indent: -3em
+}
+.fhir-link {
+	text-decoration: none;
+	color: #005eb8
+}
+.fhir-text-faded {
+	opacity: 0.4
+}
+.fhir-text-strikethrough {
+	text-decoration: line-through
+}
+.fhir-data-cell {
+	border: 1px solid #f0f0f0
+}
+.fhir-data-label,
+.fhir-telecom-name {
+	color: #474747;
+	font-weight: bold;
+	font-size: 13
+}
+.fhir-data-label-empty {
+	color: #474747;
+	font-weight: normal
+}
+.fhir-data-value,
+.fhir-telecom-value {
+	color: #474747;
+	font-size: 13
+}
+.fhir-data-value-smalltext {
+	font-size: 10
+}
+.fhir-data-block-title {
+	color: #808080;
+	font-weight: bold;
+	text-decoration: underline;
+	font-size: 13
+}</style>
+  </head>
+  <body>
+    <div class="fhir-panel">
+      <div class="fhir-panel-heading-box">
+        <h3 class="fhir-panel-heading-text">Bindings</h3>
+      </div>
+      <div class="fhir-panel-body">
+        <table class="fhir-table">
+          <thead>
+            <tr class="fhir-table-header-row">
+              <th title="Identifies the bound node within the StructureDefinition" style="width: 20%" class="fhir-table-title">Path</th>
+              <th title="Node description" style="width: 40%" class="fhir-table-title">Definition</th>
+              <th title="Type of binding." style="width: 10%" class="fhir-table-title">Type</th>
+              <th title="ValueSet containing permitted codes." style="width: 30%" class="fhir-table-title">Reference</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#CapabilityStatement.language">CapabilityStatement.language</a>
+              </td>
+              <td class="fhir-tree-cell">The base language in which the resource is written.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Extensible">Extensible</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-languages.html">
+                  http://hl7.org/fhir/stu3/valueset-languages.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#CapabilityStatement.status">CapabilityStatement.status</a>
+              </td>
+              <td class="fhir-tree-cell">The status of this capability statement. Enables tracking the life-cycle of the content.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-publication-status.html">
+                  http://hl7.org/fhir/stu3/valueset-publication-status.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#CapabilityStatement.contact.telecom.system">CapabilityStatement.contact.telecom.system</a>
+              </td>
+              <td class="fhir-tree-cell">Telecommunications form for contact point - what communications system is required to make use of the contact.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-contact-point-system.html">
+                  http://hl7.org/fhir/stu3/valueset-contact-point-system.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#CapabilityStatement.contact.telecom.use">CapabilityStatement.contact.telecom.use</a>
+              </td>
+              <td class="fhir-tree-cell">Identifies the purpose for the contact point.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-contact-point-use.html">
+                  http://hl7.org/fhir/stu3/valueset-contact-point-use.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#CapabilityStatement.useContext.code">CapabilityStatement.useContext.code</a>
+              </td>
+              <td class="fhir-tree-cell">A code that identifies the type of context being specified by this usage context.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Extensible">Extensible</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-usage-context-type.html">
+                  http://hl7.org/fhir/stu3/valueset-usage-context-type.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#CapabilityStatement.useContext.value[x]">CapabilityStatement.useContext.value[x]</a>
+              </td>
+              <td class="fhir-tree-cell">A value that defines the context specified in this context of use. The interpretation of the value is defined by the code.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Example">Example</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-use-context.html">
+                  http://hl7.org/fhir/stu3/valueset-use-context.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#CapabilityStatement.jurisdiction">CapabilityStatement.jurisdiction</a>
+              </td>
+              <td class="fhir-tree-cell">A legal or geographic region in which the capability statement is intended to be used.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Extensible">Extensible</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-jurisdiction.html">
+                  http://hl7.org/fhir/stu3/valueset-jurisdiction.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#CapabilityStatement.kind">CapabilityStatement.kind</a>
+              </td>
+              <td class="fhir-tree-cell">The way that this statement is intended to be used, to describe an actual running instance of software, a particular product (kind not instance of software) or a class of implementation (e.g. a desired purchase).</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-capability-statement-kind.html">
+                  http://hl7.org/fhir/stu3/valueset-capability-statement-kind.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#CapabilityStatement.acceptUnknown">CapabilityStatement.acceptUnknown</a>
+              </td>
+              <td class="fhir-tree-cell">A code that indicates whether the application accepts unknown elements or extensions when reading resources.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-unknown-content-code.html">
+                  http://hl7.org/fhir/stu3/valueset-unknown-content-code.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#CapabilityStatement.format">CapabilityStatement.format</a>
+              </td>
+              <td class="fhir-tree-cell">A list of the formats supported by this implementation using their content types.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://www.rfc-editor.org/bcp/bcp13.txt">
+                  http://www.rfc-editor.org/bcp/bcp13.txt
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#CapabilityStatement.patchFormat">CapabilityStatement.patchFormat</a>
+              </td>
+              <td class="fhir-tree-cell">A list of the patch formats supported by this implementation using their content types.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://www.rfc-editor.org/bcp/bcp13.txt">
+                  http://www.rfc-editor.org/bcp/bcp13.txt
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#CapabilityStatement.rest.mode">CapabilityStatement.rest.mode</a>
+              </td>
+              <td class="fhir-tree-cell">Identifies whether this portion of the statement is describing the ability to initiate or receive restful operations.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-restful-capability-mode.html">
+                  http://hl7.org/fhir/stu3/valueset-restful-capability-mode.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#CapabilityStatement.rest.security.service">CapabilityStatement.rest.security.service</a>
+              </td>
+              <td class="fhir-tree-cell">Types of security services that are supported/required by the system.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Extensible">Extensible</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-restful-security-service.html">
+                  http://hl7.org/fhir/stu3/valueset-restful-security-service.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#CapabilityStatement.rest.security.certificate.type">CapabilityStatement.rest.security.certificate.type</a>
+              </td>
+              <td class="fhir-tree-cell">Mime type for a certificate.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://www.rfc-editor.org/bcp/bcp13.txt">
+                  http://www.rfc-editor.org/bcp/bcp13.txt
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#CapabilityStatement.rest.resource.type">CapabilityStatement.rest.resource.type</a>
+              </td>
+              <td class="fhir-tree-cell">A type of resource exposed via the restful interface.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-resource-types.html">
+                  http://hl7.org/fhir/stu3/valueset-resource-types.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#CapabilityStatement.rest.resource.interaction.extension(capabilityStatementExpectation)">CapabilityStatement.rest.resource.interaction.extension(capabilityStatementExpectation)</a>
+              </td>
+              <td class="fhir-tree-cell">Defines the level of expectation associated with a given system capability.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-conformance-expectation.html">
+                  http://hl7.org/fhir/stu3/valueset-conformance-expectation.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#CapabilityStatement.rest.resource.interaction.code">CapabilityStatement.rest.resource.interaction.code</a>
+              </td>
+              <td class="fhir-tree-cell">Coded identifier of the operation, supported by the system resource.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-type-restful-interaction.html">
+                  http://hl7.org/fhir/stu3/valueset-type-restful-interaction.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#CapabilityStatement.rest.resource.versioning">CapabilityStatement.rest.resource.versioning</a>
+              </td>
+              <td class="fhir-tree-cell">This field is set to no-version to specify that the system does not support (server) or use (client) versioning for this resource type. If this has some other value, the server must at least correctly track and populate the versionId meta-property on resources. If the value is 'versioned-update', then the server supports all the versioning features, including using e-tags for version integrity in the API.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-versioning-policy.html">
+                  http://hl7.org/fhir/stu3/valueset-versioning-policy.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#CapabilityStatement.rest.resource.conditionalRead">CapabilityStatement.rest.resource.conditionalRead</a>
+              </td>
+              <td class="fhir-tree-cell">A code that indicates how the server supports conditional read.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-conditional-read-status.html">
+                  http://hl7.org/fhir/stu3/valueset-conditional-read-status.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#CapabilityStatement.rest.resource.conditionalDelete">CapabilityStatement.rest.resource.conditionalDelete</a>
+              </td>
+              <td class="fhir-tree-cell">A code that indicates how the server supports conditional delete.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-conditional-delete-status.html">
+                  http://hl7.org/fhir/stu3/valueset-conditional-delete-status.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#CapabilityStatement.rest.resource.referencePolicy">CapabilityStatement.rest.resource.referencePolicy</a>
+              </td>
+              <td class="fhir-tree-cell">A set of flags that defines how references are supported.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-reference-handling-policy.html">
+                  http://hl7.org/fhir/stu3/valueset-reference-handling-policy.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#CapabilityStatement.rest.resource.searchInclude.extension(capabilityStatementExpectation)">CapabilityStatement.rest.resource.searchInclude.extension(capabilityStatementExpectation)</a>
+              </td>
+              <td class="fhir-tree-cell">Defines the level of expectation associated with a given system capability.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-conformance-expectation.html">
+                  http://hl7.org/fhir/stu3/valueset-conformance-expectation.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#CapabilityStatement.rest.resource.searchRevInclude.extension(capabilityStatementExpectation)">CapabilityStatement.rest.resource.searchRevInclude.extension(capabilityStatementExpectation)</a>
+              </td>
+              <td class="fhir-tree-cell">Defines the level of expectation associated with a given system capability.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-conformance-expectation.html">
+                  http://hl7.org/fhir/stu3/valueset-conformance-expectation.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#CapabilityStatement.rest.resource.searchParam.extension(capabilityStatementExpectation)">CapabilityStatement.rest.resource.searchParam.extension(capabilityStatementExpectation)</a>
+              </td>
+              <td class="fhir-tree-cell">Defines the level of expectation associated with a given system capability.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-conformance-expectation.html">
+                  http://hl7.org/fhir/stu3/valueset-conformance-expectation.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#CapabilityStatement.rest.resource.searchParam.type">CapabilityStatement.rest.resource.searchParam.type</a>
+              </td>
+              <td class="fhir-tree-cell">The type of value a search parameter refers to, and how the content is interpreted.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-search-param-type.html">
+                  http://hl7.org/fhir/stu3/valueset-search-param-type.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#CapabilityStatement.rest.interaction.extension(capabilityStatementExpectation)">CapabilityStatement.rest.interaction.extension(capabilityStatementExpectation)</a>
+              </td>
+              <td class="fhir-tree-cell">Defines the level of expectation associated with a given system capability.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-conformance-expectation.html">
+                  http://hl7.org/fhir/stu3/valueset-conformance-expectation.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#CapabilityStatement.rest.interaction.code">CapabilityStatement.rest.interaction.code</a>
+              </td>
+              <td class="fhir-tree-cell">A coded identifier of the operation, supported by the system.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-system-restful-interaction.html">
+                  http://hl7.org/fhir/stu3/valueset-system-restful-interaction.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#CapabilityStatement.rest.operation.extension(capabilityStatementExpectation)">CapabilityStatement.rest.operation.extension(capabilityStatementExpectation)</a>
+              </td>
+              <td class="fhir-tree-cell">Defines the level of expectation associated with a given system capability.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-conformance-expectation.html">
+                  http://hl7.org/fhir/stu3/valueset-conformance-expectation.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#CapabilityStatement.messaging.endpoint.protocol">CapabilityStatement.messaging.endpoint.protocol</a>
+              </td>
+              <td class="fhir-tree-cell">A list of the messaging transport protocol(s) identifiers, supported by this endpoint.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Extensible">Extensible</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-message-transport.html">
+                  http://hl7.org/fhir/stu3/valueset-message-transport.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#CapabilityStatement.messaging.supportedMessage.mode">CapabilityStatement.messaging.supportedMessage.mode</a>
+              </td>
+              <td class="fhir-tree-cell">The mode of this event declaration - whether application is sender or receiver.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-event-capability-mode.html">
+                  http://hl7.org/fhir/stu3/valueset-event-capability-mode.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#CapabilityStatement.messaging.event.extension(capabilityStatementExpectation)">CapabilityStatement.messaging.event.extension(capabilityStatementExpectation)</a>
+              </td>
+              <td class="fhir-tree-cell">Defines the level of expectation associated with a given system capability.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-conformance-expectation.html">
+                  http://hl7.org/fhir/stu3/valueset-conformance-expectation.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#CapabilityStatement.messaging.event.code">CapabilityStatement.messaging.event.code</a>
+              </td>
+              <td class="fhir-tree-cell">A coded identifier of a supported messaging event.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Example">Example</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-message-events.html">
+                  http://hl7.org/fhir/stu3/valueset-message-events.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#CapabilityStatement.messaging.event.category">CapabilityStatement.messaging.event.category</a>
+              </td>
+              <td class="fhir-tree-cell">The impact of the content of the message.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-message-significance-category.html">
+                  http://hl7.org/fhir/stu3/valueset-message-significance-category.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#CapabilityStatement.messaging.event.mode">CapabilityStatement.messaging.event.mode</a>
+              </td>
+              <td class="fhir-tree-cell">The mode of this event declaration - whether an application is a sender or receiver.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-event-capability-mode.html">
+                  http://hl7.org/fhir/stu3/valueset-event-capability-mode.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#CapabilityStatement.messaging.event.focus">CapabilityStatement.messaging.event.focus</a>
+              </td>
+              <td class="fhir-tree-cell">A resource associated with the event.  This is the resource that defines the event.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-resource-types.html">
+                  http://hl7.org/fhir/stu3/valueset-resource-types.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#CapabilityStatement.document.extension(capabilityStatementExpectation)">CapabilityStatement.document.extension(capabilityStatementExpectation)</a>
+              </td>
+              <td class="fhir-tree-cell">Defines the level of expectation associated with a given system capability.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-conformance-expectation.html">
+                  http://hl7.org/fhir/stu3/valueset-conformance-expectation.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#CapabilityStatement.document.mode">CapabilityStatement.document.mode</a>
+              </td>
+              <td class="fhir-tree-cell">Mode of this document declaration - whether an application is a producer or consumer.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-document-mode.html">
+                  http://hl7.org/fhir/stu3/valueset-document-mode.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4" class="fhir-data-label fhir-tree-cell">Inherited via referenced resource: https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CapabilityStatement-Expectation-1</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#CapabilityStatement.document.extension(capabilityStatementExpectation)">CapabilityStatement.document.extension(capabilityStatementExpectation)</a>
+              </td>
+              <td class="fhir-tree-cell">SHALL | SHOULD | MAY |SHOULD-NOT</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-conformance-expectation.html">
+                  http://hl7.org/fhir/stu3/valueset-conformance-expectation.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4" class="fhir-data-label fhir-tree-cell">Inherited via referenced resource: https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CapabilityStatement-Expectation-1</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#CapabilityStatement.messaging.event.extension(capabilityStatementExpectation)">CapabilityStatement.messaging.event.extension(capabilityStatementExpectation)</a>
+              </td>
+              <td class="fhir-tree-cell">SHALL | SHOULD | MAY |SHOULD-NOT</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-conformance-expectation.html">
+                  http://hl7.org/fhir/stu3/valueset-conformance-expectation.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4" class="fhir-data-label fhir-tree-cell">Inherited via referenced resource: https://fhir.nhs.uk/STU3/StructureDefinition/Extension-NHSDigital-ProfileLink-1</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#CapabilityStatement.profile.extension(profileLink)">CapabilityStatement.profile.extension(profileLink)</a>
+              </td>
+              <td class="fhir-tree-cell">Profile link</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-resource-types.html">
+                  http://hl7.org/fhir/stu3/valueset-resource-types.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4" class="fhir-data-label fhir-tree-cell">Inherited via referenced resource: https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CapabilityStatement-Expectation-1</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#CapabilityStatement.rest.interaction.extension(capabilityStatementExpectation)">CapabilityStatement.rest.interaction.extension(capabilityStatementExpectation)</a>
+              </td>
+              <td class="fhir-tree-cell">SHALL | SHOULD | MAY |SHOULD-NOT</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-conformance-expectation.html">
+                  http://hl7.org/fhir/stu3/valueset-conformance-expectation.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4" class="fhir-data-label fhir-tree-cell">Inherited via referenced resource: https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CapabilityStatement-Expectation-1</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#CapabilityStatement.rest.operation.extension(capabilityStatementExpectation)">CapabilityStatement.rest.operation.extension(capabilityStatementExpectation)</a>
+              </td>
+              <td class="fhir-tree-cell">SHALL | SHOULD | MAY |SHOULD-NOT</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-conformance-expectation.html">
+                  http://hl7.org/fhir/stu3/valueset-conformance-expectation.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4" class="fhir-data-label fhir-tree-cell">Inherited via referenced resource: https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CapabilityStatement-Expectation-1</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#CapabilityStatement.rest.resource.interaction.extension(capabilityStatementExpectation)">CapabilityStatement.rest.resource.interaction.extension(capabilityStatementExpectation)</a>
+              </td>
+              <td class="fhir-tree-cell">SHALL | SHOULD | MAY |SHOULD-NOT</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-conformance-expectation.html">
+                  http://hl7.org/fhir/stu3/valueset-conformance-expectation.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4" class="fhir-data-label fhir-tree-cell">Inherited via referenced resource: https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CapabilityStatement-Expectation-1</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#CapabilityStatement.rest.resource.searchInclude.extension(capabilityStatementExpectation)">CapabilityStatement.rest.resource.searchInclude.extension(capabilityStatementExpectation)</a>
+              </td>
+              <td class="fhir-tree-cell">SHALL | SHOULD | MAY |SHOULD-NOT</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-conformance-expectation.html">
+                  http://hl7.org/fhir/stu3/valueset-conformance-expectation.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4" class="fhir-data-label fhir-tree-cell">Inherited via referenced resource: https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CapabilityStatement-Expectation-1</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#CapabilityStatement.rest.resource.searchParam.extension(capabilityStatementExpectation)">CapabilityStatement.rest.resource.searchParam.extension(capabilityStatementExpectation)</a>
+              </td>
+              <td class="fhir-tree-cell">SHALL | SHOULD | MAY |SHOULD-NOT</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-conformance-expectation.html">
+                  http://hl7.org/fhir/stu3/valueset-conformance-expectation.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4" class="fhir-data-label fhir-tree-cell">Inherited via referenced resource: https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CapabilityStatement-Expectation-1</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#CapabilityStatement.rest.resource.searchRevInclude.extension(capabilityStatementExpectation)">CapabilityStatement.rest.resource.searchRevInclude.extension(capabilityStatementExpectation)</a>
+              </td>
+              <td class="fhir-tree-cell">SHALL | SHOULD | MAY |SHOULD-NOT</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-conformance-expectation.html">
+                  http://hl7.org/fhir/stu3/valueset-conformance-expectation.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

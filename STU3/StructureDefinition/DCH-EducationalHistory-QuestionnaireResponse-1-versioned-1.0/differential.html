@@ -1,0 +1,1654 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <style>.fhirtreebg-dotted-1 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR4nO3OIRIAIAwDwf41/38DRSJBIbqZWRdxlaRu7a2XPwAAwOl7AAAAMEcDVN1AgPyAV0EAAAAASUVORK5CYII=);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-0111 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALklEQVR4nO3O0QkAIAxDwe6a/Wew7iAo0gvcZ+BVkrplb/38BwAAzjwPAAAA5mhp2UAslLx5WAAAAABJRU5ErkJggg==);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-0100 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4nO3OwQkAMAwDsezq/WdoMkVaqAx6+ypJbZmdzT8AAOAt1wMAAIB/NF9dQIDlRTsJAAAAAElFTkSuQmCC);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-1100 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAMUlEQVR4nO3OwQkAIAwDwO6a/WdQR1AoiHiB+yWQSlK7VsZJv3sPAAC87foBAADgHxNKW0BW4z7WCQAAAABJRU5ErkJggg==);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-1111 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAMUlEQVR4nO3OwQkAIAwDwO6a/WdQR1D6EPQC90sglaR2rYyT/mt7AACg5/oBAADgHxNU10ACNZr/AAAAAABJRU5ErkJggg==);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-1110 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAMUlEQVR4nO3OwQkAIAwDwO6a/WdQR9BXC17gfgmkktStk/XSn7YHAAB6tR8AAAD+sQFKWUAsNDxT5QAAAABJRU5ErkJggg==);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-100 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR4nO3OIRIAIAwDwf41/38DRSJBIbqZWRdxlaRu7a2XPwAAwOl7AAAAMEcDVN1AgPyAV0EAAAAASUVORK5CYII=);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-111 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAMUlEQVR4nO3OwQkAIAwDwO6a/WdQR9BXC17gfgmkktStk/XSn7YHAAB6tR8AAAD+sQFKWUAsNDxT5QAAAABJRU5ErkJggg==);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-110 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAMUlEQVR4nO3OwQkAIAwDwO6a/WdQR1AoiHiB+yWQSlK7VsZJv3sPAAC87foBAADgHxNKW0BW4z7WCQAAAABJRU5ErkJggg==);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-011 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4nO3OwQ0AMAwCsezK/jO0naI8YiQ/kW6SzC9vp/kHAAC66gEAAMAeF19bQFakpxbwAAAAAElFTkSuQmCC);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-000 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4nO3OIQEAAAgDsHd9/w60AMHE/NI2AAAAG84DAADAHwNp30Cqb/h6OAAAAABJRU5ErkJggg==);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-01100 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4nO3OwQ0AMAwCsezK/jO0naI8YiQ/kW6SzC9vp/kHAAC66gEAAMAeF19bQFakpxbwAAAAAElFTkSuQmCC);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-01110 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALklEQVR4nO3O0QkAIAxDwe6a/Wew7iAo0gvcZ+BVkrplb/38BwAAzjwPAAAA5mhp2UAslLx5WAAAAABJRU5ErkJggg==);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-010 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4nO3OwQkAMAwDsezq/WdoMkVaqAx6+ypJbZmdzT8AAOAt1wMAAIB/NF9dQIDlRTsJAAAAAElFTkSuQmCC);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-11 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAMUlEQVR4nO3OwQkAIAwDwO6a/WdQR1AoiHiB+yWQSlK7VsZJv3sPAAC87foBAADgHxNKW0BW4z7WCQAAAABJRU5ErkJggg==);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-11100 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAMUlEQVR4nO3OwQkAIAwDwO6a/WdQR9BXC17gfgmkktStk/XSn7YHAAB6tR8AAAD+sQFKWUAsNDxT5QAAAABJRU5ErkJggg==);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-11110 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAMUlEQVR4nO3OwQkAIAwDwO6a/WdQR1D6EPQC90sglaR2rYyT/mt7AACg5/oBAADgHxNU10ACNZr/AAAAAABJRU5ErkJggg==);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-01 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4nO3OwQkAMAwDsezq/WdoMkVaqAx6+ypJbZmdzT8AAOAt1wMAAIB/NF9dQIDlRTsJAAAAAElFTkSuQmCC);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-10 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR4nO3OIRIAIAwDwf41/38DRSJBIbqZWRdxlaRu7a2XPwAAwOl7AAAAMEcDVN1AgPyAV0EAAAAASUVORK5CYII=);
+	background-repeat: repeat-y
+}
+tr,
+.fhir-table-title {
+	font-size: 11px;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	vertical-align: top;
+	border: 0
+}
+.fhir-table-title {
+	padding: 0px 4px
+}
+td {
+	padding: 5px 4px
+}
+.fhir-panel-heading-box {
+	margin: -15px -15px 15px;
+	padding: 10px 15px;
+	background-color: #f0f0f0;
+	border-bottom: 1px solid #808080;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px
+}
+.fhir-panel-heading-text {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 17.5px;
+	font-weight: 500
+}
+tr {
+	padding: 3px;
+	line-height: 1.66em
+}
+.fhir-table-header-row {
+	border: 1px solid #f0f0f0
+}
+tr,
+fhir-table-title,
+td,
+tr,
+fhir-table-title,
+td {
+	text-align: left;
+	text-align: left
+}
+fhir-table-title,
+td,
+fhir-table-title,
+td {
+	vertical-align: top;
+	vertical-align: top
+}
+table {
+	width: 100%;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	border-collapse: collapse
+}
+.fhir-panel * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+.fhir-table.fhir-tree-table tbody:before {
+	content: '-';
+	display: block;
+	line-height: 1em;
+	color: transparent
+}
+.fhir-tree-table {
+	table-layout: fixed;
+	width: 100%
+}
+.fhir-panel {
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.4;
+	width: 95%;
+	max-width: 100%;
+	word-wrap: break-word
+}
+.fhir-panel {
+	padding: 15px;
+	margin-bottom: 20;
+	background-color: #ffffff;
+	border: 1px solid #808080;
+	border-radius: 4px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05)
+}
+.fhir-panel .fhir-link {
+	text-decoration: none;
+	color: #005eb8
+}
+.fhir-panel-subheading {
+	color: #474747;
+	font-weight: bold;
+	font-size: 13
+}
+.fhir-info-name-bold {
+	font-weight: bold;
+	color: #474747
+}
+.fhir-text-italic {
+	font-style: italic;
+	color: #474747
+}
+.fhir-info-plain {
+	color: #474747
+}
+.fhir-resource-info-cell {
+	padding: 5px 4px;
+	border-bottom: 1px solid #f0f0f0
+}
+.fhir-indent-wrapped-text {
+	margin-left: 3em;
+	text-indent: -3em
+}
+.fhir-link {
+	text-decoration: none;
+	color: #005eb8
+}
+.fhir-text-faded {
+	opacity: 0.4
+}
+.fhir-text-strikethrough {
+	text-decoration: line-through
+}
+.fhir-tree-resource-icon {
+	padding-right: 4px;
+	background-color: white;
+	border: 0;
+	width: 20;
+	height: 16
+}
+img.fhir-tree-icon {
+	background-color: white;
+	border: 0;
+	width: 16;
+	height: 22
+}
+.fhir-tree-icons {
+	padding: 0 4px;
+	border-collapse: collapse
+}
+.fhir-tree-icons img {
+	vertical-align: top;
+	float: left;
+	border-collapse: collapse
+}
+.fhir-table,
+.fhir-table tbody tr {
+	border-collapse: collapse;
+	vertical-align: top;
+	border-style: none
+}
+.fhir-tree-icons,
+.fhir-tree-icons img,
+.fhir-table {
+	-webkit-border-horizontal-spacing: 0;
+	-webkit-border-vertical-spacing: 0
+}
+.fhir-tree-cell {
+	padding: 5px 4px
+}</style>
+  </head>
+  <body>
+    <div class="fhir-panel">
+      <div class="fhir-panel-body">
+        <table class="fhir-table fhir-tree-table">
+          <thead>
+            <tr class="fhir-table-header-row">
+              <th title="The logical name of the element" style="width: 25%" class="fhir-table-title">Name</th>
+              <th title="Features of the element" style="width: 5%; max-width: 60px" class="fhir-table-title">Flags</th>
+              <th title="Minimum and maximum # of times the element can appear in the instance" style="width: 5%; max-width: 40px" class="fhir-table-title">Card.</th>
+              <th title="Reference to the type of the element" style="width: 15%; max-width: 80px" class="fhir-table-title">Type</th>
+              <th title="Additional information about the element" style="width: 50%" class="fhir-table-title">Description/Constraints</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="fhirtreebg-dotted-1 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/icon_resource.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#QuestionnaireResponse" title="A structured set of questions and their answers. The questions are ordered and grouped into coherent subsets, corresponding to the structure of the grouping of the questionnaire being responded to." class="fhir-tree-cell fhir-link tabLink">QuestionnaireResponse</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">&#8203;</td>
+              <td class="fhir-tree-cell" />
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-11 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_datatype.gif" class="fhir-tree-resource-icon" />
+                <a href="details.html#QuestionnaireResponse.identifier" title="A business identifier assigned to a particular completed (or partially completed) questionnaire." class="fhir-tree-cell fhir-link tabLink">identifier</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-text-faded fhir-tree-cell">0..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#identifier">Identifier</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <span title="The purpose of this identifier." class="fhir-tree-cell fhir-text-strikethrough">use</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#code">Code</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_element.gif" class="fhir-tree-resource-icon" />
+                <span title="A coded type for the identifier that can be used to determine which identifier to use for a specific purpose." class="fhir-tree-cell fhir-text-strikethrough">type</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#codeableconcept">CodeableConcept</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#QuestionnaireResponse.identifier.value" title="The portion of the identifier typically relevant to the user and which is unique within the context of the system." class="fhir-tree-cell fhir-link tabLink">value</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_element.gif" class="fhir-tree-resource-icon" />
+                <span title="Time period during which identifier is/was valid for use." class="fhir-tree-cell fhir-text-strikethrough">period</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#period">Period</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-100 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin_end.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                <span title="Organization that issued/manages the identifier." class="fhir-tree-cell fhir-text-strikethrough">assigner</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/references.html">Reference</a>
+                (
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/StructureDefinition/Organization">Organization</a>
+                )
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                <span title="The order, proposal or plan that is fulfilled in whole or in part by this QuestionnaireResponse.  For example, a ProcedureRequest seeking an intake assessment or a decision support recommendation to assess for post-partum depression." class="fhir-tree-cell fhir-text-strikethrough">basedOn</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/references.html">Reference</a>
+                (
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/StructureDefinition/ReferralRequest">ReferralRequest</a>
+                |
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/StructureDefinition/CarePlan">CarePlan</a>
+                |
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/StructureDefinition/ProcedureRequest">ProcedureRequest</a>
+                )
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                <span title="A procedure or observation that this questionnaire was performed as part of the execution of.  For example, the surgery a checklist was executed as part of." class="fhir-tree-cell fhir-text-strikethrough">parent</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/references.html">Reference</a>
+                (
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/StructureDefinition/Observation">Observation</a>
+                |
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/StructureDefinition/Procedure">Procedure</a>
+                )
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                <span title="The Questionnaire that defines and organizes the questions for which answers are being provided." class="fhir-tree-cell fhir-text-strikethrough">questionnaire</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/references.html">Reference</a>
+                (
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/StructureDefinition/Questionnaire">Questionnaire</a>
+                )
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#QuestionnaireResponse.status" title="The position of the questionnaire response within its overall lifecycle." class="fhir-tree-cell fhir-link tabLink">status</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#code">Code</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-indent-wrapped-text fhir-info-plain">Fixed Value: completed</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-11 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#QuestionnaireResponse.subject" title="The subject of the questionnaire response.  This could be a patient, organization, practitioner, device, etc.  This is who/what the answers apply to, but is not necessarily the source of information." class="fhir-tree-cell fhir-link tabLink">subject</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/references.html">Reference</a>
+                (
+                <a class="fhir-link" href="/STU3/StructureDefinition/CareConnect-DCH-Patient-1">CareConnect-DCH-Patient-1</a>
+                )
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">The subject of the Educational History questions</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-100 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin_end.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#QuestionnaireResponse.subject.reference" title="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." class="fhir-tree-cell fhir-link tabLink">reference</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-11 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#QuestionnaireResponse.context" title="The encounter or episode of care with primary association to the questionnaire response." class="fhir-tree-cell fhir-link tabLink">context</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/references.html">Reference</a>
+                (
+                <a class="fhir-link" href="/STU3/StructureDefinition/CareConnect-DCH-Encounter-1">CareConnect-DCH-Encounter-1</a>
+                )
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-100 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin_end.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#QuestionnaireResponse.context.reference" title="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." class="fhir-tree-cell fhir-link tabLink">reference</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <span title="The date and/or time that this set of answers were last changed." class="fhir-tree-cell fhir-text-strikethrough">authored</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#datetime">dateTime</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-11 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                <span title="Person who received the answers to the questions in the QuestionnaireResponse and recorded them in the system." class="fhir-tree-cell fhir-text-strikethrough">author</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/references.html">Reference</a>
+                (
+                <a class="fhir-link" href="/STU3/StructureDefinition/CareConnect-DCH-Practitioner-1">CareConnect-DCH-Practitioner-1</a>
+                )
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-100 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin_end.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <span title="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." class="fhir-tree-cell fhir-text-strikethrough">reference</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">1..1</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                <span title="The person who answered the questions about the subject." class="fhir-tree-cell fhir-text-strikethrough">source</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/references.html">Reference</a>
+                (
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/StructureDefinition/Patient">Patient</a>
+                |
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/StructureDefinition/Practitioner">Practitioner</a>
+                |
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/StructureDefinition/RelatedPerson">RelatedPerson</a>
+                )
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_slice.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#QuestionnaireResponse.item" title="A group or question item from the original questionnaire for which answers are provided." class="fhir-tree-cell fhir-link tabLink">item</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..6</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/backboneelement.html">BackboneElement</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-indent-wrapped-text fhir-info-plain">Slicing: Discriminator: text, Ordering: true, Rules: Closed</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-11 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_datatype.gif" class="fhir-tree-resource-icon" />
+                <a href="details.html#QuestionnaireResponse.item(educationalEstablishmentName)" title="A group or question item from the original questionnaire for which answers are provided." class="fhir-tree-cell fhir-link tabLink">item (educationalEstablishmentName)</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/backboneelement.html">BackboneElement</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">Name of Educational establishment</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#QuestionnaireResponse.item(educationalEstablishmentName).linkId" title="The item from the Questionnaire that corresponds to this item in the QuestionnaireResponse resource." class="fhir-tree-cell fhir-link tabLink">linkId</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-indent-wrapped-text fhir-info-plain">Fixed Value: educationalEstablishmentName</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <span title="A reference to an [ElementDefinition](elementdefinition.html) that provides the details for the item." class="fhir-tree-cell fhir-text-strikethrough">definition</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#uri">Uri</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#QuestionnaireResponse.item(educationalEstablishmentName).text" title="Text that is displayed above the contents of the group or as the text of the question being answered." class="fhir-tree-cell fhir-link tabLink">text</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-indent-wrapped-text fhir-info-plain">Fixed Value: Educational Establishment</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                <span title="More specific subject this section's answers are about, details the subject given in QuestionnaireResponse." class="fhir-tree-cell fhir-text-strikethrough">subject</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/references.html">Reference</a>
+                (
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/StructureDefinition/Resource">Resource</a>
+                )
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-111 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_datatype.gif" class="fhir-tree-resource-icon" />
+                <a href="details.html#QuestionnaireResponse.item(educationalEstablishmentName).answer" title="The respondent's answer(s) to the question." class="fhir-tree-cell fhir-link tabLink">answer</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/backboneelement.html">BackboneElement</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-1110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#QuestionnaireResponse.item(educationalEstablishmentName).answer.valueString" title="The answer (or one of the answers) provided by the respondent to the question." class="fhir-tree-cell fhir-link tabLink">valueString</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-1100 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin_end.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_element.gif" class="fhir-tree-resource-icon" />
+                <span title="Nested groups and/or questions found within this particular answer." class="fhir-tree-cell fhir-text-strikethrough">item</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="details.html#QuestionnaireResponse.item">see QuestionnaireResponse.item</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-100 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin_end.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_element.gif" class="fhir-tree-resource-icon" />
+                <span title="Questions or sub-groups nested beneath a question or group." class="fhir-tree-cell fhir-text-strikethrough">item</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="details.html#QuestionnaireResponse.item">see QuestionnaireResponse.item</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-11 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_datatype.gif" class="fhir-tree-resource-icon" />
+                <a href="details.html#QuestionnaireResponse.item(educationalEstablishmentType)" title="A group or question item from the original questionnaire for which answers are provided." class="fhir-tree-cell fhir-link tabLink">item (educationalEstablishmentType)</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/backboneelement.html">BackboneElement</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">Educational establishment attended</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#QuestionnaireResponse.item(educationalEstablishmentType).linkId" title="The item from the Questionnaire that corresponds to this item in the QuestionnaireResponse resource." class="fhir-tree-cell fhir-link tabLink">linkId</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-indent-wrapped-text fhir-info-plain">Fixed Value: educationalEstablishmentType</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <span title="A reference to an [ElementDefinition](elementdefinition.html) that provides the details for the item." class="fhir-tree-cell fhir-text-strikethrough">definition</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#uri">Uri</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#QuestionnaireResponse.item(educationalEstablishmentType).text" title="Text that is displayed above the contents of the group or as the text of the question being answered." class="fhir-tree-cell fhir-link tabLink">text</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-indent-wrapped-text fhir-info-plain">Fixed Value: Type of Educational establishment</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                <span title="More specific subject this section's answers are about, details the subject given in QuestionnaireResponse." class="fhir-tree-cell fhir-text-strikethrough">subject</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/references.html">Reference</a>
+                (
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/StructureDefinition/Resource">Resource</a>
+                )
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-111 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_datatype.gif" class="fhir-tree-resource-icon" />
+                <a href="details.html#QuestionnaireResponse.item(educationalEstablishmentType).answer" title="The respondent's answer(s) to the question." class="fhir-tree-cell fhir-link tabLink">answer</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/backboneelement.html">BackboneElement</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-1111 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_datatype.gif" class="fhir-tree-resource-icon" />
+                <a href="details.html#QuestionnaireResponse.item(educationalEstablishmentType).answer.valueCoding" title="The answer (or one of the answers) provided by the respondent to the question." class="fhir-tree-cell fhir-link tabLink">valueCoding</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#coding">Coding</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-indent-wrapped-text fhir-info-plain">
+                  Binding (required): The type of educational establishment (
+                  <a href="/STU3/ValueSet/DCH-EducationalEstablishmentType-1" class="fhir-link">https://fhir.nhs.uk/STU3/ValueSet/DCH-EducationalEstablishmentType-1</a>
+                  )
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-11110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#QuestionnaireResponse.item(educationalEstablishmentType).answer.valueCoding.system" title="The identification of the code system that defines the meaning of the symbol in the code." class="fhir-tree-cell fhir-link tabLink">system</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#uri">Uri</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-indent-wrapped-text fhir-info-plain">
+                  Fixed Value:
+                  <a href="/STU3/CodeSystem/DCH-EducationalEstablishmentType-1" class="fhir-link">https://fhir.nhs.uk/STU3/CodeSystem/DCH-EducationalEstablishmentType-1</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-11110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <span title="The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged." class="fhir-tree-cell fhir-text-strikethrough">version</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-11110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#QuestionnaireResponse.item(educationalEstablishmentType).answer.valueCoding.code" title="A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)." class="fhir-tree-cell fhir-link tabLink">code</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#code">Code</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-11110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#QuestionnaireResponse.item(educationalEstablishmentType).answer.valueCoding.display" title="A representation of the meaning of the code in the system, following the rules of the system." class="fhir-tree-cell fhir-link tabLink">display</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-11100 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin_end.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <span title="Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays)." class="fhir-tree-cell fhir-text-strikethrough">userSelected</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#boolean">Boolean</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-1100 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin_end.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_element.gif" class="fhir-tree-resource-icon" />
+                <span title="Nested groups and/or questions found within this particular answer." class="fhir-tree-cell fhir-text-strikethrough">item</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="details.html#QuestionnaireResponse.item">see QuestionnaireResponse.item</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-100 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin_end.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_element.gif" class="fhir-tree-resource-icon" />
+                <span title="Questions or sub-groups nested beneath a question or group." class="fhir-tree-cell fhir-text-strikethrough">item</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="details.html#QuestionnaireResponse.item">see QuestionnaireResponse.item</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-11 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_datatype.gif" class="fhir-tree-resource-icon" />
+                <a href="details.html#QuestionnaireResponse.item(educationalEstablishmentStart)" title="A group or question item from the original questionnaire for which answers are provided." class="fhir-tree-cell fhir-link tabLink">item (educationalEstablishmentStart)</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/backboneelement.html">BackboneElement</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">The Year the child attended the school from</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#QuestionnaireResponse.item(educationalEstablishmentStart).linkId" title="The item from the Questionnaire that corresponds to this item in the QuestionnaireResponse resource." class="fhir-tree-cell fhir-link tabLink">linkId</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-indent-wrapped-text fhir-info-plain">Fixed Value: educationalEstablishmentStart</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <span title="A reference to an [ElementDefinition](elementdefinition.html) that provides the details for the item." class="fhir-tree-cell fhir-text-strikethrough">definition</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#uri">Uri</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#QuestionnaireResponse.item(educationalEstablishmentStart).text" title="Text that is displayed above the contents of the group or as the text of the question being answered." class="fhir-tree-cell fhir-link tabLink">text</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-indent-wrapped-text fhir-info-plain">Fixed Value: Year From</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                <span title="More specific subject this section's answers are about, details the subject given in QuestionnaireResponse." class="fhir-tree-cell fhir-text-strikethrough">subject</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/references.html">Reference</a>
+                (
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/StructureDefinition/Resource">Resource</a>
+                )
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-111 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_datatype.gif" class="fhir-tree-resource-icon" />
+                <a href="details.html#QuestionnaireResponse.item(educationalEstablishmentStart).answer" title="The respondent's answer(s) to the question." class="fhir-tree-cell fhir-link tabLink">answer</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/backboneelement.html">BackboneElement</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-1110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#QuestionnaireResponse.item(educationalEstablishmentStart).answer.valueDate" title="The answer (or one of the answers) provided by the respondent to the question." class="fhir-tree-cell fhir-link tabLink">valueDate</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#date">Date</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-1100 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin_end.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_element.gif" class="fhir-tree-resource-icon" />
+                <span title="Nested groups and/or questions found within this particular answer." class="fhir-tree-cell fhir-text-strikethrough">item</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="details.html#QuestionnaireResponse.item">see QuestionnaireResponse.item</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-100 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin_end.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_element.gif" class="fhir-tree-resource-icon" />
+                <span title="Questions or sub-groups nested beneath a question or group." class="fhir-tree-cell fhir-text-strikethrough">item</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="details.html#QuestionnaireResponse.item">see QuestionnaireResponse.item</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-11 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_datatype.gif" class="fhir-tree-resource-icon" />
+                <a href="details.html#QuestionnaireResponse.item(educationalEstablishmentEnd)" title="A group or question item from the original questionnaire for which answers are provided." class="fhir-tree-cell fhir-link tabLink">item (educationalEstablishmentEnd)</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/backboneelement.html">BackboneElement</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">The year the child left the school</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#QuestionnaireResponse.item(educationalEstablishmentEnd).linkId" title="The item from the Questionnaire that corresponds to this item in the QuestionnaireResponse resource." class="fhir-tree-cell fhir-link tabLink">linkId</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-indent-wrapped-text fhir-info-plain">Fixed Value: educationalEstablishmentEnd</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <span title="A reference to an [ElementDefinition](elementdefinition.html) that provides the details for the item." class="fhir-tree-cell fhir-text-strikethrough">definition</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#uri">Uri</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#QuestionnaireResponse.item(educationalEstablishmentEnd).text" title="Text that is displayed above the contents of the group or as the text of the question being answered." class="fhir-tree-cell fhir-link tabLink">text</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-indent-wrapped-text fhir-info-plain">Fixed Value: Year To</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                <span title="More specific subject this section's answers are about, details the subject given in QuestionnaireResponse." class="fhir-tree-cell fhir-text-strikethrough">subject</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/references.html">Reference</a>
+                (
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/StructureDefinition/Resource">Resource</a>
+                )
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-111 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_datatype.gif" class="fhir-tree-resource-icon" />
+                <a href="details.html#QuestionnaireResponse.item(educationalEstablishmentEnd).answer" title="The respondent's answer(s) to the question." class="fhir-tree-cell fhir-link tabLink">answer</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/backboneelement.html">BackboneElement</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-1110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#QuestionnaireResponse.item(educationalEstablishmentEnd).answer.valueDate" title="The answer (or one of the answers) provided by the respondent to the question." class="fhir-tree-cell fhir-link tabLink">valueDate</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#date">Date</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-1100 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin_end.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_element.gif" class="fhir-tree-resource-icon" />
+                <span title="Nested groups and/or questions found within this particular answer." class="fhir-tree-cell fhir-text-strikethrough">item</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="details.html#QuestionnaireResponse.item">see QuestionnaireResponse.item</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-100 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin_end.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_element.gif" class="fhir-tree-resource-icon" />
+                <span title="Questions or sub-groups nested beneath a question or group." class="fhir-tree-cell fhir-text-strikethrough">item</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="details.html#QuestionnaireResponse.item">see QuestionnaireResponse.item</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-11 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_datatype.gif" class="fhir-tree-resource-icon" />
+                <a href="details.html#QuestionnaireResponse.item(educationalAssessmentOutcome)" title="A group or question item from the original questionnaire for which answers are provided." class="fhir-tree-cell fhir-link tabLink">item (educationalAssessmentOutcome)</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/backboneelement.html">BackboneElement</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">The outcome of an educational assessment</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#QuestionnaireResponse.item(educationalAssessmentOutcome).linkId" title="The item from the Questionnaire that corresponds to this item in the QuestionnaireResponse resource." class="fhir-tree-cell fhir-link tabLink">linkId</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-indent-wrapped-text fhir-info-plain">Fixed Value: educationalAssessmentOutcome</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <span title="A reference to an [ElementDefinition](elementdefinition.html) that provides the details for the item." class="fhir-tree-cell fhir-text-strikethrough">definition</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#uri">Uri</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#QuestionnaireResponse.item(educationalAssessmentOutcome).text" title="Text that is displayed above the contents of the group or as the text of the question being answered." class="fhir-tree-cell fhir-link tabLink">text</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-indent-wrapped-text fhir-info-plain">Fixed Value: Educational Assessment</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                <span title="More specific subject this section's answers are about, details the subject given in QuestionnaireResponse." class="fhir-tree-cell fhir-text-strikethrough">subject</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/references.html">Reference</a>
+                (
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/StructureDefinition/Resource">Resource</a>
+                )
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-111 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_datatype.gif" class="fhir-tree-resource-icon" />
+                <a href="details.html#QuestionnaireResponse.item(educationalAssessmentOutcome).answer" title="The respondent's answer(s) to the question." class="fhir-tree-cell fhir-link tabLink">answer</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/backboneelement.html">BackboneElement</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-1111 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_datatype.gif" class="fhir-tree-resource-icon" />
+                <a href="details.html#QuestionnaireResponse.item(educationalAssessmentOutcome).answer.valueCoding" title="The answer (or one of the answers) provided by the respondent to the question." class="fhir-tree-cell fhir-link tabLink">valueCoding</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#coding">Coding</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-indent-wrapped-text fhir-info-plain">
+                  Binding (required): The outcome of an educational assessment (
+                  <a href="/STU3/ValueSet/DCH-EducationalEstablishmentType-1" class="fhir-link">https://fhir.nhs.uk/STU3/ValueSet/DCH-EducationalEstablishmentType-1</a>
+                  )
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-11110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#QuestionnaireResponse.item(educationalAssessmentOutcome).answer.valueCoding.system" title="The identification of the code system that defines the meaning of the symbol in the code." class="fhir-tree-cell fhir-link tabLink">system</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#uri">Uri</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-indent-wrapped-text fhir-info-plain">
+                  Fixed Value:
+                  <a href="/STU3/CodeSystem/DCH-EducationalAssessmentOutcome-1" class="fhir-link">https://fhir.nhs.uk/STU3/CodeSystem/DCH-EducationalAssessmentOutcome-1</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-11110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <span title="The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged." class="fhir-tree-cell fhir-text-strikethrough">version</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-11110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#QuestionnaireResponse.item(educationalAssessmentOutcome).answer.valueCoding.code" title="A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)." class="fhir-tree-cell fhir-link tabLink">code</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#code">Code</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-11110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#QuestionnaireResponse.item(educationalAssessmentOutcome).answer.valueCoding.display" title="A representation of the meaning of the code in the system, following the rules of the system." class="fhir-tree-cell fhir-link tabLink">display</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-11100 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin_end.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <span title="Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays)." class="fhir-tree-cell fhir-text-strikethrough">userSelected</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#boolean">Boolean</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-1100 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin_end.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_element.gif" class="fhir-tree-resource-icon" />
+                <span title="Nested groups and/or questions found within this particular answer." class="fhir-tree-cell fhir-text-strikethrough">item</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="details.html#QuestionnaireResponse.item">see QuestionnaireResponse.item</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-100 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin_end.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_element.gif" class="fhir-tree-resource-icon" />
+                <span title="Questions or sub-groups nested beneath a question or group." class="fhir-tree-cell fhir-text-strikethrough">item</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="details.html#QuestionnaireResponse.item">see QuestionnaireResponse.item</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-01 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin_end.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_datatype.gif" class="fhir-tree-resource-icon" />
+                <a href="details.html#QuestionnaireResponse.item(specialEducationalNeedType)" title="A group or question item from the original questionnaire for which answers are provided." class="fhir-tree-cell fhir-link tabLink">item (specialEducationalNeedType)</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/backboneelement.html">BackboneElement</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">The type of special educational need that the child has</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-010 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_blank.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#QuestionnaireResponse.item(specialEducationalNeedType).linkId" title="The item from the Questionnaire that corresponds to this item in the QuestionnaireResponse resource." class="fhir-tree-cell fhir-link tabLink">linkId</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-indent-wrapped-text fhir-info-plain">Fixed Value: specialEducationalNeedType</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-010 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_blank.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <span title="A reference to an [ElementDefinition](elementdefinition.html) that provides the details for the item." class="fhir-tree-cell fhir-text-strikethrough">definition</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#uri">Uri</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-010 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_blank.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#QuestionnaireResponse.item(specialEducationalNeedType).text" title="Text that is displayed above the contents of the group or as the text of the question being answered." class="fhir-tree-cell fhir-link tabLink">text</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-indent-wrapped-text fhir-info-plain">Fixed Value: Type of Special Educational Need</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-010 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_blank.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                <span title="More specific subject this section's answers are about, details the subject given in QuestionnaireResponse." class="fhir-tree-cell fhir-text-strikethrough">subject</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/references.html">Reference</a>
+                (
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/StructureDefinition/Resource">Resource</a>
+                )
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-011 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_blank.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_datatype.gif" class="fhir-tree-resource-icon" />
+                <a href="details.html#QuestionnaireResponse.item(specialEducationalNeedType).answer" title="The respondent's answer(s) to the question." class="fhir-tree-cell fhir-link tabLink">answer</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/backboneelement.html">BackboneElement</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-0111 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_blank.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_datatype.gif" class="fhir-tree-resource-icon" />
+                <a href="details.html#QuestionnaireResponse.item(specialEducationalNeedType).answer.valueCoding" title="The answer (or one of the answers) provided by the respondent to the question." class="fhir-tree-cell fhir-link tabLink">valueCoding</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#coding">Coding</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-indent-wrapped-text fhir-info-plain">
+                  Binding (required): The type of Special Educational Need (
+                  <a href="/STU3/ValueSet/DCH-SpecialEducationalNeed-1" class="fhir-link">https://fhir.nhs.uk/STU3/ValueSet/DCH-SpecialEducationalNeed-1</a>
+                  )
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-01110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_blank.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#QuestionnaireResponse.item(specialEducationalNeedType).answer.valueCoding.system" title="The identification of the code system that defines the meaning of the symbol in the code." class="fhir-tree-cell fhir-link tabLink">system</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#uri">Uri</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-indent-wrapped-text fhir-info-plain">
+                  Fixed Value:
+                  <a href="/STU3/CodeSystem/DCH-SpecialEducationalNeed-1" class="fhir-link">https://fhir.nhs.uk/STU3/CodeSystem/DCH-SpecialEducationalNeed-1</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-01110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_blank.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <span title="The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged." class="fhir-tree-cell fhir-text-strikethrough">version</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-01110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_blank.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#QuestionnaireResponse.item(specialEducationalNeedType).answer.valueCoding.code" title="A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)." class="fhir-tree-cell fhir-link tabLink">code</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#code">Code</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-01110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_blank.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#QuestionnaireResponse.item(specialEducationalNeedType).answer.valueCoding.display" title="A representation of the meaning of the code in the system, following the rules of the system." class="fhir-tree-cell fhir-link tabLink">display</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-01100 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_blank.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin_end.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <span title="Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays)." class="fhir-tree-cell fhir-text-strikethrough">userSelected</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#boolean">Boolean</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-0100 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_blank.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin_end.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_element.gif" class="fhir-tree-resource-icon" />
+                <span title="Nested groups and/or questions found within this particular answer." class="fhir-tree-cell fhir-text-strikethrough">item</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="details.html#QuestionnaireResponse.item">see QuestionnaireResponse.item</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-000 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_blank.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin_end.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_element.gif" class="fhir-tree-resource-icon" />
+                <span title="Questions or sub-groups nested beneath a question or group." class="fhir-tree-cell fhir-text-strikethrough">item</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="details.html#QuestionnaireResponse.item">see QuestionnaireResponse.item</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

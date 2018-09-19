@@ -1,0 +1,1435 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <style>.fhirtreebg-dotted-1 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR4nO3OIRIAIAwDwf41/38DRSJBIbqZWRdxlaRu7a2XPwAAwOl7AAAAMEcDVN1AgPyAV0EAAAAASUVORK5CYII=);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-1101 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAANUlEQVR4nO3OwQkAMAgDQHd1/xnajtBiwYcn3C8hRmbGrXPrJf+7X9W9DwAA07U/AAAAzLEBVNlALPfpRRsAAAAASUVORK5CYII=);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-1100 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAMUlEQVR4nO3OwQkAIAwDwO6a/WdQR1AoiHiB+yWQSlK7VsZJv3sPAAC87foBAADgHxNKW0BW4z7WCQAAAABJRU5ErkJggg==);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-1110 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAMUlEQVR4nO3OwQkAIAwDwO6a/WdQR9BXC17gfgmkktStk/XSn7YHAAB6tR8AAAD+sQFKWUAsNDxT5QAAAABJRU5ErkJggg==);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-100 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR4nO3OIRIAIAwDwf41/38DRSJBIbqZWRdxlaRu7a2XPwAAwOl7AAAAMEcDVN1AgPyAV0EAAAAASUVORK5CYII=);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-111 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAMUlEQVR4nO3OwQkAIAwDwO6a/WdQR9BXC17gfgmkktStk/XSn7YHAAB6tR8AAAD+sQFKWUAsNDxT5QAAAABJRU5ErkJggg==);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-110 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAMUlEQVR4nO3OwQkAIAwDwO6a/WdQR1AoiHiB+yWQSlK7VsZJv3sPAAC87foBAADgHxNKW0BW4z7WCQAAAABJRU5ErkJggg==);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-000 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4nO3OIQEAAAgDsHd9/w60AMHE/NI2AAAAG84DAADAHwNp30Cqb/h6OAAAAABJRU5ErkJggg==);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-11 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAMUlEQVR4nO3OwQkAIAwDwO6a/WdQR1AoiHiB+yWQSlK7VsZJv3sPAAC87foBAADgHxNKW0BW4z7WCQAAAABJRU5ErkJggg==);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-11000 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAMUlEQVR4nO3OwQkAIAwDwO6a/WdQR1AoiHiB+yWQSlK7VsZJv3sPAAC87foBAADgHxNKW0BW4z7WCQAAAABJRU5ErkJggg==);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-01 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4nO3OwQkAMAwDsezq/WdoMkVaqAx6+ypJbZmdzT8AAOAt1wMAAIB/NF9dQIDlRTsJAAAAAElFTkSuQmCC);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-11010 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAANUlEQVR4nO3OwQkAMAgDQHd1/xnajtBiwYcn3C8hRmbGrXPrJf+7X9W9DwAA07U/AAAAzLEBVNlALPfpRRsAAAAASUVORK5CYII=);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-10 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR4nO3OIRIAIAwDwf41/38DRSJBIbqZWRdxlaRu7a2XPwAAwOl7AAAAMEcDVN1AgPyAV0EAAAAASUVORK5CYII=);
+	background-repeat: repeat-y
+}
+tr,
+.fhir-table-title {
+	font-size: 11px;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	vertical-align: top;
+	border: 0
+}
+.fhir-table-title {
+	padding: 0px 4px
+}
+td {
+	padding: 5px 4px
+}
+.fhir-panel-heading-box {
+	margin: -15px -15px 15px;
+	padding: 10px 15px;
+	background-color: #f0f0f0;
+	border-bottom: 1px solid #808080;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px
+}
+.fhir-panel-heading-text {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 17.5px;
+	font-weight: 500
+}
+tr {
+	padding: 3px;
+	line-height: 1.66em
+}
+.fhir-table-header-row {
+	border: 1px solid #f0f0f0
+}
+tr,
+fhir-table-title,
+td,
+tr,
+fhir-table-title,
+td {
+	text-align: left;
+	text-align: left
+}
+fhir-table-title,
+td,
+fhir-table-title,
+td {
+	vertical-align: top;
+	vertical-align: top
+}
+table {
+	width: 100%;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	border-collapse: collapse
+}
+.fhir-panel * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+.fhir-table.fhir-tree-table tbody:before {
+	content: '-';
+	display: block;
+	line-height: 1em;
+	color: transparent
+}
+.fhir-tree-table {
+	table-layout: fixed;
+	width: 100%
+}
+.fhir-panel {
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.4;
+	width: 95%;
+	max-width: 100%;
+	word-wrap: break-word
+}
+.fhir-panel {
+	padding: 15px;
+	margin-bottom: 20;
+	background-color: #ffffff;
+	border: 1px solid #808080;
+	border-radius: 4px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05)
+}
+.fhir-panel .fhir-link {
+	text-decoration: none;
+	color: #005eb8
+}
+.fhir-panel-subheading {
+	color: #474747;
+	font-weight: bold;
+	font-size: 13
+}
+.fhir-info-name-bold {
+	font-weight: bold;
+	color: #474747
+}
+.fhir-text-italic {
+	font-style: italic;
+	color: #474747
+}
+.fhir-info-plain {
+	color: #474747
+}
+.fhir-resource-info-cell {
+	padding: 5px 4px;
+	border-bottom: 1px solid #f0f0f0
+}
+.fhir-indent-wrapped-text {
+	margin-left: 3em;
+	text-indent: -3em
+}
+.fhir-link {
+	text-decoration: none;
+	color: #005eb8
+}
+.fhir-text-faded {
+	opacity: 0.4
+}
+.fhir-text-strikethrough {
+	text-decoration: line-through
+}
+.fhir-tree-resource-icon {
+	padding-right: 4px;
+	background-color: white;
+	border: 0;
+	width: 20;
+	height: 16
+}
+img.fhir-tree-icon {
+	background-color: white;
+	border: 0;
+	width: 16;
+	height: 22
+}
+.fhir-tree-icons {
+	padding: 0 4px;
+	border-collapse: collapse
+}
+.fhir-tree-icons img {
+	vertical-align: top;
+	float: left;
+	border-collapse: collapse
+}
+.fhir-table,
+.fhir-table tbody tr {
+	border-collapse: collapse;
+	vertical-align: top;
+	border-style: none
+}
+.fhir-tree-icons,
+.fhir-tree-icons img,
+.fhir-table {
+	-webkit-border-horizontal-spacing: 0;
+	-webkit-border-vertical-spacing: 0
+}
+.fhir-tree-cell {
+	padding: 5px 4px
+}</style>
+  </head>
+  <body>
+    <div class="fhir-panel">
+      <div class="fhir-panel-body">
+        <table class="fhir-table fhir-tree-table">
+          <thead>
+            <tr class="fhir-table-header-row">
+              <th title="The logical name of the element" style="width: 25%" class="fhir-table-title">Name</th>
+              <th title="Features of the element" style="width: 5%; max-width: 60px" class="fhir-table-title">Flags</th>
+              <th title="Minimum and maximum # of times the element can appear in the instance" style="width: 5%; max-width: 40px" class="fhir-table-title">Card.</th>
+              <th title="Reference to the type of the element" style="width: 15%; max-width: 80px" class="fhir-table-title">Type</th>
+              <th title="Additional information about the element" style="width: 50%" class="fhir-table-title">Description/Constraints</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="fhirtreebg-dotted-1 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/icon_resource.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient" title="Demographics and other administrative information about an individual or animal receiving care or other health-related services." class="fhir-tree-cell fhir-link tabLink">Patient</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">&#8203;</td>
+              <td class="fhir-tree-cell" />
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.id" title="The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes." class="fhir-tree-cell fhir-link tabLink">id</a>
+              </td>
+              <td class="fhir-resource-flag">
+                <span title="This element must be supported">S</span>
+              </td>
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#id">Id</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_extension_complex.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.extension(registrationDetails)" title="Additional registration information for the Patient resource." class="fhir-tree-cell fhir-link tabLink">extension (registrationDetails)</a>
+              </td>
+              <td class="fhir-resource-flag">
+                <span title="This element must be supported">S</span>
+              </td>
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/extensibility.html#Extension">Extension</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-indent-wrapped-text fhir-info-plain">
+                  URL:
+                  <a href="/STU3/StructureDefinition/Extension-CareConnect-GPC-RegistrationDetails-1" class="fhir-link">https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-RegistrationDetails-1</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_extension_simple.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.extension(ethnicCategory)" title="The ethnicity of the subject." class="fhir-tree-cell fhir-link tabLink">extension (ethnicCategory)</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/extensibility.html#Extension">Extension</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-indent-wrapped-text fhir-info-plain">
+                  URL:
+                  <a href="/STU3/StructureDefinition/Extension-CareConnect-GPC-EthnicCategory-1" class="fhir-link">https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-EthnicCategory-1</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_extension_simple.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.extension(religiousAffiliation)" title="The religious affiliation of the subject." class="fhir-tree-cell fhir-link tabLink">extension (religiousAffiliation)</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/extensibility.html#Extension">Extension</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-indent-wrapped-text fhir-info-plain">
+                  URL:
+                  <a href="/STU3/StructureDefinition/Extension-CareConnect-GPC-ReligiousAffiliation-1" class="fhir-link">https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-ReligiousAffiliation-1</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_extension_simple.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.extension(patient-cadavericDonor)" title="Flag indicating whether the patient authorized the donation of body parts after death." class="fhir-tree-cell fhir-link tabLink">extension (patient-cadavericDonor)</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/extensibility.html#Extension">Extension</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-indent-wrapped-text fhir-info-plain">
+                  URL:
+                  <a href="http://hl7.org/fhir/stu3/StructureDefinition/patient-cadavericDonor" class="fhir-link">http://hl7.org/fhir/StructureDefinition/patient-cadavericDonor</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_extension_simple.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.extension(residentialStatus)" title="The residential status of the patient. For example if this patient is a UK resident." class="fhir-tree-cell fhir-link tabLink">extension (residentialStatus)</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/extensibility.html#Extension">Extension</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">The residential status of the patient</div>
+                <div class="fhir-indent-wrapped-text fhir-info-plain">
+                  URL:
+                  <a href="/STU3/StructureDefinition/Extension-CareConnect-GPC-ResidentialStatus-1" class="fhir-link">https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-ResidentialStatus-1</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_extension_simple.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.extension(treatmentCategory)" title="The treatment category for this patient. For example if this patient is entitled to free healthcare treatment." class="fhir-tree-cell fhir-link tabLink">extension (treatmentCategory)</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/extensibility.html#Extension">Extension</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-indent-wrapped-text fhir-info-plain">
+                  URL:
+                  <a href="/STU3/StructureDefinition/Extension-CareConnect-GPC-TreatmentCategory-1" class="fhir-link">https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-TreatmentCategory-1</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_extension_complex.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.extension(nhsCommunication)" title="Communication preferences including a list of Languages which may be used for communication" class="fhir-tree-cell fhir-link tabLink">extension (nhsCommunication)</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">0..*</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/extensibility.html#Extension">Extension</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-indent-wrapped-text fhir-info-plain">
+                  URL:
+                  <a href="/STU3/StructureDefinition/Extension-CareConnect-GPC-NHSCommunication-1" class="fhir-link">https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-NHSCommunication-1</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_extension_simple.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.extension(birthPlace)" title="Birth Place: The registered place of birth of the patient. A sytem may use the address.text if they don't store the birthPlace address in discrete elements." class="fhir-tree-cell fhir-link tabLink">extension (birthPlace)</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/extensibility.html#Extension">Extension</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-indent-wrapped-text fhir-info-plain">
+                  URL:
+                  <a href="http://hl7.org/fhir/stu3/StructureDefinition/birthPlace" class="fhir-link">http://hl7.org/fhir/StructureDefinition/birthPlace</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_extension_simple.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.extension(nominatedPharmacy)" title="A patient's nominated pharmacy." class="fhir-tree-cell fhir-link tabLink">extension (nominatedPharmacy)</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/extensibility.html#Extension">Extension</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-indent-wrapped-text fhir-info-plain">
+                  URL:
+                  <a href="/STU3/StructureDefinition/Extension-CareConnect-GPC-NominatedPharmacy-1" class="fhir-link">https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-NominatedPharmacy-1</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_extension_simple.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.extension(deathNotificationStatus)" title="This extension is constrained to represent a patient’s death notification (as held on Personal Demographics Service (PDS))." class="fhir-tree-cell fhir-link tabLink">extension (deathNotificationStatus)</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/extensibility.html#Extension">Extension</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-indent-wrapped-text fhir-info-plain">
+                  URL:
+                  <a href="/STU3/StructureDefinition/Extension-CareConnect-GPC-DeathNotificationStatus-1" class="fhir-link">https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-DeathNotificationStatus-1</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_slice.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.identifier" title="An identifier for this patient." class="fhir-tree-cell fhir-link tabLink">identifier</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">0..*</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#identifier">Identifier</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-indent-wrapped-text fhir-info-plain">Slicing: Discriminator: system, Ordering: false, Rules: Open at End</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-11 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_datatype.gif" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.identifier(nhsNumber)" title="An identifier for this patient." class="fhir-tree-cell fhir-link tabLink">identifier (nhsNumber)</a>
+              </td>
+              <td class="fhir-resource-flag">
+                <span title="This element must be supported">S</span>
+              </td>
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#identifier">Identifier</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">The patient's NHS number</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_extension_simple.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.identifier(nhsNumber).extension(nhsNumberVerificationStatus)" title="The verification/tracing status of the NHS number." class="fhir-tree-cell fhir-link tabLink">extension (nhsNumberVerificationStatus)</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/extensibility.html#Extension">Extension</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-indent-wrapped-text fhir-info-plain">
+                  URL:
+                  <a href="/STU3/StructureDefinition/Extension-CareConnect-GPC-NHSNumberVerificationStatus-1" class="fhir-link">https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareConnect-GPC-NHSNumberVerificationStatus-1</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <span title="The purpose of this identifier." class="fhir-tree-cell fhir-text-strikethrough">use</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#code">Code</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_element.gif" class="fhir-tree-resource-icon" />
+                <span title="A coded type for the identifier that can be used to determine which identifier to use for a specific purpose." class="fhir-tree-cell fhir-text-strikethrough">type</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#codeableconcept">CodeableConcept</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.identifier(nhsNumber).system" title="Establishes the namespace for the value - that is, a URL that describes a set values that are unique." class="fhir-tree-cell fhir-link tabLink">system</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#uri">Uri</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-indent-wrapped-text fhir-info-plain">Fixed Value: https://fhir.nhs.uk/Id/nhs-number</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.identifier(nhsNumber).value" title="The portion of the identifier typically relevant to the user and which is unique within the context of the system." class="fhir-tree-cell fhir-link tabLink">value</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_element.gif" class="fhir-tree-resource-icon" />
+                <span title="Time period during which identifier is/was valid for use." class="fhir-tree-cell fhir-text-strikethrough">period</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#period">Period</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-100 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin_end.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                <span title="Organization that issued/manages the identifier." class="fhir-tree-cell fhir-text-strikethrough">assigner</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/references.html">Reference</a>
+                (
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/StructureDefinition/Organization">Organization</a>
+                )
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_slice.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.name" title="A name associated with the individual. There will only be one name with the value of 'official'." class="fhir-tree-cell fhir-link tabLink">name</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..*</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#humanname">HumanName</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-indent-wrapped-text fhir-info-plain">Slicing: Discriminator: use, Ordering: false, Rules: Open at End</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-11 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_datatype.gif" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.name(official)" title="A name associated with the individual." class="fhir-tree-cell fhir-link tabLink">name (official)</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#humanname">HumanName</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">A name associated with the patient. There will only be one name with the value of 'official'.</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.name(official).use" title="Identifies the purpose for this name." class="fhir-tree-cell fhir-link tabLink">use</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#code">Code</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-indent-wrapped-text fhir-info-plain">Fixed Value: official</div>
+                <div class="fhir-indent-wrapped-text fhir-info-plain">
+                  Binding (required): The use of a human name (
+                  <a href="/STU3/ValueSet/CareConnect-NameUse-1" class="fhir-link">https://fhir.nhs.uk/STU3/ValueSet/CareConnect-NameUse-1</a>
+                  )
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.name(official).family" title="The part of a name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father." class="fhir-tree-cell fhir-link tabLink">family</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-100 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin_end.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.name(official).given" title="Given name." class="fhir-tree-cell fhir-link tabLink">given</a>
+              </td>
+              <td class="fhir-resource-flag">
+                <span title="This element must be supported">S</span>
+              </td>
+              <td class="fhir-tree-cell">0..*</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-11 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_datatype.gif" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.name(other)" title="A name associated with the individual." class="fhir-tree-cell fhir-link tabLink">name (other)</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">0..*</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#humanname">HumanName</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-100 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin_end.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.name(other).use" title="Identifies the purpose for this name." class="fhir-tree-cell fhir-link tabLink">use</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#code">Code</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-indent-wrapped-text fhir-info-plain">
+                  Binding (required): The use of a human name (
+                  <a href="/STU3/ValueSet/CareConnect-NameUse-1" class="fhir-link">https://fhir.nhs.uk/STU3/ValueSet/CareConnect-NameUse-1</a>
+                  )
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-11 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_datatype.gif" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.telecom" title="A contact detail (e.g. a telephone number or an email address) by which the individual may be contacted." class="fhir-tree-cell fhir-link tabLink">telecom</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-text-faded fhir-tree-cell">0..*</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#contactpoint">ContactPoint</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.telecom.system" title="Telecommunications form for contact point - what communications system is required to make use of the contact." class="fhir-tree-cell fhir-link tabLink">system</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#code">Code</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-100 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin_end.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.telecom.value" title="The actual contact point details, in a form that is meaningful to the designated communication system (i.e. phone number or email address)." class="fhir-tree-cell fhir-link tabLink">value</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.gender" title="Administrative Gender - the gender that the patient is considered to have for administration and record keeping purposes." class="fhir-tree-cell fhir-link tabLink">gender</a>
+              </td>
+              <td class="fhir-resource-flag">
+                <span title="This element must be supported">S</span>
+              </td>
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#code">Code</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-indent-wrapped-text fhir-info-plain">
+                  Binding (required): The gender of a person used for administrative purposes. (
+                  <a href="/STU3/ValueSet/CareConnect-AdministrativeGender-1" class="fhir-link">https://fhir.nhs.uk/STU3/ValueSet/CareConnect-AdministrativeGender-1</a>
+                  )
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-11 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.birthDate" title="The date of birth for the individual." class="fhir-tree-cell fhir-link tabLink">birthDate</a>
+              </td>
+              <td class="fhir-resource-flag">
+                <span title="This element must be supported">S</span>
+              </td>
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#date">Date</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-100 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin_end.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_extension_simple.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.birthDate.extension(patient-birthTime)" title="The time of day that the Patient was born. This includes the date to ensure that the timezone information can be communicated effectively." class="fhir-tree-cell fhir-link tabLink">extension (patient-birthTime)</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/extensibility.html#Extension">Extension</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-indent-wrapped-text fhir-info-plain">
+                  URL:
+                  <a href="http://hl7.org/fhir/stu3/StructureDefinition/patient-birthTime" class="fhir-link">http://hl7.org/fhir/StructureDefinition/patient-birthTime</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.deceasedDateTime" title="Indicates if the individual is deceased or not." class="fhir-tree-cell fhir-link tabLink">deceasedDateTime</a>
+              </td>
+              <td class="fhir-resource-flag">
+                <span title="This element must be supported">S</span>
+              </td>
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#datetime">dateTime</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-11 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_datatype.gif" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.address" title="Addresses for the individual." class="fhir-tree-cell fhir-link tabLink">address</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-text-faded fhir-tree-cell">0..*</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#address">Address</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.address.text" title="A full text representation of the address." class="fhir-tree-cell fhir-link tabLink">text</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.address.line" title="This component contains the house number, apartment number, street name, street direction,  P.O. Box number, delivery hints, and similar address information." class="fhir-tree-cell fhir-link tabLink">line</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">0..*</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.address.city" title="The name of the city, town, village or other community or delivery center." class="fhir-tree-cell fhir-link tabLink">city</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.address.district" title="The name of the administrative area (county)." class="fhir-tree-cell fhir-link tabLink">district</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <span title="Sub-unit of a country with limited sovereignty in a federally organized country. A code may be used if codes are in common use (i.e. US 2 letter state codes)." class="fhir-tree-cell fhir-text-strikethrough">state</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.address.postalCode" title="A postal code designating a region defined by the postal service." class="fhir-tree-cell fhir-link tabLink">postalCode</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-100 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin_end.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.address.country" title="Country - a nation as commonly understood or generally accepted." class="fhir-tree-cell fhir-link tabLink">country</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-11 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_datatype.gif" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.maritalStatus" title="This field contains a patient's most recent marital (civil) status." class="fhir-tree-cell fhir-link tabLink">maritalStatus</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#codeableconcept">CodeableConcept</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-indent-wrapped-text fhir-info-plain">
+                  Binding (required): The domestic partnership status of a person. (
+                  <a href="/STU3/ValueSet/CareConnect-MaritalStatus-1" class="fhir-link">https://fhir.nhs.uk/STU3/ValueSet/CareConnect-MaritalStatus-1</a>
+                  )
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-111 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_datatype.gif" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.maritalStatus.coding" title="A reference to a code defined by a terminology system." class="fhir-tree-cell fhir-link tabLink">coding</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#coding">Coding</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-1110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.maritalStatus.coding.system" title="The identification of the code system that defines the meaning of the symbol in the code." class="fhir-tree-cell fhir-link tabLink">system</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#uri">Uri</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-1110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <span title="The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged." class="fhir-tree-cell fhir-text-strikethrough">version</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-1110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.maritalStatus.coding.code" title="A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)." class="fhir-tree-cell fhir-link tabLink">code</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#code">Code</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-1110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.maritalStatus.coding.display" title="A representation of the meaning of the code in the system, following the rules of the system." class="fhir-tree-cell fhir-link tabLink">display</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-1100 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin_end.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <span title="Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays)." class="fhir-tree-cell fhir-text-strikethrough">userSelected</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#boolean">Boolean</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-100 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin_end.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <span title="A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user." class="fhir-tree-cell fhir-text-strikethrough">text</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.multipleBirthBoolean" title="Indicates whether the patient is part of a multiple (bool) or indicates the actual birth order (integer)." class="fhir-tree-cell fhir-link tabLink">multipleBirthBoolean</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#boolean">Boolean</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_element.gif" class="fhir-tree-resource-icon" />
+                <span title="Image of the patient." class="fhir-tree-cell fhir-text-strikethrough">photo</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#attachment">Attachment</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-11 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_datatype.gif" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.contact" title="A contact party (e.g. guardian, partner, friend) for the patient." class="fhir-tree-cell fhir-link tabLink">contact</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-text-faded fhir-tree-cell">0..*</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/backboneelement.html">BackboneElement</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-111 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_datatype.gif" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.contact.relationship" title="The nature of the relationship between the patient and the contact person." class="fhir-tree-cell fhir-link tabLink">relationship</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-text-faded fhir-tree-cell">0..*</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#codeableconcept">CodeableConcept</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-1101 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin_end.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_datatype.gif" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.contact.relationship.coding" title="A reference to a code defined by a terminology system." class="fhir-tree-cell fhir-link tabLink">coding</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-text-faded fhir-tree-cell">0..*</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#coding">Coding</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-11010 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_blank.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.contact.relationship.coding.system" title="The identification of the code system that defines the meaning of the symbol in the code." class="fhir-tree-cell fhir-link tabLink">system</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#uri">Uri</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-11010 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_blank.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.contact.relationship.coding.code" title="A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)." class="fhir-tree-cell fhir-link tabLink">code</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#code">Code</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-11000 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_blank.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin_end.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.contact.relationship.coding.display" title="A representation of the meaning of the code in the system, following the rules of the system." class="fhir-tree-cell fhir-link tabLink">display</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-111 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_datatype.gif" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.contact.name" title="A name associated with the contact person." class="fhir-tree-cell fhir-link tabLink">name</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#humanname">HumanName</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-1100 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin_end.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.contact.name.use" title="Identifies the purpose for this name." class="fhir-tree-cell fhir-link tabLink">use</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#code">Code</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-111 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_datatype.gif" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.contact.address" title="Address for the contact person." class="fhir-tree-cell fhir-link tabLink">address</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-text-faded fhir-tree-cell">0..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#address">Address</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-1110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.contact.address.text" title="A full text representation of the address." class="fhir-tree-cell fhir-link tabLink">text</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-1110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.contact.address.line" title="This component contains the house number, apartment number, street name, street direction,  P.O. Box number, delivery hints, and similar address information." class="fhir-tree-cell fhir-link tabLink">line</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">0..*</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-1110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.contact.address.city" title="The name of the city, town, village or other community or delivery center." class="fhir-tree-cell fhir-link tabLink">city</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-1110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.contact.address.district" title="The name of the administrative area (county)." class="fhir-tree-cell fhir-link tabLink">district</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-1110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <span title="Sub-unit of a country with limited sovereignty in a federally organized country. A code may be used if codes are in common use (i.e. US 2 letter state codes)." class="fhir-tree-cell fhir-text-strikethrough">state</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-1110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.contact.address.postalCode" title="A postal code designating a region defined by the postal service." class="fhir-tree-cell fhir-link tabLink">postalCode</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-1100 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin_end.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.contact.address.country" title="Country - a nation as commonly understood or generally accepted." class="fhir-tree-cell fhir-link tabLink">country</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.contact.gender" title="Administrative Gender - the gender that the contact person is considered to have for administration and record keeping purposes." class="fhir-tree-cell fhir-link tabLink">gender</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#code">Code</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-indent-wrapped-text fhir-info-plain">
+                  Binding (required): The gender of a person used for administrative purposes. (
+                  <a href="/STU3/ValueSet/CareConnect-AdministrativeGender-1" class="fhir-link">https://fhir.nhs.uk/STU3/ValueSet/CareConnect-AdministrativeGender-1</a>
+                  )
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-100 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin_end.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.contact.organization" title="Organization on behalf of which the contact is acting or for which the contact is working." class="fhir-tree-cell fhir-link tabLink">organization</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/references.html">Reference</a>
+                (
+                <a class="fhir-link" href="/STU3/StructureDefinition/CareConnect-GPC-Organization-1">CareConnect-GPC-Organization-1</a>
+                )
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_datatype.gif" class="fhir-tree-resource-icon" />
+                <span title="This patient is known to be an animal." class="fhir-tree-cell fhir-text-strikethrough">animal</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/backboneelement.html">BackboneElement</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_datatype.gif" class="fhir-tree-resource-icon" />
+                <span title="Languages which may be used to communicate with the patient about his or her health." class="fhir-tree-cell fhir-text-strikethrough">communication</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/backboneelement.html">BackboneElement</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.generalPractitioner" title="Patient's nominated care provider." class="fhir-tree-cell fhir-link tabLink">generalPractitioner</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/references.html">Reference</a>
+                (
+                <a class="fhir-link" href="/STU3/StructureDefinition/CareConnect-GPC-Organization-1">CareConnect-GPC-Organization-1</a>
+                |
+                <a class="fhir-link" href="/STU3/StructureDefinition/CareConnect-GPC-Practitioner-1">CareConnect-GPC-Practitioner-1</a>
+                )
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.managingOrganization" title="Organization that is the custodian of the patient record." class="fhir-tree-cell fhir-link tabLink">managingOrganization</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/references.html">Reference</a>
+                (
+                <a class="fhir-link" href="/STU3/StructureDefinition/CareConnect-GPC-Organization-1">CareConnect-GPC-Organization-1</a>
+                )
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-01 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin_end.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_datatype.gif" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.link" title="Link to another patient resource that concerns the same actual patient." class="fhir-tree-cell fhir-link tabLink">link</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-text-faded fhir-tree-cell">0..*</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/backboneelement.html">BackboneElement</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-000 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_blank.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin_end.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#Patient.link.other" title="The other patient resource that the link refers to." class="fhir-tree-cell fhir-link tabLink">other</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/references.html">Reference</a>
+                (
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/StructureDefinition/RelatedPerson">RelatedPerson</a>
+                |
+                <a class="fhir-link" href="/STU3/StructureDefinition/CareConnect-GPC-Patient-1">CareConnect-GPC-Patient-1</a>
+                )
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

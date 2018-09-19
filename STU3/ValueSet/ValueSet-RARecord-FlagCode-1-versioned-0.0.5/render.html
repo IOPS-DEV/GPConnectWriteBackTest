@@ -1,0 +1,847 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <style>tr,
+.fhir-table-title {
+	font-size: 11px;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	vertical-align: top;
+	border: 0
+}
+.fhir-table-title {
+	padding: 0px 4px
+}
+td {
+	padding: 5px 4px
+}
+.fhir-panel-heading-box {
+	margin: -15px -15px 15px;
+	padding: 10px 15px;
+	background-color: #f0f0f0;
+	border-bottom: 1px solid #808080;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px
+}
+.fhir-panel-heading-text {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 17.5px;
+	font-weight: 500
+}
+tr {
+	padding: 3px;
+	line-height: 1.66em
+}
+.fhir-table-header-row {
+	border: 1px solid #f0f0f0
+}
+tr,
+fhir-table-title,
+td,
+tr,
+fhir-table-title,
+td {
+	text-align: left;
+	text-align: left
+}
+fhir-table-title,
+td,
+fhir-table-title,
+td {
+	vertical-align: top;
+	vertical-align: top
+}
+table {
+	width: 100%;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	border-collapse: collapse
+}
+.fhir-panel * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+.fhir-table.fhir-tree-table tbody:before {
+	content: '-';
+	display: block;
+	line-height: 1em;
+	color: transparent
+}
+.fhir-tree-table {
+	table-layout: fixed;
+	width: 100%
+}
+.fhir-panel {
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.4;
+	width: 95%;
+	max-width: 100%;
+	word-wrap: break-word
+}
+.fhir-panel {
+	padding: 15px;
+	margin-bottom: 20;
+	background-color: #ffffff;
+	border: 1px solid #808080;
+	border-radius: 4px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05)
+}
+.fhir-panel .fhir-link {
+	text-decoration: none;
+	color: #005eb8
+}
+.fhir-panel-subheading {
+	color: #474747;
+	font-weight: bold;
+	font-size: 13
+}
+.fhir-link {
+	text-decoration: none;
+	color: #005eb8
+}
+.fhir-text-faded {
+	opacity: 0.4
+}
+.fhir-text-strikethrough {
+	text-decoration: line-through
+}
+.fhir-data-cell {
+	border: 1px solid #f0f0f0
+}
+.fhir-data-label,
+.fhir-telecom-name {
+	color: #474747;
+	font-weight: bold;
+	font-size: 13
+}
+.fhir-data-label-empty {
+	color: #474747;
+	font-weight: normal
+}
+.fhir-data-value,
+.fhir-telecom-value {
+	color: #474747;
+	font-size: 13
+}
+.fhir-data-value-smalltext {
+	font-size: 10
+}
+.fhir-data-block-title {
+	color: #808080;
+	font-weight: bold;
+	text-decoration: underline;
+	font-size: 13
+}</style>
+  </head>
+  <body>
+    <div class="fhir-panel">
+      <div class="fhir-panel-heading-box">
+        <h3 class="fhir-panel-heading-text">ValueSet: Reasonable Adjustments Record Flag Code</h3>
+      </div>
+      <div class="fhir-panel-body">
+        <table class="fhir-table">
+          <colgroup>
+            <col width="25%" />
+            <col width="25%" />
+            <col width="25%" />
+            <col width="25%" />
+          </colgroup>
+          <tr>
+            <td class="fhir-data-cell" colspan="2">
+              <span class="fhir-data-label">Name:</span>
+              <span class="fhir-data-value">Reasonable Adjustments Record Flag Code</span>
+            </td>
+            <td class="fhir-data-cell" colspan="2">
+              <span class="fhir-data-label">URL:</span>
+              <span class="fhir-data-value">
+                <a class="fhir-link" href="/STU3/ValueSet/ValueSet-RARecord-FlagCode-1">https://fhir.nhs.uk/STU3/ValueSet/ValueSet-RARecord-FlagCode-1</a>
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td class="fhir-data-cell" colspan="1">
+              <span class="fhir-data-label">Version:</span>
+              <span class="fhir-data-value">0.0.5</span>
+            </td>
+            <td class="fhir-data-cell" colspan="1">
+              <span class="fhir-data-label">Status:</span>
+              <span class="fhir-data-value">Draft</span>
+            </td>
+            <td class="fhir-data-cell" colspan="1">
+              <span class="fhir-data-label">Last updated:</span>
+              <span class="fhir-data-value">14/07/18</span>
+            </td>
+            <td class="fhir-data-cell" colspan="1">
+              <span class="fhir-data-label fhir-data-label-empty">Experimental:</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="fhir-data-cell" colspan="4">
+              <span class="fhir-data-label">Description:</span>
+              <span class="fhir-data-value">A code from the SNOMED Clinical Terminology UK coding system that describes the severity of an allergy.</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="fhir-data-cell" colspan="4">
+              <span class="fhir-data-label">Publisher:</span>
+              <span class="fhir-data-value">NHS Digital</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="fhir-data-cell" colspan="4">
+              <span class="fhir-data-label">Copyright:</span>
+              <span class="fhir-data-value">© 2018 NHS Digital. This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.</span>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="fhir-panel">
+      <div class="fhir-panel-heading-box">
+        <h3 class="fhir-panel-heading-text">Value set concepts</h3>
+      </div>
+      <div class="fhir-panel-body">
+        <table class="fhir-table">
+          <thead>
+            <tr class="fhir-table-header-row">
+              <th title="System that the following concepts belong to" style="width: 25%" class="fhir-table-title">CodeSystem</th>
+              <th title="Identifier for this concept" style="width: 10%" class="fhir-table-title">Code</th>
+              <th title="Human-friendly name" style="width: 65%" class="fhir-table-title">Display</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">
+                <a class="fhir-link" href="/STU3/CodeSystem/CodeSystem-RARecord-CommunicationAdjustments-1">https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-CommunicationAdjustments-1</a>
+              </td>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">adjustcommunicationforhearingsensoryimpairment</td>
+              <td class="fhir-tree-cell fhir-data-cell">Adjust communication for hearing  / sensory impairment</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">adjustforatypicalexpressionofpain</td>
+              <td class="fhir-tree-cell fhir-data-cell">Adjust for atypical expression of pain</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">adjustforuseofcommunicationbookaid</td>
+              <td class="fhir-tree-cell fhir-data-cell">Adjust for use of communication book / aid</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">advocatetobepresent</td>
+              <td class="fhir-tree-cell fhir-data-cell">Advocate to be present</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">carertobepresentforallcommunication</td>
+              <td class="fhir-tree-cell fhir-data-cell">Carer to be present for all communication</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">patientlikelytoalwaysrespondinthepositive</td>
+              <td class="fhir-tree-cell fhir-data-cell">Patient likely to always respond in the positive</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">provideappointmentreminders</td>
+              <td class="fhir-tree-cell fhir-data-cell">Provide appointment reminders</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">providewrittenremindersandadvice</td>
+              <td class="fhir-tree-cell fhir-data-cell">Provide written reminders and advice</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">reasonableadjustmentforcommunicationnodetailprovided</td>
+              <td class="fhir-tree-cell fhir-data-cell">Reasonable adjustment for communication (no detail provided)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">reasonableadjustmentforcommunicationseedetailprovided</td>
+              <td class="fhir-tree-cell fhir-data-cell">Reasonable adjustment for communication (see detail provided)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">
+                <a class="fhir-link" href="/STU3/CodeSystem/CodeSystem-RARecord-SupportAdjustments-1">https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-SupportAdjustments-1</a>
+              </td>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">additionalsupportfordischarge</td>
+              <td class="fhir-tree-cell fhir-data-cell">Additional support for discharge</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">adjusttoinvolvecarersinallaspectsofcare</td>
+              <td class="fhir-tree-cell fhir-data-cell">Adjust to involve Carers in all aspects of care</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">lastingpowerofattorney</td>
+              <td class="fhir-tree-cell fhir-data-cell">Lasting Power of Attorney</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">patientnottobeleftalone</td>
+              <td class="fhir-tree-cell fhir-data-cell">Patient not to be left alone</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">reasonableadjustmentforadditionalsupportnodetailprovided</td>
+              <td class="fhir-tree-cell fhir-data-cell">Reasonable adjustment for additional support (no detail provided)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">reasonableadjustmentforadditionalsupportseedetailprovided</td>
+              <td class="fhir-tree-cell fhir-data-cell">Reasonable adjustment for additional support (see detail provided)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">supportforvisualsensoryimpairment</td>
+              <td class="fhir-tree-cell fhir-data-cell">Support for visual /sensory impairment</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">
+                <a class="fhir-link" href="/STU3/CodeSystem/CodeSystem-RARecord-PersonalisationAdjustments-1">https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-PersonalisationAdjustments-1</a>
+              </td>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">adjustforneedlephobia</td>
+              <td class="fhir-tree-cell fhir-data-cell">Adjust for needle phobia</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">dislikesuniformswhitecoats</td>
+              <td class="fhir-tree-cell fhir-data-cell">Dislikes uniforms / white coats</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">hasanticipatorycarecrisisplan</td>
+              <td class="fhir-tree-cell fhir-data-cell">Has anticipatory care /crisis plan</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">maleorfemaleonlysupport</td>
+              <td class="fhir-tree-cell fhir-data-cell">Male or Female only support</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">reasonableadjustmenttopersonalisationnodetailprovided</td>
+              <td class="fhir-tree-cell fhir-data-cell">Reasonable adjustment to personalisation (no detail provided)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">reasonableadjustmenttopersonalisationseedetailprovided</td>
+              <td class="fhir-tree-cell fhir-data-cell">Reasonable adjustment to personalisation (see detail provided)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">respondstodistraction</td>
+              <td class="fhir-tree-cell fhir-data-cell">Responds to distraction</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">willonlytoleratemedicationsincertainformat</td>
+              <td class="fhir-tree-cell fhir-data-cell">Will only tolerate medications in certain format</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">
+                <a class="fhir-link" href="/STU3/CodeSystem/CodeSystem-RARecord-EnvironmentAdjustments-1">https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-EnvironmentAdjustments-1</a>
+              </td>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">adjustforlowlightstimulus</td>
+              <td class="fhir-tree-cell fhir-data-cell">Adjust for low light stimulus</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">adjustforlownoisestimulus</td>
+              <td class="fhir-tree-cell fhir-data-cell">Adjust for low noise stimulus</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">adjustforsingleroom</td>
+              <td class="fhir-tree-cell fhir-data-cell">Adjust for single room</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">adjustforspecialistequipment</td>
+              <td class="fhir-tree-cell fhir-data-cell">Adjust for specialist equipment</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">adjustminimisewaitingtimes</td>
+              <td class="fhir-tree-cell fhir-data-cell">Adjust / minimise waiting times</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">reasonableadjustmenttoenvironmentnodetailprovided</td>
+              <td class="fhir-tree-cell fhir-data-cell">Reasonable adjustment to environment (no detail provided)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">reasonableadjustmenttoenvironmentseedetailprovided</td>
+              <td class="fhir-tree-cell fhir-data-cell">Reasonable adjustment to environment (see detail provided)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">wheelchairaccess</td>
+              <td class="fhir-tree-cell fhir-data-cell">Wheelchair access</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">
+                <a class="fhir-link" href="/STU3/CodeSystem/CodeSystem-RARecord-ServiceDeliveryAdjustments-1">https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-ServiceDeliveryAdjustments-1</a>
+              </td>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">adjustforhighlevelsofanxiety</td>
+              <td class="fhir-tree-cell fhir-data-cell">Adjust for high levels of anxiety</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">considerdesensitisationforanyprocedure</td>
+              <td class="fhir-tree-cell fhir-data-cell">Consider desensitisation for any procedure</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">considerhomevisits</td>
+              <td class="fhir-tree-cell fhir-data-cell">Consider Home Visits</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">considerpreoutpatientoradmissionvisit</td>
+              <td class="fhir-tree-cell fhir-data-cell">Consider pre outpatient or admission visit</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">offerfirstorlastappointment</td>
+              <td class="fhir-tree-cell fhir-data-cell">Offer first or last appointment</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">provideadditionaltimefordecisionmakingprocessing</td>
+              <td class="fhir-tree-cell fhir-data-cell">Provide additional time for decision making / processing</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">providelongerappointment</td>
+              <td class="fhir-tree-cell fhir-data-cell">Provide longer appointment</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">reasonableadjustmenttoservicedeliverynodetailprovided</td>
+              <td class="fhir-tree-cell fhir-data-cell">Reasonable adjustment to service delivery (no detail provided)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">reasonableadjustmenttoservicedeliveryseedetailprovided</td>
+              <td class="fhir-tree-cell fhir-data-cell">Reasonable adjustment to service delivery (see detail provided)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">
+                <a class="fhir-link" href="/STU3/CodeSystem/CodeSystem-RARecord-SpecificRisksAdjustments-1">https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-SpecificRisksAdjustments-1</a>
+              </td>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">monitorforconstipation</td>
+              <td class="fhir-tree-cell fhir-data-cell">Monitor for constipation</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">monitorfordehydration</td>
+              <td class="fhir-tree-cell fhir-data-cell">Monitor for dehydration</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">monitorfordysphagia</td>
+              <td class="fhir-tree-cell fhir-data-cell">Monitor for Dysphagia</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">monitorforepilepsy</td>
+              <td class="fhir-tree-cell fhir-data-cell">Monitor for epilepsy</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">monitorforpressuresores</td>
+              <td class="fhir-tree-cell fhir-data-cell">Monitor for pressure sores</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">monitorforself-harm</td>
+              <td class="fhir-tree-cell fhir-data-cell">Monitor for self-harm</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">monitornutrition</td>
+              <td class="fhir-tree-cell fhir-data-cell">Monitor nutrition</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">reasonableadjustmentforspecificrisksnodetailprovided</td>
+              <td class="fhir-tree-cell fhir-data-cell">Reasonable adjustment for specific risks (no detail provided)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">reasonableadjustmentforspecificrisksseedetailprovided</td>
+              <td class="fhir-tree-cell fhir-data-cell">Reasonable adjustment for specific risks (see detail provided)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">
+                <a class="fhir-link" href="/STU3/CodeSystem/CodeSystem-RARecord-OtherAdjustments-1">https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-OtherAdjustments-1</a>
+              </td>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">reasonableadjustmentsforhealthandcareaccess</td>
+              <td class="fhir-tree-cell fhir-data-cell">Reasonable adjustments for health and care access</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">
+                <a class="fhir-link" href="/STU3/CodeSystem/CodeSystem-RARecord-AccessibleInformationAdjustments-1">https://fhir.nhs.uk/STU3/CodeSystem/CodeSystem-RARecord-AccessibleInformationAdjustments-1</a>
+              </td>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">britishsignlanguageinterpreterneeded</td>
+              <td class="fhir-tree-cell fhir-data-cell">British Sign Language interpreter needed</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">doeslipread</td>
+              <td class="fhir-tree-cell fhir-data-cell">Does lip read</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">doesusecommunicationdevice</td>
+              <td class="fhir-tree-cell fhir-data-cell">Does use communication device</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">doesusehearingaid</td>
+              <td class="fhir-tree-cell fhir-data-cell">Does use hearing aid</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">hands-onsigninginterpreterneeded</td>
+              <td class="fhir-tree-cell fhir-data-cell">Hands-on signing interpreter needed</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">makatonsignlanguageinterpreterneeded</td>
+              <td class="fhir-tree-cell fhir-data-cell">Makaton Sign Language interpreter needed</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">needsanadvocate</td>
+              <td class="fhir-tree-cell fhir-data-cell">Needs an advocate</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">preferredmethodofcommunicationwritten</td>
+              <td class="fhir-tree-cell fhir-data-cell">Preferred method of communication: written</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">requiresaudiblealert</td>
+              <td class="fhir-tree-cell fhir-data-cell">Requires audible alert</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">requirescontactbyemail</td>
+              <td class="fhir-tree-cell fhir-data-cell">Requires contact by email</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">requirescontactbyletter</td>
+              <td class="fhir-tree-cell fhir-data-cell">Requires contact by letter</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">requirescontactbyshortmessageservicetextmessage</td>
+              <td class="fhir-tree-cell fhir-data-cell">Requires contact by short message service text message</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">requirescontactbytelephone</td>
+              <td class="fhir-tree-cell fhir-data-cell">Requires contact by telephone</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">requirescontactbytextrelay</td>
+              <td class="fhir-tree-cell fhir-data-cell">Requires contact by text relay</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">requirescontactviacarer</td>
+              <td class="fhir-tree-cell fhir-data-cell">Requires contact via carer</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">requiresdeafblindblockalphabetinterpreter</td>
+              <td class="fhir-tree-cell fhir-data-cell">Requires deafblind block alphabet interpreter</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">requiresdeafblindcommunicatorguide</td>
+              <td class="fhir-tree-cell fhir-data-cell">Requires deafblind communicator guide</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">requiresdeafblindhapticcommunicationinterpreter</td>
+              <td class="fhir-tree-cell fhir-data-cell">Requires deafblind haptic communication interpreter</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">requiresdeafblindmanualalphabetinterpreter</td>
+              <td class="fhir-tree-cell fhir-data-cell">Requires deafblind manual alphabet interpreter</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">requireshealthcareinformationrecordingonpersonalaudiorecordingdevice</td>
+              <td class="fhir-tree-cell fhir-data-cell">Requires healthcare information recording on personal audio recording device</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">requiresinformationbyemail</td>
+              <td class="fhir-tree-cell fhir-data-cell">Requires information by email</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">requiresinformationincontractedgrade2braille</td>
+              <td class="fhir-tree-cell fhir-data-cell">Requires information in contracted (Grade 2) Braille</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">requiresinformationineasyread</td>
+              <td class="fhir-tree-cell fhir-data-cell">Requires information in Easyread</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">requiresinformationinelectronicaudioformat</td>
+              <td class="fhir-tree-cell fhir-data-cell">Requires information in electronic audio format</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">requiresinformationinelectronicdownloadableformat</td>
+              <td class="fhir-tree-cell fhir-data-cell">Requires information in electronic downloadable format</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">requiresinformationinmakaton</td>
+              <td class="fhir-tree-cell fhir-data-cell">Requires information in Makaton</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">requiresinformationinmoonalphabet</td>
+              <td class="fhir-tree-cell fhir-data-cell">Requires information in Moon alphabet</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">requiresinformationinuncontractedgrade1braille</td>
+              <td class="fhir-tree-cell fhir-data-cell">Requires information in uncontracted (Grade 1) Braille</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">requiresinformationonaudiocassettetape</td>
+              <td class="fhir-tree-cell fhir-data-cell">Requires information on audio cassette tape</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">requiresinformationoncompactdisc</td>
+              <td class="fhir-tree-cell fhir-data-cell">Requires information on compact disc</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">requiresinformationondigitalversatiledisc</td>
+              <td class="fhir-tree-cell fhir-data-cell">Requires information on digital versatile disc</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">requiresinformationonuniversalserialbusmassstoragedevice</td>
+              <td class="fhir-tree-cell fhir-data-cell">Requires information on universal serial bus mass storage device</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">requiresinformationverbally</td>
+              <td class="fhir-tree-cell fhir-data-cell">Requires information verbally</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">requireslipspeaker</td>
+              <td class="fhir-tree-cell fhir-data-cell">Requires lipspeaker</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">requiresmanualnotetaker</td>
+              <td class="fhir-tree-cell fhir-data-cell">Requires manual note taker</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">requiressightedguide</td>
+              <td class="fhir-tree-cell fhir-data-cell">Requires sighted guide</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">requiresspeechtotextreporter</td>
+              <td class="fhir-tree-cell fhir-data-cell">Requires speech to text reporter</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">requirestactilealert</td>
+              <td class="fhir-tree-cell fhir-data-cell">Requires tactile alert</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">requiresthirdpartytoreadoutwritteninformation</td>
+              <td class="fhir-tree-cell fhir-data-cell">Requires third party to read out written information</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">requiresvisualalert</td>
+              <td class="fhir-tree-cell fhir-data-cell">Requires visual alert</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">requireswritteninformationinatleast20pointsansseriffont</td>
+              <td class="fhir-tree-cell fhir-data-cell">Requires written information in at least 20 point sans serif font</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">requireswritteninformationinatleast24pointsansseriffont</td>
+              <td class="fhir-tree-cell fhir-data-cell">Requires written information in at least 24 point sans serif font</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">requireswritteninformationinatleast28pointsansseriffont</td>
+              <td class="fhir-tree-cell fhir-data-cell">Requires written information in at least 28 point sans serif font</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">signsupportedenglishinterpreterneeded</td>
+              <td class="fhir-tree-cell fhir-data-cell">Sign Supported English interpreter needed</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">usesa citizenadvocate</td>
+              <td class="fhir-tree-cell fhir-data-cell">Uses a citizen advocate</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">usesa legaladvocate</td>
+              <td class="fhir-tree-cell fhir-data-cell">Uses a legal advocate</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">usesalternativecommunicationskill</td>
+              <td class="fhir-tree-cell fhir-data-cell">Uses alternative communication skill</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">usesbritishsignlanguage</td>
+              <td class="fhir-tree-cell fhir-data-cell">Uses British sign language</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">usescuedspeechtransliterator</td>
+              <td class="fhir-tree-cell fhir-data-cell">Uses cued speech transliterator</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">usesdeafblindintervener</td>
+              <td class="fhir-tree-cell fhir-data-cell">Uses deafblind intervener</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">usesdeafblindmanualalphabet</td>
+              <td class="fhir-tree-cell fhir-data-cell">Uses Deafblind Manual Alphabet</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">useselectronicnotetaker</td>
+              <td class="fhir-tree-cell fhir-data-cell">Uses electronic note taker</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">useslipspeaker</td>
+              <td class="fhir-tree-cell fhir-data-cell">Uses lipspeaker</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">usesmakatonsignlanguage</td>
+              <td class="fhir-tree-cell fhir-data-cell">Uses Makaton sign language</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">usesmanualnotetaker</td>
+              <td class="fhir-tree-cell fhir-data-cell">Uses manual note taker</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">usespersonalaudiorecordingdevicetorecordinformation</td>
+              <td class="fhir-tree-cell fhir-data-cell">Uses personal audio recording device to record information</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">usespersonalcommunicationpassport</td>
+              <td class="fhir-tree-cell fhir-data-cell">Uses Personal Communication Passport</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">usessignlanguage</td>
+              <td class="fhir-tree-cell fhir-data-cell">Uses sign language</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">usesspeechtotextreporter</td>
+              <td class="fhir-tree-cell fhir-data-cell">Uses speech to text reporter</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">usestelecommunicationsdeviceforthedeaf</td>
+              <td class="fhir-tree-cell fhir-data-cell">Uses telecommunications device for the deaf</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">visualframesignlanguageinterpreterneeded</td>
+              <td class="fhir-tree-cell fhir-data-cell">Visual frame sign language interpreter needed</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

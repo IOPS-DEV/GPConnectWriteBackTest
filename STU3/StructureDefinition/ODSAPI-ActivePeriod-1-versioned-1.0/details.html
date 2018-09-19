@@ -1,0 +1,365 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <style>.fhir-details-header-row {
+	font-size: 12px;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	padding: 3px;
+	vertical-align: top;
+	line-height: 1.4em;
+	font-weight: normal;
+	text-align: left;
+	border-bottom: 1px solid #cccccc;
+	background: #f0f0f0
+}
+.fhir-details-data-row,
+.fhir-details-data-cell {
+	padding: 3px;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	line-height: 1.2em;
+	font-weight: normal;
+	vertical-align: top;
+	text-align: left
+}
+.fhir-details-header-cell {
+	font-size: 12px;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	padding: 3px;
+	vertical-align: top;
+	line-height: 1.2em;
+	font-weight: bold;
+	border-bottom: 1px solid #cccccc;
+	background: #f0f0f0
+}
+tr,
+.fhir-table-title {
+	font-size: 11px;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	vertical-align: top;
+	border: 0
+}
+.fhir-table-title {
+	padding: 0px 4px
+}
+td {
+	padding: 5px 4px
+}
+.fhir-panel-heading-box {
+	margin: -15px -15px 15px;
+	padding: 10px 15px;
+	background-color: #f0f0f0;
+	border-bottom: 1px solid #808080;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px
+}
+.fhir-panel-heading-text {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 17.5px;
+	font-weight: 500
+}
+tr {
+	padding: 3px;
+	line-height: 1.66em
+}
+.fhir-table-header-row {
+	border: 1px solid #f0f0f0
+}
+tr,
+fhir-table-title,
+td,
+tr,
+fhir-table-title,
+td {
+	text-align: left;
+	text-align: left
+}
+fhir-table-title,
+td,
+fhir-table-title,
+td {
+	vertical-align: top;
+	vertical-align: top
+}
+table {
+	width: 100%;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	border-collapse: collapse
+}
+.fhir-panel * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+.fhir-table.fhir-tree-table tbody:before {
+	content: '-';
+	display: block;
+	line-height: 1em;
+	color: transparent
+}
+.fhir-tree-table {
+	table-layout: fixed;
+	width: 100%
+}
+.fhir-panel {
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.4;
+	width: 95%;
+	max-width: 100%;
+	word-wrap: break-word
+}
+.fhir-panel {
+	padding: 15px;
+	margin-bottom: 20;
+	background-color: #ffffff;
+	border: 1px solid #808080;
+	border-radius: 4px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05)
+}
+.fhir-panel .fhir-link {
+	text-decoration: none;
+	color: #005eb8
+}
+.fhir-panel-subheading {
+	color: #474747;
+	font-weight: bold;
+	font-size: 13
+}
+.fhir-link {
+	text-decoration: none;
+	color: #005eb8
+}
+.fhir-text-faded {
+	opacity: 0.4
+}
+.fhir-text-strikethrough {
+	text-decoration: line-through
+}
+.fhir-list {
+	margin: 0px
+}</style>
+  </head>
+  <body>
+    <div class="fhir-panel">
+      <div class="fhir-panel-heading-box">
+        <h3 class="fhir-panel-heading-text">Details</h3>
+      </div>
+      <div class="fhir-panel-body">
+        <table class="fhir-table">
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="Period" />
+              Period
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">A time period defined by a start and end date and optionally time.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..*</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell">&#8203;</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">This is not a duration - that's a measure of time (a separate type), but a duration that occurs at a fixed value of time. A Period specifies a range of time; the context of use will specify whether the entire range applies (e.g. "the patient was an inpatient of the hospital for this time range") or one value from the range applies (e.g. "give to the patient between these two times"). If duration is required, specify the type as Interval|Duration.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Invariants</td>
+            <td class="fhir-details-data-cell">
+              <b>Affect this element</b>
+              <br />
+              <b>ele-1:</b>
+              All FHIR elements must have a @value or children (xpath: @value|f:*|h:div) severity: Error
+              <br />
+              <b>per-1:</b>
+              If present, start SHALL have a lower value than end (xpath: not(exists(f:start)) or not(exists(f:end)) or (f:start/@value &lt;= f:end/@value)) severity: Error
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Mappings</td>
+            <td class="fhir-details-data-cell">
+              <b>v2:</b>
+              DR
+              <br />
+              <b>rim:</b>
+              IVL&lt;TS&gt;[lowClosed="true" and highClosed="true"] or URG&lt;TS&gt;[lowClosed="true" and highClosed="true"]
+            </td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="Period.id" />
+              Period.id
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">Note that FHIR strings may not exceed 1MB in size</td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="Period.extension(dateType)" />
+              Period.extension(dateType)
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">Optional Extension Element - found in all resources.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">1..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/extensibility.html#Extension">Extension</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Alternate Names</td>
+            <td class="fhir-details-data-cell">extensions; user content</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Invariants</td>
+            <td class="fhir-details-data-cell">
+              <b>Affect this element</b>
+              <br />
+              <b>ext-1:</b>
+              Must have either extensions or value[x], not both (xpath: exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])) severity: Error
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Extension</td>
+            <td class="fhir-details-data-cell">
+              <a href="/STU3/StructureDefinition/Extension-ODSAPI-DateType-1" class="fhir-link">https://fhir.nhs.uk/STU3/StructureDefinition/Extension-ODSAPI-DateType-1</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="Period.start" />
+              Period.start
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">The start of the period. The boundary is inclusive.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">1..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#datetime">dateTime</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/search.html#summary" class="fhir-link">Summary</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">If the low element is missing, the meaning is that the low boundary is not known.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Mappings</td>
+            <td class="fhir-details-data-cell">
+              <b>v2:</b>
+              DR.1
+              <br />
+              <b>rim:</b>
+              ./low
+            </td>
+          </tr>
+          <tr class="fhir-details-header-row">
+            <td class="fhir-details-header-cell" colspan="2">
+              <a name="Period.end" />
+              Period.end
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Definition</td>
+            <td class="fhir-details-data-cell">The end of the period. If the end of the period is missing, it means that the period is ongoing. The start may be in the past, and the end date in the future, which means that period is expected/planned to end at that time.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/conformance-rules.html#cardinality" class="fhir-link">Cardinality</a>
+            </td>
+            <td class="fhir-details-data-cell">0..1</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/datatypes.html" class="fhir-link">Type</a>
+            </td>
+            <td class="fhir-tree-cell fhir-details-data-cell">
+              <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#datetime">dateTime</a>
+            </td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">
+              <a href="http://hl7.org/fhir/stu3/search.html#summary" class="fhir-link">Summary</a>
+            </td>
+            <td class="fhir-details-data-cell">True</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Comments</td>
+            <td class="fhir-details-data-cell">The high value includes any matching date/time. i.e. 2012-02-03T10:00:00 is in a period that has a end value of 2012-02-03.</td>
+          </tr>
+          <tr class="fhir-details-data-row">
+            <td class="fhir-details-data-cell">Mappings</td>
+            <td class="fhir-details-data-cell">
+              <b>v2:</b>
+              DR.2
+              <br />
+              <b>rim:</b>
+              ./high
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

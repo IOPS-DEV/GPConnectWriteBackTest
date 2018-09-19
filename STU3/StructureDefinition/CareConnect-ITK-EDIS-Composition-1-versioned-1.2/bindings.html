@@ -1,0 +1,888 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <style>tr,
+.fhir-table-title {
+	font-size: 11px;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	vertical-align: top;
+	border: 0
+}
+.fhir-table-title {
+	padding: 0px 4px
+}
+td {
+	padding: 5px 4px
+}
+.fhir-panel-heading-box {
+	margin: -15px -15px 15px;
+	padding: 10px 15px;
+	background-color: #f0f0f0;
+	border-bottom: 1px solid #808080;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px
+}
+.fhir-panel-heading-text {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 17.5px;
+	font-weight: 500
+}
+tr {
+	padding: 3px;
+	line-height: 1.66em
+}
+.fhir-table-header-row {
+	border: 1px solid #f0f0f0
+}
+tr,
+fhir-table-title,
+td,
+tr,
+fhir-table-title,
+td {
+	text-align: left;
+	text-align: left
+}
+fhir-table-title,
+td,
+fhir-table-title,
+td {
+	vertical-align: top;
+	vertical-align: top
+}
+table {
+	width: 100%;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	border-collapse: collapse
+}
+.fhir-panel * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+.fhir-table.fhir-tree-table tbody:before {
+	content: '-';
+	display: block;
+	line-height: 1em;
+	color: transparent
+}
+.fhir-tree-table {
+	table-layout: fixed;
+	width: 100%
+}
+.fhir-panel {
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.4;
+	width: 95%;
+	max-width: 100%;
+	word-wrap: break-word
+}
+.fhir-panel {
+	padding: 15px;
+	margin-bottom: 20;
+	background-color: #ffffff;
+	border: 1px solid #808080;
+	border-radius: 4px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05)
+}
+.fhir-panel .fhir-link {
+	text-decoration: none;
+	color: #005eb8
+}
+.fhir-panel-subheading {
+	color: #474747;
+	font-weight: bold;
+	font-size: 13
+}
+.fhir-info-name-bold {
+	font-weight: bold;
+	color: #474747
+}
+.fhir-text-italic {
+	font-style: italic;
+	color: #474747
+}
+.fhir-info-plain {
+	color: #474747
+}
+.fhir-resource-info-cell {
+	padding: 5px 4px;
+	border-bottom: 1px solid #f0f0f0
+}
+.fhir-indent-wrapped-text {
+	margin-left: 3em;
+	text-indent: -3em
+}
+.fhir-link {
+	text-decoration: none;
+	color: #005eb8
+}
+.fhir-text-faded {
+	opacity: 0.4
+}
+.fhir-text-strikethrough {
+	text-decoration: line-through
+}
+.fhir-data-cell {
+	border: 1px solid #f0f0f0
+}
+.fhir-data-label,
+.fhir-telecom-name {
+	color: #474747;
+	font-weight: bold;
+	font-size: 13
+}
+.fhir-data-label-empty {
+	color: #474747;
+	font-weight: normal
+}
+.fhir-data-value,
+.fhir-telecom-value {
+	color: #474747;
+	font-size: 13
+}
+.fhir-data-value-smalltext {
+	font-size: 10
+}
+.fhir-data-block-title {
+	color: #808080;
+	font-weight: bold;
+	text-decoration: underline;
+	font-size: 13
+}</style>
+  </head>
+  <body>
+    <div class="fhir-panel">
+      <div class="fhir-panel-heading-box">
+        <h3 class="fhir-panel-heading-text">Bindings</h3>
+      </div>
+      <div class="fhir-panel-body">
+        <table class="fhir-table">
+          <thead>
+            <tr class="fhir-table-header-row">
+              <th title="Identifies the bound node within the StructureDefinition" style="width: 20%" class="fhir-table-title">Path</th>
+              <th title="Node description" style="width: 40%" class="fhir-table-title">Definition</th>
+              <th title="Type of binding." style="width: 10%" class="fhir-table-title">Type</th>
+              <th title="ValueSet containing permitted codes." style="width: 30%" class="fhir-table-title">Reference</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.language">Composition.language</a>
+              </td>
+              <td class="fhir-tree-cell">The base language in which the resource is written.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Extensible">Extensible</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-languages.html">
+                  http://hl7.org/fhir/stu3/valueset-languages.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.status">Composition.status</a>
+              </td>
+              <td class="fhir-tree-cell">The workflow/clinical status of this composition. The status is a marker for the clinical standing of the document.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-composition-status.html">
+                  http://hl7.org/fhir/stu3/valueset-composition-status.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.type">Composition.type</a>
+              </td>
+              <td class="fhir-tree-cell">Specifies the particular kind of composition (e.g. History and Physical, Discharge Summary, Progress Note). This usually equates to the purpose of making the composition.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Preferred">Preferred</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="/STU3/ValueSet/DocumentType-1">https://fhir.nhs.uk/STU3/ValueSet/DocumentType-1</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.class">Composition.class</a>
+              </td>
+              <td class="fhir-tree-cell">A categorization for the type of the composition - helps for indexing and searching. This may be implied by or derived from the code specified in the Composition Type.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Example">Example</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-doc-classcodes.html">
+                  http://hl7.org/fhir/stu3/valueset-doc-classcodes.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.relatesTo.code">Composition.relatesTo.code</a>
+              </td>
+              <td class="fhir-tree-cell">The type of relationship that this composition has with anther composition or document.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-document-relationship-type.html">
+                  http://hl7.org/fhir/stu3/valueset-document-relationship-type.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.section.code">Composition.section.code</a>
+              </td>
+              <td class="fhir-tree-cell">A code identifying the kind of content contained within the section. This must be consistent with the section title.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Example">Example</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-doc-section-codes.html">
+                  http://hl7.org/fhir/stu3/valueset-doc-section-codes.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.section.text.status">Composition.section.text.status</a>
+              </td>
+              <td class="fhir-tree-cell">The status of the narrative - whether it's entirely generated (from just the defined data or the extensions too), or whether a human authored it and it may contain additional data.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-narrative-status.html">
+                  http://hl7.org/fhir/stu3/valueset-narrative-status.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.section.mode">Composition.section.mode</a>
+              </td>
+              <td class="fhir-tree-cell">How the entry list was prepared - whether it is a working list that is suitable for being maintained on an ongoing basis, or if it represents a snapshot of a list of items from another source, or whether it is a prepared list where items may be marked as added, modified or deleted.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-list-mode.html">
+                  http://hl7.org/fhir/stu3/valueset-list-mode.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.section.orderedBy">Composition.section.orderedBy</a>
+              </td>
+              <td class="fhir-tree-cell">Specifies the order applied to the items in the section entries.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Preferred">Preferred</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-list-order.html">
+                  http://hl7.org/fhir/stu3/valueset-list-order.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.section.emptyReason">Composition.section.emptyReason</a>
+              </td>
+              <td class="fhir-tree-cell">If the section is empty, why the list is empty. An empty section typically has some text explaining the empty reason.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Preferred">Preferred</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-list-empty-reason.html">
+                  http://hl7.org/fhir/stu3/valueset-list-empty-reason.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.section(admissionDetailsSection).code">Composition.section(admissionDetailsSection).code</a>
+              </td>
+              <td class="fhir-tree-cell">A code identifying the kind of content contained within the section. This must be consistent with the section title.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">http://snomed.info/sct</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.section(admissionDetailsSection).text.status">Composition.section(admissionDetailsSection).text.status</a>
+              </td>
+              <td class="fhir-tree-cell">The status of the narrative - whether it's entirely generated (from just the defined data or the extensions too), or whether a human authored it and it may contain additional data.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-narrative-status.html">
+                  http://hl7.org/fhir/stu3/valueset-narrative-status.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.section(allergiesAndAdverseReactionsSection).code">Composition.section(allergiesAndAdverseReactionsSection).code</a>
+              </td>
+              <td class="fhir-tree-cell">A code identifying the kind of content contained within the section. This must be consistent with the section title.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">http://snomed.info/sct</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.section(allergiesAndAdverseReactionsSection).text.status">Composition.section(allergiesAndAdverseReactionsSection).text.status</a>
+              </td>
+              <td class="fhir-tree-cell">The status of the narrative - whether it's entirely generated (from just the defined data or the extensions too), or whether a human authored it and it may contain additional data.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-narrative-status.html">
+                  http://hl7.org/fhir/stu3/valueset-narrative-status.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.section(assessmentScalesSection).code">Composition.section(assessmentScalesSection).code</a>
+              </td>
+              <td class="fhir-tree-cell">A code identifying the kind of content contained within the section. This must be consistent with the section title.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">http://snomed.info/sct</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.section(assessmentScalesSection).text.status">Composition.section(assessmentScalesSection).text.status</a>
+              </td>
+              <td class="fhir-tree-cell">The status of the narrative - whether it's entirely generated (from just the defined data or the extensions too), or whether a human authored it and it may contain additional data.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-narrative-status.html">
+                  http://hl7.org/fhir/stu3/valueset-narrative-status.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.section(clinicalSummarySection).code">Composition.section(clinicalSummarySection).code</a>
+              </td>
+              <td class="fhir-tree-cell">A code identifying the kind of content contained within the section. This must be consistent with the section title.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">http://snomed.info/sct</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.section(clinicalSummarySection).text.status">Composition.section(clinicalSummarySection).text.status</a>
+              </td>
+              <td class="fhir-tree-cell">The status of the narrative - whether it's entirely generated (from just the defined data or the extensions too), or whether a human authored it and it may contain additional data.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-narrative-status.html">
+                  http://hl7.org/fhir/stu3/valueset-narrative-status.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.section(diagnosesSection).code">Composition.section(diagnosesSection).code</a>
+              </td>
+              <td class="fhir-tree-cell">A code identifying the kind of content contained within the section. This must be consistent with the section title.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">http://snomed.info/sct</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.section(diagnosesSection).text.status">Composition.section(diagnosesSection).text.status</a>
+              </td>
+              <td class="fhir-tree-cell">The status of the narrative - whether it's entirely generated (from just the defined data or the extensions too), or whether a human authored it and it may contain additional data.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-narrative-status.html">
+                  http://hl7.org/fhir/stu3/valueset-narrative-status.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.section(dischargeDetailsSection).code">Composition.section(dischargeDetailsSection).code</a>
+              </td>
+              <td class="fhir-tree-cell">A code identifying the kind of content contained within the section. This must be consistent with the section title.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">http://snomed.info/sct</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.section(dischargeDetailsSection).text.status">Composition.section(dischargeDetailsSection).text.status</a>
+              </td>
+              <td class="fhir-tree-cell">The status of the narrative - whether it's entirely generated (from just the defined data or the extensions too), or whether a human authored it and it may contain additional data.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-narrative-status.html">
+                  http://hl7.org/fhir/stu3/valueset-narrative-status.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.section(distributionListSection).code">Composition.section(distributionListSection).code</a>
+              </td>
+              <td class="fhir-tree-cell">A code identifying the kind of content contained within the section. This must be consistent with the section title.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">http://snomed.info/sct</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.section(distributionListSection).text.status">Composition.section(distributionListSection).text.status</a>
+              </td>
+              <td class="fhir-tree-cell">The status of the narrative - whether it's entirely generated (from just the defined data or the extensions too), or whether a human authored it and it may contain additional data.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-narrative-status.html">
+                  http://hl7.org/fhir/stu3/valueset-narrative-status.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.section(gpPracticeSection).code">Composition.section(gpPracticeSection).code</a>
+              </td>
+              <td class="fhir-tree-cell">A code identifying the kind of content contained within the section. This must be consistent with the section title.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">http://snomed.info/sct</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.section(gpPracticeSection).text.status">Composition.section(gpPracticeSection).text.status</a>
+              </td>
+              <td class="fhir-tree-cell">The status of the narrative - whether it's entirely generated (from just the defined data or the extensions too), or whether a human authored it and it may contain additional data.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-narrative-status.html">
+                  http://hl7.org/fhir/stu3/valueset-narrative-status.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.section(individualRequirementsSection).code">Composition.section(individualRequirementsSection).code</a>
+              </td>
+              <td class="fhir-tree-cell">A code identifying the kind of content contained within the section. This must be consistent with the section title.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">http://snomed.info/sct</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.section(individualRequirementsSection).text.status">Composition.section(individualRequirementsSection).text.status</a>
+              </td>
+              <td class="fhir-tree-cell">The status of the narrative - whether it's entirely generated (from just the defined data or the extensions too), or whether a human authored it and it may contain additional data.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-narrative-status.html">
+                  http://hl7.org/fhir/stu3/valueset-narrative-status.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.section(informationAndAdviceGivenSection).code">Composition.section(informationAndAdviceGivenSection).code</a>
+              </td>
+              <td class="fhir-tree-cell">A code identifying the kind of content contained within the section. This must be consistent with the section title.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">http://snomed.info/sct</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.section(informationAndAdviceGivenSection).text.status">Composition.section(informationAndAdviceGivenSection).text.status</a>
+              </td>
+              <td class="fhir-tree-cell">The status of the narrative - whether it's entirely generated (from just the defined data or the extensions too), or whether a human authored it and it may contain additional data.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-narrative-status.html">
+                  http://hl7.org/fhir/stu3/valueset-narrative-status.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.section(investigationResultsSection).code">Composition.section(investigationResultsSection).code</a>
+              </td>
+              <td class="fhir-tree-cell">A code identifying the kind of content contained within the section. This must be consistent with the section title.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">http://snomed.info/sct</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.section(investigationResultsSection).text.status">Composition.section(investigationResultsSection).text.status</a>
+              </td>
+              <td class="fhir-tree-cell">The status of the narrative - whether it's entirely generated (from just the defined data or the extensions too), or whether a human authored it and it may contain additional data.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-narrative-status.html">
+                  http://hl7.org/fhir/stu3/valueset-narrative-status.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.section(legalInformationSection).code">Composition.section(legalInformationSection).code</a>
+              </td>
+              <td class="fhir-tree-cell">A code identifying the kind of content contained within the section. This must be consistent with the section title.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">http://snomed.info/sct</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.section(legalInformationSection).text.status">Composition.section(legalInformationSection).text.status</a>
+              </td>
+              <td class="fhir-tree-cell">The status of the narrative - whether it's entirely generated (from just the defined data or the extensions too), or whether a human authored it and it may contain additional data.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-narrative-status.html">
+                  http://hl7.org/fhir/stu3/valueset-narrative-status.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.section(medicationsAndMedicalDevicesSection).code">Composition.section(medicationsAndMedicalDevicesSection).code</a>
+              </td>
+              <td class="fhir-tree-cell">A code identifying the kind of content contained within the section. This must be consistent with the section title.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">http://snomed.info/sct</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.section(medicationsAndMedicalDevicesSection).text.status">Composition.section(medicationsAndMedicalDevicesSection).text.status</a>
+              </td>
+              <td class="fhir-tree-cell">The status of the narrative - whether it's entirely generated (from just the defined data or the extensions too), or whether a human authored it and it may contain additional data.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-narrative-status.html">
+                  http://hl7.org/fhir/stu3/valueset-narrative-status.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.section(participationInResearchSection).code">Composition.section(participationInResearchSection).code</a>
+              </td>
+              <td class="fhir-tree-cell">A code identifying the kind of content contained within the section. This must be consistent with the section title.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">http://snomed.info/sct</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.section(participationInResearchSection).text.status">Composition.section(participationInResearchSection).text.status</a>
+              </td>
+              <td class="fhir-tree-cell">The status of the narrative - whether it's entirely generated (from just the defined data or the extensions too), or whether a human authored it and it may contain additional data.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-narrative-status.html">
+                  http://hl7.org/fhir/stu3/valueset-narrative-status.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.section(patientAndCarerConcernsExpectationsAndWishesSection).code">Composition.section(patientAndCarerConcernsExpectationsAndWishesSection).code</a>
+              </td>
+              <td class="fhir-tree-cell">A code identifying the kind of content contained within the section. This must be consistent with the section title.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">http://snomed.info/sct</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.section(patientAndCarerConcernsExpectationsAndWishesSection).text.status">Composition.section(patientAndCarerConcernsExpectationsAndWishesSection).text.status</a>
+              </td>
+              <td class="fhir-tree-cell">The status of the narrative - whether it's entirely generated (from just the defined data or the extensions too), or whether a human authored it and it may contain additional data.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-narrative-status.html">
+                  http://hl7.org/fhir/stu3/valueset-narrative-status.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.section(patientDemographicsSection).code">Composition.section(patientDemographicsSection).code</a>
+              </td>
+              <td class="fhir-tree-cell">A code identifying the kind of content contained within the section. This must be consistent with the section title.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">http://snomed.info/sct</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.section(patientDemographicsSection).text.status">Composition.section(patientDemographicsSection).text.status</a>
+              </td>
+              <td class="fhir-tree-cell">The status of the narrative - whether it's entirely generated (from just the defined data or the extensions too), or whether a human authored it and it may contain additional data.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-narrative-status.html">
+                  http://hl7.org/fhir/stu3/valueset-narrative-status.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.section(personCompletingRecordSection).code">Composition.section(personCompletingRecordSection).code</a>
+              </td>
+              <td class="fhir-tree-cell">A code identifying the kind of content contained within the section. This must be consistent with the section title.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">http://snomed.info/sct</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.section(personCompletingRecordSection).text.status">Composition.section(personCompletingRecordSection).text.status</a>
+              </td>
+              <td class="fhir-tree-cell">The status of the narrative - whether it's entirely generated (from just the defined data or the extensions too), or whether a human authored it and it may contain additional data.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-narrative-status.html">
+                  http://hl7.org/fhir/stu3/valueset-narrative-status.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.section(planAndRequestedActionsSection).code">Composition.section(planAndRequestedActionsSection).code</a>
+              </td>
+              <td class="fhir-tree-cell">A code identifying the kind of content contained within the section. This must be consistent with the section title.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">http://snomed.info/sct</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.section(planAndRequestedActionsSection).text.status">Composition.section(planAndRequestedActionsSection).text.status</a>
+              </td>
+              <td class="fhir-tree-cell">The status of the narrative - whether it's entirely generated (from just the defined data or the extensions too), or whether a human authored it and it may contain additional data.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-narrative-status.html">
+                  http://hl7.org/fhir/stu3/valueset-narrative-status.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.section(proceduresSection).code">Composition.section(proceduresSection).code</a>
+              </td>
+              <td class="fhir-tree-cell">A code identifying the kind of content contained within the section. This must be consistent with the section title.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">http://snomed.info/sct</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.section(proceduresSection).text.status">Composition.section(proceduresSection).text.status</a>
+              </td>
+              <td class="fhir-tree-cell">The status of the narrative - whether it's entirely generated (from just the defined data or the extensions too), or whether a human authored it and it may contain additional data.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-narrative-status.html">
+                  http://hl7.org/fhir/stu3/valueset-narrative-status.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.section(referrerDetailsSection).code">Composition.section(referrerDetailsSection).code</a>
+              </td>
+              <td class="fhir-tree-cell">A code identifying the kind of content contained within the section. This must be consistent with the section title.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">http://snomed.info/sct</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.section(referrerDetailsSection).text.status">Composition.section(referrerDetailsSection).text.status</a>
+              </td>
+              <td class="fhir-tree-cell">The status of the narrative - whether it's entirely generated (from just the defined data or the extensions too), or whether a human authored it and it may contain additional data.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-narrative-status.html">
+                  http://hl7.org/fhir/stu3/valueset-narrative-status.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.section(safetyAlertsSection).code">Composition.section(safetyAlertsSection).code</a>
+              </td>
+              <td class="fhir-tree-cell">A code identifying the kind of content contained within the section. This must be consistent with the section title.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">http://snomed.info/sct</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.section(safetyAlertsSection).text.status">Composition.section(safetyAlertsSection).text.status</a>
+              </td>
+              <td class="fhir-tree-cell">The status of the narrative - whether it's entirely generated (from just the defined data or the extensions too), or whether a human authored it and it may contain additional data.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-narrative-status.html">
+                  http://hl7.org/fhir/stu3/valueset-narrative-status.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.section(socialContextSection).code">Composition.section(socialContextSection).code</a>
+              </td>
+              <td class="fhir-tree-cell">A code identifying the kind of content contained within the section. This must be consistent with the section title.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">http://snomed.info/sct</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.section(socialContextSection).text.status">Composition.section(socialContextSection).text.status</a>
+              </td>
+              <td class="fhir-tree-cell">The status of the narrative - whether it's entirely generated (from just the defined data or the extensions too), or whether a human authored it and it may contain additional data.</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/valueset-narrative-status.html">
+                  http://hl7.org/fhir/stu3/valueset-narrative-status.html
+                  <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4" class="fhir-data-label fhir-tree-cell">Inherited via referenced resource: https://fhir.nhs.uk/STU3/StructureDefinition/Extension-CareSettingType-1</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell">
+                <a class="tabLink fhir-link" href="details.html#Composition.extension(careSettingTypeExtension)">Composition.extension(careSettingTypeExtension)</a>
+              </td>
+              <td class="fhir-tree-cell">An extension to carry the Care setting type of the document</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/terminologies.html#Required">Required</a>
+              </td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="/STU3/ValueSet/CareSettingType-1">https://fhir.nhs.uk/STU3/ValueSet/CareSettingType-1</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

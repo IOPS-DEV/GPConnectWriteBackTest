@@ -1,0 +1,585 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <style>.fhirtreebg-dotted-1 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR4nO3OIRIAIAwDwf41/38DRSJBIbqZWRdxlaRu7a2XPwAAwOl7AAAAMEcDVN1AgPyAV0EAAAAASUVORK5CYII=);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-1111 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAMUlEQVR4nO3OwQkAIAwDwO6a/WdQR1D6EPQC90sglaR2rYyT/mt7AACg5/oBAADgHxNU10ACNZr/AAAAAABJRU5ErkJggg==);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-1100 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAMUlEQVR4nO3OwQkAIAwDwO6a/WdQR1AoiHiB+yWQSlK7VsZJv3sPAAC87foBAADgHxNKW0BW4z7WCQAAAABJRU5ErkJggg==);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-1110 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAMUlEQVR4nO3OwQkAIAwDwO6a/WdQR9BXC17gfgmkktStk/XSn7YHAAB6tR8AAAD+sQFKWUAsNDxT5QAAAABJRU5ErkJggg==);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-11 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAMUlEQVR4nO3OwQkAIAwDwO6a/WdQR1AoiHiB+yWQSlK7VsZJv3sPAAC87foBAADgHxNKW0BW4z7WCQAAAABJRU5ErkJggg==);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-111 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAMUlEQVR4nO3OwQkAIAwDwO6a/WdQR9BXC17gfgmkktStk/XSn7YHAAB6tR8AAAD+sQFKWUAsNDxT5QAAAABJRU5ErkJggg==);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-11100 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAMUlEQVR4nO3OwQkAIAwDwO6a/WdQR9BXC17gfgmkktStk/XSn7YHAAB6tR8AAAD+sQFKWUAsNDxT5QAAAABJRU5ErkJggg==);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-100 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR4nO3OIRIAIAwDwf41/38DRSJBIbqZWRdxlaRu7a2XPwAAwOl7AAAAMEcDVN1AgPyAV0EAAAAASUVORK5CYII=);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-00 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4nO3OIQEAAAgDsHd9/w60AMHE/NI2AAAAG84DAADAHwNp30Cqb/h6OAAAAABJRU5ErkJggg==);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-110 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAMUlEQVR4nO3OwQkAIAwDwO6a/WdQR1AoiHiB+yWQSlK7VsZJv3sPAAC87foBAADgHxNKW0BW4z7WCQAAAABJRU5ErkJggg==);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-10 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR4nO3OIRIAIAwDwf41/38DRSJBIbqZWRdxlaRu7a2XPwAAwOl7AAAAMEcDVN1AgPyAV0EAAAAASUVORK5CYII=);
+	background-repeat: repeat-y
+}
+tr,
+.fhir-table-title {
+	font-size: 11px;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	vertical-align: top;
+	border: 0
+}
+.fhir-table-title {
+	padding: 0px 4px
+}
+td {
+	padding: 5px 4px
+}
+.fhir-panel-heading-box {
+	margin: -15px -15px 15px;
+	padding: 10px 15px;
+	background-color: #f0f0f0;
+	border-bottom: 1px solid #808080;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px
+}
+.fhir-panel-heading-text {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 17.5px;
+	font-weight: 500
+}
+tr {
+	padding: 3px;
+	line-height: 1.66em
+}
+.fhir-table-header-row {
+	border: 1px solid #f0f0f0
+}
+tr,
+fhir-table-title,
+td,
+tr,
+fhir-table-title,
+td {
+	text-align: left;
+	text-align: left
+}
+fhir-table-title,
+td,
+fhir-table-title,
+td {
+	vertical-align: top;
+	vertical-align: top
+}
+table {
+	width: 100%;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	border-collapse: collapse
+}
+.fhir-panel * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+.fhir-table.fhir-tree-table tbody:before {
+	content: '-';
+	display: block;
+	line-height: 1em;
+	color: transparent
+}
+.fhir-tree-table {
+	table-layout: fixed;
+	width: 100%
+}
+.fhir-panel {
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.4;
+	width: 95%;
+	max-width: 100%;
+	word-wrap: break-word
+}
+.fhir-panel {
+	padding: 15px;
+	margin-bottom: 20;
+	background-color: #ffffff;
+	border: 1px solid #808080;
+	border-radius: 4px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05)
+}
+.fhir-panel .fhir-link {
+	text-decoration: none;
+	color: #005eb8
+}
+.fhir-panel-subheading {
+	color: #474747;
+	font-weight: bold;
+	font-size: 13
+}
+.fhir-info-name-bold {
+	font-weight: bold;
+	color: #474747
+}
+.fhir-text-italic {
+	font-style: italic;
+	color: #474747
+}
+.fhir-info-plain {
+	color: #474747
+}
+.fhir-resource-info-cell {
+	padding: 5px 4px;
+	border-bottom: 1px solid #f0f0f0
+}
+.fhir-indent-wrapped-text {
+	margin-left: 3em;
+	text-indent: -3em
+}
+.fhir-link {
+	text-decoration: none;
+	color: #005eb8
+}
+.fhir-text-faded {
+	opacity: 0.4
+}
+.fhir-text-strikethrough {
+	text-decoration: line-through
+}
+.fhir-tree-resource-icon {
+	padding-right: 4px;
+	background-color: white;
+	border: 0;
+	width: 20;
+	height: 16
+}
+img.fhir-tree-icon {
+	background-color: white;
+	border: 0;
+	width: 16;
+	height: 22
+}
+.fhir-tree-icons {
+	padding: 0 4px;
+	border-collapse: collapse
+}
+.fhir-tree-icons img {
+	vertical-align: top;
+	float: left;
+	border-collapse: collapse
+}
+.fhir-table,
+.fhir-table tbody tr {
+	border-collapse: collapse;
+	vertical-align: top;
+	border-style: none
+}
+.fhir-tree-icons,
+.fhir-tree-icons img,
+.fhir-table {
+	-webkit-border-horizontal-spacing: 0;
+	-webkit-border-vertical-spacing: 0
+}
+.fhir-tree-cell {
+	padding: 5px 4px
+}</style>
+  </head>
+  <body>
+    <div class="fhir-panel">
+      <div class="fhir-panel-body">
+        <table class="fhir-table fhir-tree-table">
+          <thead>
+            <tr class="fhir-table-header-row">
+              <th title="The logical name of the element" style="width: 25%" class="fhir-table-title">Name</th>
+              <th title="Features of the element" style="width: 5%; max-width: 60px" class="fhir-table-title">Flags</th>
+              <th title="Minimum and maximum # of times the element can appear in the instance" style="width: 5%; max-width: 40px" class="fhir-table-title">Card.</th>
+              <th title="Reference to the type of the element" style="width: 15%; max-width: 80px" class="fhir-table-title">Type</th>
+              <th title="Additional information about the element" style="width: 50%" class="fhir-table-title">Description/Constraints</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="fhirtreebg-dotted-1 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/icon_resource.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#ValueSet" title="A value set specifies a set of codes drawn from one or more code systems." class="fhir-tree-cell fhir-link tabLink">ValueSet</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">&#8203;</td>
+              <td class="fhir-tree-cell" />
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <span title="An absolute URI that is used to identify this value set when it is referenced in a specification, model, design or an instance. This SHALL be a URL, SHOULD be globally unique, and SHOULD be an address at which this value set is (or will be) published. The URL SHOULD include the major version of the value set. For more information see [Technical and Business Versions](resource.html#versions)." class="fhir-tree-cell fhir-text-strikethrough">url</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#uri">Uri</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_element.gif" class="fhir-tree-resource-icon" />
+                <span title="A formal identifier that is used to identify this value set when it is represented in other formats, or referenced in a specification, model, design or an instance." class="fhir-tree-cell fhir-text-strikethrough">identifier</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#identifier">Identifier</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <span title="The identifier that is used to identify this version of the value set when it is referenced in a specification, model, design or instance. This is an arbitrary value managed by the value set author and is not expected to be globally unique. For example, it might be a timestamp (e.g. yyyymmdd) if a managed version is not available. There is also no expectation that versions can be placed in a lexicographical sequence." class="fhir-tree-cell fhir-text-strikethrough">version</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <span title="A natural language name identifying the value set. This name should be usable as an identifier for the module by machine processing applications such as code generation." class="fhir-tree-cell fhir-text-strikethrough">name</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <span title="A short, descriptive, user-friendly title for the value set." class="fhir-tree-cell fhir-text-strikethrough">title</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <span title="A boolean value to indicate that this value set is authored for testing purposes (or education/evaluation/marketing), and is not intended to be used for genuine usage." class="fhir-tree-cell fhir-text-strikethrough">experimental</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#boolean">Boolean</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#ValueSet.publisher" title="The name of the individual or organization that published the value set." class="fhir-tree-cell fhir-link tabLink">publisher</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-indent-wrapped-text fhir-info-plain">Fixed Value: NHS Digital</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_element.gif" class="fhir-tree-resource-icon" />
+                <span title="Contact details to assist a user in finding and communicating with the publisher." class="fhir-tree-cell fhir-text-strikethrough">contact</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/metadatatypes.html#ContactDetail">ContactDetail</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#ValueSet.description" title="A free text natural language description of the value set from a consumer's perspective." class="fhir-tree-cell fhir-link tabLink">description</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#markdown">Markdown</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">eRS Specialty</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_element.gif" class="fhir-tree-resource-icon" />
+                <span title="The content was developed with a focus and intent of supporting the contexts that are listed. These terms may be used to assist with indexing and searching for appropriate value set instances." class="fhir-tree-cell fhir-text-strikethrough">useContext</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/metadatatypes.html#UsageContext">UsageContext</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_element.gif" class="fhir-tree-resource-icon" />
+                <span title="A legal or geographic region in which the value set is intended to be used." class="fhir-tree-cell fhir-text-strikethrough">jurisdiction</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#codeableconcept">CodeableConcept</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <span title="If this is set to 'true', then no new versions of the content logical definition can be created.  Note: Other metadata might still change." class="fhir-tree-cell fhir-text-strikethrough">immutable</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#boolean">Boolean</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <span title="Explaination of why this value set is needed and why it has been designed as it has." class="fhir-tree-cell fhir-text-strikethrough">purpose</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#markdown">Markdown</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <span title="A copyright statement relating to the value set and/or its contents. Copyright statements are generally legal restrictions on the use and publishing of the value set." class="fhir-tree-cell fhir-text-strikethrough">copyright</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#markdown">Markdown</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <span title="Whether this is intended to be used with an extensible binding or not." class="fhir-tree-cell fhir-text-strikethrough">extensible</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#boolean">Boolean</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-11 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_datatype.gif" class="fhir-tree-resource-icon" />
+                <a href="details.html#ValueSet.compose" title="A set of criteria that define the content logical definition of the value set by including or excluding codes from outside this value set. This I also known as the &quot;Content Logical Definition&quot; (CLD)." class="fhir-tree-cell fhir-link tabLink">compose</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-text-faded fhir-tree-cell">0..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/backboneelement.html">BackboneElement</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <span title="If a locked date is defined, then the Content Logical Definition must be evaluated using the current version as of the locked date for referenced code system(s) and value set instances where ValueSet.compose.include.version is not defined." class="fhir-tree-cell fhir-text-strikethrough">lockedDate</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#date">Date</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <span title="Whether inactive codes - codes that are not approved for current use - are in the value set. If inactive = true, inactive codes are to be included in the expansion, if inactive = false, the inactive codes will not be included in the expansion. If absent, the behavior is determined by the implementation, or by the applicable ExpansionProfile (but generally, inactive codes would be expected to be included)." class="fhir-tree-cell fhir-text-strikethrough">inactive</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#boolean">Boolean</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-111 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_datatype.gif" class="fhir-tree-resource-icon" />
+                <a href="details.html#ValueSet.compose.include" title="Include one or more codes from a code system or other value set(s)." class="fhir-tree-cell fhir-link tabLink">include</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-text-faded fhir-tree-cell">1..*</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/backboneelement.html">BackboneElement</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-1110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#ValueSet.compose.include.system" title="An absolute URI which is the code system from which the selected codes come from." class="fhir-tree-cell fhir-link tabLink">system</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#uri">Uri</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-indent-wrapped-text fhir-info-plain">
+                  Fixed Value:
+                  <a href="/STU3/StructureDefinition/eRS-Specialty-CodeSystem-1" class="fhir-link">https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Specialty-CodeSystem-1</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-1111 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_datatype.gif" class="fhir-tree-resource-icon" />
+                <a href="details.html#ValueSet.compose.include.concept" title="Specifies a concept to be included or excluded." class="fhir-tree-cell fhir-link tabLink">concept</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-text-faded fhir-tree-cell">0..*</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/backboneelement.html">BackboneElement</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-11100 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin_end.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_datatype.gif" class="fhir-tree-resource-icon" />
+                <span title="Additional representations for this concept when used in this value set - other languages, aliases, specialized purposes, used for particular purposes, etc." class="fhir-tree-cell fhir-text-strikethrough">designation</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/backboneelement.html">BackboneElement</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-1100 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin_end.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_datatype.gif" class="fhir-tree-resource-icon" />
+                <span title="Select concepts by specify a matching criteria based on the properties (including relationships) defined by the system. If multiple filters are specified, they SHALL all be true." class="fhir-tree-cell fhir-text-strikethrough">filter</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/backboneelement.html">BackboneElement</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-100 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin_end.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_element.gif" class="fhir-tree-resource-icon" />
+                <span title="Exclude one or more codes from the value set based on code system filters and/or other value sets." class="fhir-tree-cell fhir-text-strikethrough">exclude</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="details.html#ValueSet.compose.include">see ValueSet.compose.include</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-00 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin_end.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_datatype.gif" class="fhir-tree-resource-icon" />
+                <span title="A value set can also be &quot;expanded&quot;, where the value set is turned into a simple collection of enumerated codes. This element holds the expansion, if it has been performed." class="fhir-tree-cell fhir-text-strikethrough">expansion</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/backboneelement.html">BackboneElement</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

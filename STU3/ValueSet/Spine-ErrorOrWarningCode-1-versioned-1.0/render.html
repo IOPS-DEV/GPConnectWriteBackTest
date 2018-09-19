@@ -1,0 +1,415 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <style>tr,
+.fhir-table-title {
+	font-size: 11px;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	vertical-align: top;
+	border: 0
+}
+.fhir-table-title {
+	padding: 0px 4px
+}
+td {
+	padding: 5px 4px
+}
+.fhir-panel-heading-box {
+	margin: -15px -15px 15px;
+	padding: 10px 15px;
+	background-color: #f0f0f0;
+	border-bottom: 1px solid #808080;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px
+}
+.fhir-panel-heading-text {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 17.5px;
+	font-weight: 500
+}
+tr {
+	padding: 3px;
+	line-height: 1.66em
+}
+.fhir-table-header-row {
+	border: 1px solid #f0f0f0
+}
+tr,
+fhir-table-title,
+td,
+tr,
+fhir-table-title,
+td {
+	text-align: left;
+	text-align: left
+}
+fhir-table-title,
+td,
+fhir-table-title,
+td {
+	vertical-align: top;
+	vertical-align: top
+}
+table {
+	width: 100%;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	border-collapse: collapse
+}
+.fhir-panel * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+.fhir-table.fhir-tree-table tbody:before {
+	content: '-';
+	display: block;
+	line-height: 1em;
+	color: transparent
+}
+.fhir-tree-table {
+	table-layout: fixed;
+	width: 100%
+}
+.fhir-panel {
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.4;
+	width: 95%;
+	max-width: 100%;
+	word-wrap: break-word
+}
+.fhir-panel {
+	padding: 15px;
+	margin-bottom: 20;
+	background-color: #ffffff;
+	border: 1px solid #808080;
+	border-radius: 4px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05)
+}
+.fhir-panel .fhir-link {
+	text-decoration: none;
+	color: #005eb8
+}
+.fhir-panel-subheading {
+	color: #474747;
+	font-weight: bold;
+	font-size: 13
+}
+.fhir-link {
+	text-decoration: none;
+	color: #005eb8
+}
+.fhir-text-faded {
+	opacity: 0.4
+}
+.fhir-text-strikethrough {
+	text-decoration: line-through
+}
+.fhir-data-cell {
+	border: 1px solid #f0f0f0
+}
+.fhir-data-label,
+.fhir-telecom-name {
+	color: #474747;
+	font-weight: bold;
+	font-size: 13
+}
+.fhir-data-label-empty {
+	color: #474747;
+	font-weight: normal
+}
+.fhir-data-value,
+.fhir-telecom-value {
+	color: #474747;
+	font-size: 13
+}
+.fhir-data-value-smalltext {
+	font-size: 10
+}
+.fhir-data-block-title {
+	color: #808080;
+	font-weight: bold;
+	text-decoration: underline;
+	font-size: 13
+}</style>
+  </head>
+  <body>
+    <div class="fhir-panel">
+      <div class="fhir-panel-heading-box">
+        <h3 class="fhir-panel-heading-text">ValueSet: Spine Error Or Warning Code</h3>
+      </div>
+      <div class="fhir-panel-body">
+        <table class="fhir-table">
+          <colgroup>
+            <col width="25%" />
+            <col width="25%" />
+            <col width="25%" />
+            <col width="25%" />
+          </colgroup>
+          <tr>
+            <td class="fhir-data-cell" colspan="2">
+              <span class="fhir-data-label">Name:</span>
+              <span class="fhir-data-value">Spine Error Or Warning Code</span>
+            </td>
+            <td class="fhir-data-cell" colspan="2">
+              <span class="fhir-data-label">URL:</span>
+              <span class="fhir-data-value">
+                <a class="fhir-link" href="/STU3/ValueSet/Spine-ErrorOrWarningCode-1">https://fhir.nhs.uk/STU3/ValueSet/Spine-ErrorOrWarningCode-1</a>
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td class="fhir-data-cell" colspan="1">
+              <span class="fhir-data-label">Version:</span>
+              <span class="fhir-data-value">1.0.0</span>
+            </td>
+            <td class="fhir-data-cell" colspan="1">
+              <span class="fhir-data-label">Status:</span>
+              <span class="fhir-data-value">Active</span>
+            </td>
+            <td class="fhir-data-cell" colspan="1">
+              <span class="fhir-data-label">Last updated:</span>
+              <span class="fhir-data-value">16/10/17</span>
+            </td>
+            <td class="fhir-data-cell" colspan="1">
+              <span class="fhir-data-label fhir-data-label-empty">Experimental:</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="fhir-data-cell" colspan="4">
+              <span class="fhir-data-label">Description:</span>
+              <span class="fhir-data-value">A ValueSet that identifies the Spine error or warning code in response to a request.</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="fhir-data-cell" colspan="4">
+              <span class="fhir-data-label">Publisher:</span>
+              <span class="fhir-data-value">NHS Digital</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="fhir-data-cell" colspan="4">
+              <span class="fhir-data-label">Contacts</span>
+              <br />
+              <span class="fhir-telecom-name">Interoperability Team</span>
+              <span class="fhir-telecom-name">:</span>
+              <span class="fhir-data-value">interoperabilityteam@nhs.net</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="fhir-data-cell" colspan="4">
+              <span class="fhir-data-label">Copyright:</span>
+              <span class="fhir-data-value">Copyright © 2017 NHS Digital</span>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="fhir-panel">
+      <div class="fhir-panel-heading-box">
+        <h3 class="fhir-panel-heading-text">Value set concepts</h3>
+      </div>
+      <div class="fhir-panel-body">
+        <table class="fhir-table">
+          <thead>
+            <tr class="fhir-table-header-row">
+              <th title="System that the following concepts belong to" style="width: 25%" class="fhir-table-title">CodeSystem</th>
+              <th title="Identifier for this concept" style="width: 10%" class="fhir-table-title">Code</th>
+              <th title="Human-friendly name" style="width: 65%" class="fhir-table-title">Display</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">
+                <a class="fhir-link" href="/STU3/CodeSystem/Spine-ErrorOrWarningCode-1">https://fhir.nhs.uk/STU3/CodeSystem/Spine-ErrorOrWarningCode-1</a>
+              </td>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ACCESS DENIED</td>
+              <td class="fhir-tree-cell fhir-data-cell">Access has been denied to process this request</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ACCESS_DENIED_SSL</td>
+              <td class="fhir-tree-cell fhir-data-cell">SSL Protocol or Cipher requirements not met</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ASID_CHECK_FAILED</td>
+              <td class="fhir-tree-cell fhir-data-cell">The sender or receiver's ASID is not authorised for this interaction</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">AUTHOR_CREDENTIALS_ERROR</td>
+              <td class="fhir-tree-cell fhir-data-cell">Author credentials error</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">BAD_REQUEST</td>
+              <td class="fhir-tree-cell fhir-data-cell">Bad request</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">CONFLICTING_VALUES</td>
+              <td class="fhir-tree-cell fhir-data-cell">Conflicting values have been specified in different fields</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">DUPLICATE_REJECTED</td>
+              <td class="fhir-tree-cell fhir-data-cell">Create would lead to creation of a duplicate resource</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">FHIR_CONSTRAINT_VIOLATION</td>
+              <td class="fhir-tree-cell fhir-data-cell">FHIR constraint violated</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">FLAG_ALREADY_SET</td>
+              <td class="fhir-tree-cell fhir-data-cell">Flag value was already set</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">INTERNAL_SERVER_ERROR</td>
+              <td class="fhir-tree-cell fhir-data-cell">Unexpected internal server error</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">INVALID_CODE_SYSTEM</td>
+              <td class="fhir-tree-cell fhir-data-cell">Invalid code system</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">INVALID_CODE_VALUE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Invalid code value</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">INVALID_ELEMENT</td>
+              <td class="fhir-tree-cell fhir-data-cell">Invalid element</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">INVALID_IDENTIFIER_SYSTEM</td>
+              <td class="fhir-tree-cell fhir-data-cell">Invalid identifier system</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">INVALID_IDENTIFIER_VALUE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Invalid identifier value</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">INVALID_NHS_NUMBER</td>
+              <td class="fhir-tree-cell fhir-data-cell">Invalid NHS number</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">INVALID_PARAMETER</td>
+              <td class="fhir-tree-cell fhir-data-cell">Invalid parameter</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">INVALID_REQUEST_MESSAGE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Invalid request message</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">INVALID_REQUEST_STATE</td>
+              <td class="fhir-tree-cell fhir-data-cell">The request exists but is not in an appropriate state for the call to succeed</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">INVALID_REQUEST_TYPE</td>
+              <td class="fhir-tree-cell fhir-data-cell">The type of request is not supported by the API call</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">INVALID_RESOURCE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Invalid validation of resource</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">INVALID_VALUE</td>
+              <td class="fhir-tree-cell fhir-data-cell">An input field has an invalid value for its type</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">MESSAGE_NOT_WELL_FORMED</td>
+              <td class="fhir-tree-cell fhir-data-cell">Message not well formed</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">MISSING_OR_INVALID_HEADER</td>
+              <td class="fhir-tree-cell fhir-data-cell">There is a required header missing or invalid</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">MSG_RESOURCE_ID_FAIL</td>
+              <td class="fhir-tree-cell fhir-data-cell">Client is not permitted to assign an id</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">NO_ORGANISATIONAL_CONSENT</td>
+              <td class="fhir-tree-cell fhir-data-cell">Organisation has not provided consent to share data</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">NO_PATIENT_CONSENT</td>
+              <td class="fhir-tree-cell fhir-data-cell">Patient has not provided consent to share data</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">NO_RECORD_FOUND</td>
+              <td class="fhir-tree-cell fhir-data-cell">No record found</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">NO_RELATIONSHIP</td>
+              <td class="fhir-tree-cell fhir-data-cell">No legitimate relationship exists with this patient</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ORGANISATION_NOT_FOUND</td>
+              <td class="fhir-tree-cell fhir-data-cell">Organisation not found</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PATIENT_NOT_FOUND</td>
+              <td class="fhir-tree-cell fhir-data-cell">Patient not found</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PATIENT_SENSITIVE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Patient sensitive</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PRACTITIONER_NOT_FOUND</td>
+              <td class="fhir-tree-cell fhir-data-cell">Practitioner not found</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">REQUEST_UNMATCHED</td>
+              <td class="fhir-tree-cell fhir-data-cell">Request does not match authorisation token</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">RESOURCE_CREATED</td>
+              <td class="fhir-tree-cell fhir-data-cell">New resource created</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">RESOURCE_DELETED</td>
+              <td class="fhir-tree-cell fhir-data-cell">Resource removed</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,822 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <style>.fhirtreebg-dotted-1 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR4nO3OIRIAIAwDwf41/38DRSJBIbqZWRdxlaRu7a2XPwAAwOl7AAAAMEcDVN1AgPyAV0EAAAAASUVORK5CYII=);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-1100 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAMUlEQVR4nO3OwQkAIAwDwO6a/WdQR1AoiHiB+yWQSlK7VsZJv3sPAAC87foBAADgHxNKW0BW4z7WCQAAAABJRU5ErkJggg==);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-1110 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAMUlEQVR4nO3OwQkAIAwDwO6a/WdQR9BXC17gfgmkktStk/XSn7YHAAB6tR8AAAD+sQFKWUAsNDxT5QAAAABJRU5ErkJggg==);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-11 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAMUlEQVR4nO3OwQkAIAwDwO6a/WdQR1AoiHiB+yWQSlK7VsZJv3sPAAC87foBAADgHxNKW0BW4z7WCQAAAABJRU5ErkJggg==);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-100 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR4nO3OIRIAIAwDwf41/38DRSJBIbqZWRdxlaRu7a2XPwAAwOl7AAAAMEcDVN1AgPyAV0EAAAAASUVORK5CYII=);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-111 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAMUlEQVR4nO3OwQkAIAwDwO6a/WdQR9BXC17gfgmkktStk/XSn7YHAAB6tR8AAAD+sQFKWUAsNDxT5QAAAABJRU5ErkJggg==);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-00 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4nO3OIQEAAAgDsHd9/w60AMHE/NI2AAAAG84DAADAHwNp30Cqb/h6OAAAAABJRU5ErkJggg==);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-110 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAMUlEQVR4nO3OwQkAIAwDwO6a/WdQR1AoiHiB+yWQSlK7VsZJv3sPAAC87foBAADgHxNKW0BW4z7WCQAAAABJRU5ErkJggg==);
+	background-repeat: repeat-y
+}
+.fhirtreebg-dotted-10 {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR4nO3OIRIAIAwDwf41/38DRSJBIbqZWRdxlaRu7a2XPwAAwOl7AAAAMEcDVN1AgPyAV0EAAAAASUVORK5CYII=);
+	background-repeat: repeat-y
+}
+tr,
+.fhir-table-title {
+	font-size: 11px;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	vertical-align: top;
+	border: 0
+}
+.fhir-table-title {
+	padding: 0px 4px
+}
+td {
+	padding: 5px 4px
+}
+.fhir-panel-heading-box {
+	margin: -15px -15px 15px;
+	padding: 10px 15px;
+	background-color: #f0f0f0;
+	border-bottom: 1px solid #808080;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px
+}
+.fhir-panel-heading-text {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 17.5px;
+	font-weight: 500
+}
+tr {
+	padding: 3px;
+	line-height: 1.66em
+}
+.fhir-table-header-row {
+	border: 1px solid #f0f0f0
+}
+tr,
+fhir-table-title,
+td,
+tr,
+fhir-table-title,
+td {
+	text-align: left;
+	text-align: left
+}
+fhir-table-title,
+td,
+fhir-table-title,
+td {
+	vertical-align: top;
+	vertical-align: top
+}
+table {
+	width: 100%;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	border-collapse: collapse
+}
+.fhir-panel * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+.fhir-table.fhir-tree-table tbody:before {
+	content: '-';
+	display: block;
+	line-height: 1em;
+	color: transparent
+}
+.fhir-tree-table {
+	table-layout: fixed;
+	width: 100%
+}
+.fhir-panel {
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.4;
+	width: 95%;
+	max-width: 100%;
+	word-wrap: break-word
+}
+.fhir-panel {
+	padding: 15px;
+	margin-bottom: 20;
+	background-color: #ffffff;
+	border: 1px solid #808080;
+	border-radius: 4px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05)
+}
+.fhir-panel .fhir-link {
+	text-decoration: none;
+	color: #005eb8
+}
+.fhir-panel-subheading {
+	color: #474747;
+	font-weight: bold;
+	font-size: 13
+}
+.fhir-info-name-bold {
+	font-weight: bold;
+	color: #474747
+}
+.fhir-text-italic {
+	font-style: italic;
+	color: #474747
+}
+.fhir-info-plain {
+	color: #474747
+}
+.fhir-resource-info-cell {
+	padding: 5px 4px;
+	border-bottom: 1px solid #f0f0f0
+}
+.fhir-indent-wrapped-text {
+	margin-left: 3em;
+	text-indent: -3em
+}
+.fhir-link {
+	text-decoration: none;
+	color: #005eb8
+}
+.fhir-text-faded {
+	opacity: 0.4
+}
+.fhir-text-strikethrough {
+	text-decoration: line-through
+}
+.fhir-tree-resource-icon {
+	padding-right: 4px;
+	background-color: white;
+	border: 0;
+	width: 20;
+	height: 16
+}
+img.fhir-tree-icon {
+	background-color: white;
+	border: 0;
+	width: 16;
+	height: 22
+}
+.fhir-tree-icons {
+	padding: 0 4px;
+	border-collapse: collapse
+}
+.fhir-tree-icons img {
+	vertical-align: top;
+	float: left;
+	border-collapse: collapse
+}
+.fhir-table,
+.fhir-table tbody tr {
+	border-collapse: collapse;
+	vertical-align: top;
+	border-style: none
+}
+.fhir-tree-icons,
+.fhir-tree-icons img,
+.fhir-table {
+	-webkit-border-horizontal-spacing: 0;
+	-webkit-border-vertical-spacing: 0
+}
+.fhir-tree-cell {
+	padding: 5px 4px
+}</style>
+  </head>
+  <body>
+    <div class="fhir-panel">
+      <div class="fhir-panel-body">
+        <table class="fhir-table fhir-tree-table">
+          <thead>
+            <tr class="fhir-table-header-row">
+              <th title="The logical name of the element" style="width: 25%" class="fhir-table-title">Name</th>
+              <th title="Features of the element" style="width: 5%; max-width: 60px" class="fhir-table-title">Flags</th>
+              <th title="Minimum and maximum # of times the element can appear in the instance" style="width: 5%; max-width: 40px" class="fhir-table-title">Card.</th>
+              <th title="Reference to the type of the element" style="width: 15%; max-width: 80px" class="fhir-table-title">Type</th>
+              <th title="Additional information about the element" style="width: 50%" class="fhir-table-title">Description/Constraints</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="fhirtreebg-dotted-1 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/icon_resource.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#ReferralRequest" title="Used to record and send details about a request for referral service or transfer of a patient to the care of another provider or provider organization." class="fhir-tree-cell fhir-link tabLink">ReferralRequest</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">&#8203;</td>
+              <td class="fhir-tree-cell" />
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_extension_simple.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#ReferralRequest.extension(eRSAppointment)" title="Optional Extension Element - found in all resources." class="fhir-tree-cell fhir-link tabLink">extension (eRSAppointment)</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/extensibility.html#Extension">Extension</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">Relative URL reference to the Appointment resource</div>
+                <div class="fhir-indent-wrapped-text fhir-info-plain">
+                  URL:
+                  <a href="/STU3/StructureDefinition/Extension-eRS-Appointment-1" class="fhir-link">https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-Appointment-1</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_extension_simple.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#ReferralRequest.extension(clinicalInfoFirstSubmitted)" title="Optional Extension Element - found in all resources." class="fhir-tree-cell fhir-link tabLink">extension (clinicalInfoFirstSubmitted)</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/extensibility.html#Extension">Extension</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">Date and time the clinical information was first submitted</div>
+                <div class="fhir-indent-wrapped-text fhir-info-plain">
+                  URL:
+                  <a href="/STU3/StructureDefinition/Extension-eRS-ClinicalInfoFirstSubmitted-1" class="fhir-link">https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-ClinicalInfoFirstSubmitted-1</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_extension_simple.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#ReferralRequest.extension(clinicalInfoLastUpdated)" title="Optional Extension Element - found in all resources." class="fhir-tree-cell fhir-link tabLink">extension (clinicalInfoLastUpdated)</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/extensibility.html#Extension">Extension</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">Date and time the clinical information was last updated</div>
+                <div class="fhir-indent-wrapped-text fhir-info-plain">
+                  URL:
+                  <a href="/STU3/StructureDefinition/Extension-eRS-ClinicalInfoLastUpdated-1" class="fhir-link">https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-ClinicalInfoLastUpdated-1</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_extension_simple.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#ReferralRequest.extension(referralPriority)" title="Optional Extension Element - found in all resources." class="fhir-tree-cell fhir-link tabLink">extension (referralPriority)</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/extensibility.html#Extension">Extension</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-indent-wrapped-text fhir-info-plain">
+                  URL:
+                  <a href="/STU3/StructureDefinition/Extension-eRS-ReferralPriority-1" class="fhir-link">https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-ReferralPriority-1</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_element.gif" class="fhir-tree-resource-icon" />
+                <span title="Business identifier that uniquely identifies the referral/care transfer request instance." class="fhir-tree-cell fhir-text-strikethrough">identifier</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#identifier">Identifier</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                <span title="A protocol, guideline, orderset or other definition that is adhered to in whole or in part by this request." class="fhir-tree-cell fhir-text-strikethrough">definition</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/references.html">Reference</a>
+                (
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/StructureDefinition/ActivityDefinition">ActivityDefinition</a>
+                |
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/StructureDefinition/PlanDefinition">PlanDefinition</a>
+                )
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                <span title="Indicates any plans, proposals or orders that this request is intended to satisfy - in whole or in part." class="fhir-tree-cell fhir-text-strikethrough">basedOn</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/references.html">Reference</a>
+                (
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/StructureDefinition/ReferralRequest">ReferralRequest</a>
+                |
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/StructureDefinition/CarePlan">CarePlan</a>
+                |
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/StructureDefinition/ProcedureRequest">ProcedureRequest</a>
+                )
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                <span title="Completed or terminated request(s) whose function is taken by this new request." class="fhir-tree-cell fhir-text-strikethrough">replaces</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/references.html">Reference</a>
+                (
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/StructureDefinition/ReferralRequest">ReferralRequest</a>
+                )
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_element.gif" class="fhir-tree-resource-icon" />
+                <span title="The business identifier of the logical &quot;grouping&quot; request/order that this referral is a part of." class="fhir-tree-cell fhir-text-strikethrough">groupIdentifier</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#identifier">Identifier</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#ReferralRequest.status" title="The status of the referral." class="fhir-tree-cell fhir-link tabLink">status</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#code">Code</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">draft | active | cancelled | completed</div>
+                <div class="fhir-indent-wrapped-text fhir-info-plain">
+                  Binding (required): The status of the referral. (
+                  <a href="/STU3/ValueSet/eRS-ReferralStatus-1" class="fhir-link">https://fhir.nhs.uk/STU3/ValueSet/eRS-ReferralStatus-1</a>
+                  )
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_element.gif" class="fhir-tree-resource-icon" />
+                <span title="An indication of the type of referral (or where applicable the type of transfer of care) request." class="fhir-tree-cell fhir-text-strikethrough">type</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#codeableconcept">CodeableConcept</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <span title="An indication of the urgency of referral (or where applicable the type of transfer of care) request." class="fhir-tree-cell fhir-text-strikethrough">priority</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#code">Code</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_element.gif" class="fhir-tree-resource-icon" />
+                <span title="The service(s) that is/are requested to be provided to the patient.  For example: cardiac pacemaker insertion." class="fhir-tree-cell fhir-text-strikethrough">serviceRequested</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#codeableconcept">CodeableConcept</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-11 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#ReferralRequest.subject" title="The Patient who is the subject of the Referral Request" class="fhir-tree-cell fhir-link tabLink">subject</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/references.html">Reference</a>
+                (
+                <a class="fhir-link" href="/STU3/StructureDefinition/eRS-Patient-1">eRS-Patient-1</a>
+                )
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">The Patient who is the subject of the Referral Request</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#ReferralRequest.subject.reference" title="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." class="fhir-tree-cell fhir-link tabLink">reference</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">Relative URL reference to the Patient resource</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-100 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin_end.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_element.gif" class="fhir-tree-resource-icon" />
+                <span title="An identifier for the other resource. This is used when there is no way to reference the other resource directly, either because the entity is not available through a FHIR server, or because there is no way for the author of the resource to convert a known identifier to an actual location. There is no requirement that a Reference.identifier point to something that is actually exposed as a FHIR instance, but it SHALL point to a business concept that would be expected to be exposed as a FHIR instance, and that instance would need to be of a FHIR resource type allowed by the reference." class="fhir-tree-cell fhir-text-strikethrough">identifier</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#identifier">Identifier</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                <span title="The encounter at which the request for referral or transfer of care is initiated." class="fhir-tree-cell fhir-text-strikethrough">context</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/references.html">Reference</a>
+                (
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/StructureDefinition/Encounter">Encounter</a>
+                |
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/StructureDefinition/EpisodeOfCare">EpisodeOfCare</a>
+                )
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_choice.gif" class="fhir-tree-resource-icon" />
+                <span title="The period of time within which the services identified in the referral/transfer of care is specified or required to occur." class="fhir-tree-cell fhir-text-strikethrough">occurrence[x]</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#datetime">dateTime</a>
+                |
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#period">Period</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <span title="Date/DateTime of creation for draft requests and date of activation for active requests." class="fhir-tree-cell fhir-text-strikethrough">authoredOn</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#datetime">dateTime</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_datatype.gif" class="fhir-tree-resource-icon" />
+                <span title="The individual who initiated the request and has responsibility for its activation." class="fhir-tree-cell fhir-text-strikethrough">requester</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/backboneelement.html">BackboneElement</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-11 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_datatype.gif" class="fhir-tree-resource-icon" />
+                <a href="details.html#ReferralRequest.specialty" title="Indication of the clinical domain or discipline to which the referral or transfer of care request is sent.  For example: Cardiology Gastroenterology Diabetology." class="fhir-tree-cell fhir-link tabLink">specialty</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">0..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#codeableconcept">CodeableConcept</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-indent-wrapped-text fhir-info-plain">
+                  Binding (required): The specialty list must be retrieved dynamically from the eRS valueset. (
+                  <a href="http://https:" class="fhir-link">https:</a>
+                  )
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-111 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_datatype.gif" class="fhir-tree-resource-icon" />
+                <a href="details.html#ReferralRequest.specialty.coding" title="A reference to a code defined by a terminology system." class="fhir-tree-cell fhir-link tabLink">coding</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#coding">Coding</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">eRS dynamic Valueset</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-1110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#ReferralRequest.specialty.coding.system" title="The identification of the code system that defines the meaning of the symbol in the code." class="fhir-tree-cell fhir-link tabLink">system</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#uri">Uri</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">Identity of the eRS system</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-1110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <span title="The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged." class="fhir-tree-cell fhir-text-strikethrough">version</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-1110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#ReferralRequest.specialty.coding.code" title="A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)." class="fhir-tree-cell fhir-link tabLink">code</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#code">Code</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">Code displayed in the eRS system for Specialty</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-1110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#ReferralRequest.specialty.coding.display" title="A representation of the meaning of the code in the system, following the rules of the system." class="fhir-tree-cell fhir-link tabLink">display</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-1100 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin_end.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <span title="Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays)." class="fhir-tree-cell fhir-text-strikethrough">userSelected</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#boolean">Boolean</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-100 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin_end.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <span title="A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user." class="fhir-tree-cell fhir-text-strikethrough">text</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                <span title="The healthcare provider(s) or provider organization(s) who/which is to receive the referral/transfer of care request." class="fhir-tree-cell fhir-text-strikethrough">recipient</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/references.html">Reference</a>
+                (
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/StructureDefinition/Practitioner">Practitioner</a>
+                |
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/StructureDefinition/Organization">Organization</a>
+                |
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/StructureDefinition/HealthcareService">HealthcareService</a>
+                )
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_element.gif" class="fhir-tree-resource-icon" />
+                <span title="Description of clinical condition indicating why referral/transfer of care is requested.  For example:  Pathological Anomalies, Disabled (physical or mental),  Behavioral Management." class="fhir-tree-cell fhir-text-strikethrough">reasonCode</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#codeableconcept">CodeableConcept</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                <span title="Indicates another resource whose existence justifies this request." class="fhir-tree-cell fhir-text-strikethrough">reasonReference</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/references.html">Reference</a>
+                (
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/StructureDefinition/Condition">Condition</a>
+                |
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/StructureDefinition/Observation">Observation</a>
+                )
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <span title="The reason element gives a short description of why the referral is being made, the description expands on this to support a more complete clinical summary." class="fhir-tree-cell fhir-text-strikethrough">description</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-11 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#ReferralRequest.supportingInfo" title="Any additional (administrative, financial or clinical) information required to support request for referral or transfer of care.  For example: Presenting problems/chief complaints Medical History Family History Alerts Allergy/Intolerance and Adverse Reactions Medications Observations/Assessments (may include cognitive and fundtional assessments) Diagnostic Reports Care Plan." class="fhir-tree-cell fhir-link tabLink">supportingInfo</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">0..*</td>
+              <td class="fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/references.html">Reference</a>
+                (
+                <a class="fhir-link" href="/STU3/StructureDefinition/eRS-ReferralRequest-1">eRS-ReferralRequest-1</a>
+                |
+                <a class="fhir-link" href="/STU3/StructureDefinition/eRS-DocumentReference-1">eRS-DocumentReference-1</a>
+                )
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">Additonal information to support referral request</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-110 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_primitive.png" class="fhir-tree-resource-icon" />
+                <a href="details.html#ReferralRequest.supportingInfo.reference" title="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." class="fhir-tree-cell fhir-link tabLink">reference</a>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell">1..1</td>
+              <td class="fhir-text-faded fhir-tree-cell">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#string">String</a>
+              </td>
+              <td class="fhir-resource-info-cell">
+                <div class="fhir-info-name-bold">Relative URL reference to the resource containing supporting information</div>
+              </td>
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-100 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vline.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin_end.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_element.gif" class="fhir-tree-resource-icon" />
+                <span title="An identifier for the other resource. This is used when there is no way to reference the other resource directly, either because the entity is not available through a FHIR server, or because there is no way for the author of the resource to convert a known identifier to an actual location. There is no requirement that a Reference.identifier point to something that is actually exposed as a FHIR instance, but it SHALL point to a business concept that would be expected to be exposed as a FHIR instance, and that instance would need to be of a FHIR resource type allowed by the reference." class="fhir-tree-cell fhir-text-strikethrough">identifier</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#identifier">Identifier</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-10 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_element.gif" class="fhir-tree-resource-icon" />
+                <span title="Comments made about the referral request by any of the participants." class="fhir-tree-cell fhir-text-strikethrough">note</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/datatypes.html#annotation">Annotation</a>
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+            <tr>
+              <td class="fhirtreebg-dotted-00 fhir-tree-icons">
+                <img src="https://fhir.nhs.uk/images/tbl_vjoin_end.png" class="fhir-tree-icon" />
+                <img src="https://fhir.nhs.uk/images/icon_reference.png" class="fhir-tree-resource-icon" />
+                <span title="Links to Provenance records for past versions of this resource or fulfilling request or event resources that identify key state transitions or updates that are likely to be relevant to a user looking at the current version of the resource." class="fhir-tree-cell fhir-text-strikethrough">relevantHistory</span>
+              </td>
+              <td class="fhir-resource-flag" />
+              <td class="fhir-tree-cell fhir-text-strikethrough">0..0</td>
+              <td class="fhir-text-faded fhir-tree-cell fhir-text-strikethrough">
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/references.html">Reference</a>
+                (
+                <a class="fhir-link" href="http://hl7.org/fhir/stu3/StructureDefinition/Provenance">Provenance</a>
+                )
+              </td>
+              <td class="fhir-resource-info-cell" />
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

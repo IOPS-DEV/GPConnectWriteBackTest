@@ -1,0 +1,265 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <style>.fhir-data-cell {
+	border: 1px solid #f0f0f0
+}
+.fhir-data-label,
+.fhir-telecom-name {
+	color: #474747;
+	font-weight: bold;
+	font-size: 13
+}
+.fhir-data-label-empty {
+	color: #474747;
+	font-weight: normal
+}
+.fhir-data-value,
+.fhir-telecom-value {
+	color: #474747;
+	font-size: 13
+}
+.fhir-data-value-smalltext {
+	font-size: 10
+}
+.fhir-data-block-title {
+	color: #808080;
+	font-weight: bold;
+	text-decoration: underline;
+	font-size: 13
+}
+.fhir-panel {
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.4;
+	width: 95%;
+	max-width: 100%;
+	word-wrap: break-word
+}
+.fhir-panel {
+	padding: 15px;
+	margin-bottom: 20;
+	background-color: #ffffff;
+	border: 1px solid #808080;
+	border-radius: 4px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05)
+}
+.fhir-panel .fhir-link {
+	text-decoration: none;
+	color: #005eb8
+}
+.fhir-panel-subheading {
+	color: #474747;
+	font-weight: bold;
+	font-size: 13
+}
+tr,
+.fhir-table-title {
+	font-size: 11px;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	vertical-align: top;
+	border: 0
+}
+.fhir-table-title {
+	padding: 0px 4px
+}
+td {
+	padding: 5px 4px
+}
+.fhir-panel-heading-box {
+	margin: -15px -15px 15px;
+	padding: 10px 15px;
+	background-color: #f0f0f0;
+	border-bottom: 1px solid #808080;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px
+}
+.fhir-panel-heading-text {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 17.5px;
+	font-weight: 500
+}
+tr {
+	padding: 3px;
+	line-height: 1.66em
+}
+.fhir-table-header-row {
+	border: 1px solid #f0f0f0
+}
+tr,
+fhir-table-title,
+td,
+tr,
+fhir-table-title,
+td {
+	text-align: left;
+	text-align: left
+}
+fhir-table-title,
+td,
+fhir-table-title,
+td {
+	vertical-align: top;
+	vertical-align: top
+}
+table {
+	width: 100%;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	border-collapse: collapse
+}
+.fhir-panel * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+.fhir-table.fhir-tree-table tbody:before {
+	content: '-';
+	display: block;
+	line-height: 1em;
+	color: transparent
+}
+.fhir-tree-table {
+	table-layout: fixed;
+	width: 100%
+}</style>
+  </head>
+  <body>
+    <div class="fhir-panel">
+      <div class="fhir-panel-heading-box">
+        <h3 class="fhir-panel-heading-text">Codes defined by DCH Blood Spot Outcome MCADD</h3>
+      </div>
+      <div class="fhir-panel-body">
+        <div>
+          <div>System: https://fhir.nhs.uk/STU3/CodeSystem/DCH-BloodSpotOutcomeMCADD-1</div>
+          <br />
+          <table class="fhir-table">
+            <thead>
+              <tr class="fhir-table-header-row">
+                <th title="Code that identifies the concept." style="width: 25%" class="fhir-table-title">Code</th>
+                <th title="User-friendly name" style="width: 75%" class="fhir-table-title">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">01</td>
+                <td class="fhir-tree-cell fhir-data-cell">Specimen received in laboratory</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">02</td>
+                <td class="fhir-tree-cell fhir-data-cell">Screening declined</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">0201</td>
+                <td class="fhir-tree-cell fhir-data-cell">Declined, no history of being screened</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">0202</td>
+                <td class="fhir-tree-cell fhir-data-cell">Declined, screened in UK (as reported by parents) with no evidence of result</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">0203</td>
+                <td class="fhir-tree-cell fhir-data-cell">Declined, screened outside UK with evidence of result</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">0204</td>
+                <td class="fhir-tree-cell fhir-data-cell">Declined, screened outside UK with no evidence of result</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">03</td>
+                <td class="fhir-tree-cell fhir-data-cell">Repeat / Further sample required</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">0301</td>
+                <td class="fhir-tree-cell fhir-data-cell">Too young for reliable screening</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">0302</td>
+                <td class="fhir-tree-cell fhir-data-cell">Too soon after transfusion (&lt;72 hours)</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">0303</td>
+                <td class="fhir-tree-cell fhir-data-cell">Insufficient sample</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">0304</td>
+                <td class="fhir-tree-cell fhir-data-cell">Unsuitable sample (blood quality): incorrect blood application</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">0305</td>
+                <td class="fhir-tree-cell fhir-data-cell">Unsuitable sample (blood quality): compressed/damaged</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">0306</td>
+                <td class="fhir-tree-cell fhir-data-cell">Unsuitable sample: day 0 and day 5 on same card</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">0308</td>
+                <td class="fhir-tree-cell fhir-data-cell">Unsuitable sample: NHS number missing/not accurately recorded</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">0309</td>
+                <td class="fhir-tree-cell fhir-data-cell">Unsuitable sample: Date of sample missing/not accurately recorded</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">0310</td>
+                <td class="fhir-tree-cell fhir-data-cell">Unsuitable sample: Date of birth not accurately matched</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">0311</td>
+                <td class="fhir-tree-cell fhir-data-cell">Unsuitable sample: Expired card used</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">0312</td>
+                <td class="fhir-tree-cell fhir-data-cell">Unsuitable sample: &gt; 14 days in transit, too old for analysis</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">0313</td>
+                <td class="fhir-tree-cell fhir-data-cell">Unsuitable sample: Damaged in transit</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">04</td>
+                <td class="fhir-tree-cell fhir-data-cell">Condition not suspected</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">05</td>
+                <td class="fhir-tree-cell fhir-data-cell">Carrier</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">07</td>
+                <td class="fhir-tree-cell fhir-data-cell">Condition not suspected, other disorders follow up</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">08</td>
+                <td class="fhir-tree-cell fhir-data-cell">Condition suspected</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">09</td>
+                <td class="fhir-tree-cell fhir-data-cell">Not screened/screening incomplete</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">0902</td>
+                <td class="fhir-tree-cell fhir-data-cell">All screens: &gt;1 year, too old for screening</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">0903</td>
+                <td class="fhir-tree-cell fhir-data-cell">Moved out of area</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">0904</td>
+                <td class="fhir-tree-cell fhir-data-cell">Not contactable, reasonable efforts made</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">0905</td>
+                <td class="fhir-tree-cell fhir-data-cell">Baby died</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">0906</td>
+                <td class="fhir-tree-cell fhir-data-cell">Not required, previous valid result</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

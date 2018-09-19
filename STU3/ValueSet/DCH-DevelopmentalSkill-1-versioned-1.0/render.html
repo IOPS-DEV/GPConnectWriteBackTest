@@ -1,0 +1,503 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <style>tr,
+.fhir-table-title {
+	font-size: 11px;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	vertical-align: top;
+	border: 0
+}
+.fhir-table-title {
+	padding: 0px 4px
+}
+td {
+	padding: 5px 4px
+}
+.fhir-panel-heading-box {
+	margin: -15px -15px 15px;
+	padding: 10px 15px;
+	background-color: #f0f0f0;
+	border-bottom: 1px solid #808080;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px
+}
+.fhir-panel-heading-text {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 17.5px;
+	font-weight: 500
+}
+tr {
+	padding: 3px;
+	line-height: 1.66em
+}
+.fhir-table-header-row {
+	border: 1px solid #f0f0f0
+}
+tr,
+fhir-table-title,
+td,
+tr,
+fhir-table-title,
+td {
+	text-align: left;
+	text-align: left
+}
+fhir-table-title,
+td,
+fhir-table-title,
+td {
+	vertical-align: top;
+	vertical-align: top
+}
+table {
+	width: 100%;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	border-collapse: collapse
+}
+.fhir-panel * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+.fhir-table.fhir-tree-table tbody:before {
+	content: '-';
+	display: block;
+	line-height: 1em;
+	color: transparent
+}
+.fhir-tree-table {
+	table-layout: fixed;
+	width: 100%
+}
+.fhir-panel {
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.4;
+	width: 95%;
+	max-width: 100%;
+	word-wrap: break-word
+}
+.fhir-panel {
+	padding: 15px;
+	margin-bottom: 20;
+	background-color: #ffffff;
+	border: 1px solid #808080;
+	border-radius: 4px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05)
+}
+.fhir-panel .fhir-link {
+	text-decoration: none;
+	color: #005eb8
+}
+.fhir-panel-subheading {
+	color: #474747;
+	font-weight: bold;
+	font-size: 13
+}
+.fhir-link {
+	text-decoration: none;
+	color: #005eb8
+}
+.fhir-text-faded {
+	opacity: 0.4
+}
+.fhir-text-strikethrough {
+	text-decoration: line-through
+}
+.fhir-data-cell {
+	border: 1px solid #f0f0f0
+}
+.fhir-data-label,
+.fhir-telecom-name {
+	color: #474747;
+	font-weight: bold;
+	font-size: 13
+}
+.fhir-data-label-empty {
+	color: #474747;
+	font-weight: normal
+}
+.fhir-data-value,
+.fhir-telecom-value {
+	color: #474747;
+	font-size: 13
+}
+.fhir-data-value-smalltext {
+	font-size: 10
+}
+.fhir-data-block-title {
+	color: #808080;
+	font-weight: bold;
+	text-decoration: underline;
+	font-size: 13
+}</style>
+  </head>
+  <body>
+    <div class="fhir-panel">
+      <div class="fhir-panel-heading-box">
+        <h3 class="fhir-panel-heading-text">ValueSet: DCH Developmental Skill</h3>
+      </div>
+      <div class="fhir-panel-body">
+        <table class="fhir-table">
+          <colgroup>
+            <col width="25%" />
+            <col width="25%" />
+            <col width="25%" />
+            <col width="25%" />
+          </colgroup>
+          <tr>
+            <td class="fhir-data-cell" colspan="2">
+              <span class="fhir-data-label">Name:</span>
+              <span class="fhir-data-value">DCH Developmental Skill</span>
+            </td>
+            <td class="fhir-data-cell" colspan="2">
+              <span class="fhir-data-label">URL:</span>
+              <span class="fhir-data-value">
+                <a class="fhir-link" href="/STU3/ValueSet/DCH-DevelopmentalSkill-1">https://fhir.nhs.uk/STU3/ValueSet/DCH-DevelopmentalSkill-1</a>
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td class="fhir-data-cell" colspan="1">
+              <span class="fhir-data-label">Version:</span>
+              <span class="fhir-data-value">1.0.0</span>
+            </td>
+            <td class="fhir-data-cell" colspan="1">
+              <span class="fhir-data-label">Status:</span>
+              <span class="fhir-data-value">Draft</span>
+            </td>
+            <td class="fhir-data-cell" colspan="1">
+              <span class="fhir-data-label">Last updated:</span>
+              <span class="fhir-data-value">04/12/17</span>
+            </td>
+            <td class="fhir-data-cell" colspan="1">
+              <span class="fhir-data-label fhir-data-label-empty">Experimental:</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="fhir-data-cell" colspan="4">
+              <span class="fhir-data-label">Description:</span>
+              <span class="fhir-data-value">A code from the SNOMED Clinical Terminology UK coding system that describes the developmental skill.</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="fhir-data-cell" colspan="4">
+              <span class="fhir-data-label">Publisher:</span>
+              <span class="fhir-data-value">NHS Digital</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="fhir-data-cell" colspan="4">
+              <span class="fhir-data-label">Contacts</span>
+              <br />
+              <span class="fhir-telecom-name">Interoperability Team</span>
+              <span class="fhir-telecom-name">:</span>
+              <span class="fhir-data-value">interoperabilityteam@nhs.net</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="fhir-data-cell" colspan="4">
+              <span class="fhir-data-label">Copyright:</span>
+              <span class="fhir-data-value">This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.</span>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="fhir-panel">
+      <div class="fhir-panel-heading-box">
+        <h3 class="fhir-panel-heading-text">Value set concepts</h3>
+      </div>
+      <div class="fhir-panel-body">
+        <table class="fhir-table">
+          <thead>
+            <tr class="fhir-table-header-row">
+              <th title="System that the following concepts belong to" style="width: 25%" class="fhir-table-title">CodeSystem</th>
+              <th title="Identifier for this concept" style="width: 10%" class="fhir-table-title">Code</th>
+              <th title="Human-friendly name" style="width: 65%" class="fhir-table-title">Display</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">http://snomed.info/sct</td>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1093111000000107</td>
+              <td class="fhir-tree-cell fhir-data-cell">Lifts head clear of ground</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1093301000000107</td>
+              <td class="fhir-tree-cell fhir-data-cell">Sits with support</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1093311000000109</td>
+              <td class="fhir-tree-cell fhir-data-cell">Crawls</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1093321000000103</td>
+              <td class="fhir-tree-cell fhir-data-cell">Stands holding on</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1093331000000101</td>
+              <td class="fhir-tree-cell fhir-data-cell">Walks holding on</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1093341000000105</td>
+              <td class="fhir-tree-cell fhir-data-cell">Almost walking alone, but you need to be close by</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1093351000000108</td>
+              <td class="fhir-tree-cell fhir-data-cell">First outdoor walk</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1093361000000106</td>
+              <td class="fhir-tree-cell fhir-data-cell">Stares at hands</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1093371000000104</td>
+              <td class="fhir-tree-cell fhir-data-cell">Grabs and holds things using whole hand</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1093381000000102</td>
+              <td class="fhir-tree-cell fhir-data-cell">Reaches out for things</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1093391000000100</td>
+              <td class="fhir-tree-cell fhir-data-cell">Drops things on purpose</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1093401000000102</td>
+              <td class="fhir-tree-cell fhir-data-cell">Finger feeds</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1093411000000100</td>
+              <td class="fhir-tree-cell fhir-data-cell">Feeds with a spoon</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1093421000000106</td>
+              <td class="fhir-tree-cell fhir-data-cell">Uses a feeder cup</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1093431000000108</td>
+              <td class="fhir-tree-cell fhir-data-cell">Picks up small things using finger and thumb</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1093441000000104</td>
+              <td class="fhir-tree-cell fhir-data-cell">Opens cupboards</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1093451000000101</td>
+              <td class="fhir-tree-cell fhir-data-cell">Holds pencil and makes marks</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1093461000000103</td>
+              <td class="fhir-tree-cell fhir-data-cell">Wanting to run and climb</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1093471000000105</td>
+              <td class="fhir-tree-cell fhir-data-cell">Smiles</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1093481000000107</td>
+              <td class="fhir-tree-cell fhir-data-cell">Babbles (lots of new sounds)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1093491000000109</td>
+              <td class="fhir-tree-cell fhir-data-cell">Turns to his or her name</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1093501000000103</td>
+              <td class="fhir-tree-cell fhir-data-cell">Copies noises</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1093511000000101</td>
+              <td class="fhir-tree-cell fhir-data-cell">Says 'mama' - to anyone</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1093521000000107</td>
+              <td class="fhir-tree-cell fhir-data-cell">Says recognisable word</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1093531000000109</td>
+              <td class="fhir-tree-cell fhir-data-cell">Plays pat-a-cake</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1093541000000100</td>
+              <td class="fhir-tree-cell fhir-data-cell">Likes toys that make noise</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1093551000000102</td>
+              <td class="fhir-tree-cell fhir-data-cell">Pointing to things that are out of reach</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1093561000000104</td>
+              <td class="fhir-tree-cell fhir-data-cell">Helps turn pages in a book</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1093571000000106</td>
+              <td class="fhir-tree-cell fhir-data-cell">Joins two recognisable words</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1093581000000108</td>
+              <td class="fhir-tree-cell fhir-data-cell">Favourite words are 'no' and 'mine'</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1093591000000105</td>
+              <td class="fhir-tree-cell fhir-data-cell">Speaks in sentences</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1093601000000104</td>
+              <td class="fhir-tree-cell fhir-data-cell">Enjoys books</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1093611000000102</td>
+              <td class="fhir-tree-cell fhir-data-cell">Joining in with songs and rhymes</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1093621000000108</td>
+              <td class="fhir-tree-cell fhir-data-cell">Stares at your face</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1093631000000105</td>
+              <td class="fhir-tree-cell fhir-data-cell">Moves eyes to watch you</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1093641000000101</td>
+              <td class="fhir-tree-cell fhir-data-cell">Smiles for special people</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1093651000000103</td>
+              <td class="fhir-tree-cell fhir-data-cell">Cries when you leave the room</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1093661000000100</td>
+              <td class="fhir-tree-cell fhir-data-cell">Holds up arms to be lifted</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1093671000000107</td>
+              <td class="fhir-tree-cell fhir-data-cell">Usually sleeps through the night</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1093681000000109</td>
+              <td class="fhir-tree-cell fhir-data-cell">Wanting to explore and be more independent</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1093691000000106</td>
+              <td class="fhir-tree-cell fhir-data-cell">Enjoys messy play but not sharing</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1093701000000106</td>
+              <td class="fhir-tree-cell fhir-data-cell">Likes being close and enjoys having cuddles and hugs</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1093711000000108</td>
+              <td class="fhir-tree-cell fhir-data-cell">Playing with other children</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1093721000000102</td>
+              <td class="fhir-tree-cell fhir-data-cell">Showing interest in potty training</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1093731000000100</td>
+              <td class="fhir-tree-cell fhir-data-cell">Turning from laughter to anger quickly</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1093741000000109</td>
+              <td class="fhir-tree-cell fhir-data-cell">Has first tooth</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1093751000000107</td>
+              <td class="fhir-tree-cell fhir-data-cell">Has been to the dentist</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1093761000000105</td>
+              <td class="fhir-tree-cell fhir-data-cell">Is used to tooth brushing</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1095761000000106</td>
+              <td class="fhir-tree-cell fhir-data-cell">Rolls over</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1095771000000104</td>
+              <td class="fhir-tree-cell fhir-data-cell">Stands alone</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1095781000000102</td>
+              <td class="fhir-tree-cell fhir-data-cell">Walks alone</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1095791000000100</td>
+              <td class="fhir-tree-cell fhir-data-cell">Sits alone</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1095801000000101</td>
+              <td class="fhir-tree-cell fhir-data-cell">Bottom shuffles</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">1095811000000104</td>
+              <td class="fhir-tree-cell fhir-data-cell">Laughs</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,468 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <style>tr,
+.fhir-table-title {
+	font-size: 11px;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	vertical-align: top;
+	border: 0
+}
+.fhir-table-title {
+	padding: 0px 4px
+}
+td {
+	padding: 5px 4px
+}
+.fhir-panel-heading-box {
+	margin: -15px -15px 15px;
+	padding: 10px 15px;
+	background-color: #f0f0f0;
+	border-bottom: 1px solid #808080;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px
+}
+.fhir-panel-heading-text {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 17.5px;
+	font-weight: 500
+}
+tr {
+	padding: 3px;
+	line-height: 1.66em
+}
+.fhir-table-header-row {
+	border: 1px solid #f0f0f0
+}
+tr,
+fhir-table-title,
+td,
+tr,
+fhir-table-title,
+td {
+	text-align: left;
+	text-align: left
+}
+fhir-table-title,
+td,
+fhir-table-title,
+td {
+	vertical-align: top;
+	vertical-align: top
+}
+table {
+	width: 100%;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	border-collapse: collapse
+}
+.fhir-panel * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+.fhir-table.fhir-tree-table tbody:before {
+	content: '-';
+	display: block;
+	line-height: 1em;
+	color: transparent
+}
+.fhir-tree-table {
+	table-layout: fixed;
+	width: 100%
+}
+.fhir-panel {
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.4;
+	width: 95%;
+	max-width: 100%;
+	word-wrap: break-word
+}
+.fhir-panel {
+	padding: 15px;
+	margin-bottom: 20;
+	background-color: #ffffff;
+	border: 1px solid #808080;
+	border-radius: 4px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05)
+}
+.fhir-panel .fhir-link {
+	text-decoration: none;
+	color: #005eb8
+}
+.fhir-panel-subheading {
+	color: #474747;
+	font-weight: bold;
+	font-size: 13
+}
+.fhir-link {
+	text-decoration: none;
+	color: #005eb8
+}
+.fhir-text-faded {
+	opacity: 0.4
+}
+.fhir-text-strikethrough {
+	text-decoration: line-through
+}
+.fhir-data-cell {
+	border: 1px solid #f0f0f0
+}
+.fhir-data-label,
+.fhir-telecom-name {
+	color: #474747;
+	font-weight: bold;
+	font-size: 13
+}
+.fhir-data-label-empty {
+	color: #474747;
+	font-weight: normal
+}
+.fhir-data-value,
+.fhir-telecom-value {
+	color: #474747;
+	font-size: 13
+}
+.fhir-data-value-smalltext {
+	font-size: 10
+}
+.fhir-data-block-title {
+	color: #808080;
+	font-weight: bold;
+	text-decoration: underline;
+	font-size: 13
+}</style>
+  </head>
+  <body>
+    <div class="fhir-panel">
+      <div class="fhir-panel-heading-box">
+        <h3 class="fhir-panel-heading-text">ValueSet: DCH Procedure Emergency Care</h3>
+      </div>
+      <div class="fhir-panel-body">
+        <table class="fhir-table">
+          <colgroup>
+            <col width="25%" />
+            <col width="25%" />
+            <col width="25%" />
+            <col width="25%" />
+          </colgroup>
+          <tr>
+            <td class="fhir-data-cell" colspan="2">
+              <span class="fhir-data-label">Name:</span>
+              <span class="fhir-data-value">DCH Procedure Emergency Care</span>
+            </td>
+            <td class="fhir-data-cell" colspan="2">
+              <span class="fhir-data-label">URL:</span>
+              <span class="fhir-data-value">
+                <a class="fhir-link" href="/STU3/ValueSet/DCH-ProcedureEmergencyCare-1">https://fhir.nhs.uk/STU3/ValueSet/DCH-ProcedureEmergencyCare-1</a>
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td class="fhir-data-cell" colspan="1">
+              <span class="fhir-data-label">Version:</span>
+              <span class="fhir-data-value">1.0.0</span>
+            </td>
+            <td class="fhir-data-cell" colspan="1">
+              <span class="fhir-data-label">Status:</span>
+              <span class="fhir-data-value">Draft</span>
+            </td>
+            <td class="fhir-data-cell" colspan="1">
+              <span class="fhir-data-label">Last updated:</span>
+              <span class="fhir-data-value">04/12/17</span>
+            </td>
+            <td class="fhir-data-cell" colspan="1">
+              <span class="fhir-data-label fhir-data-label-empty">Experimental:</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="fhir-data-cell" colspan="4">
+              <span class="fhir-data-label">Description:</span>
+              <span class="fhir-data-value">A code from the SNOMED Clinical Terminology UK coding system that describes the therapeutic or diagnostic procedure performed on the patient.</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="fhir-data-cell" colspan="4">
+              <span class="fhir-data-label">Publisher:</span>
+              <span class="fhir-data-value">NHS Digital</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="fhir-data-cell" colspan="4">
+              <span class="fhir-data-label">Contacts</span>
+              <br />
+              <span class="fhir-telecom-name">Interoperability Team</span>
+              <span class="fhir-telecom-name">:</span>
+              <span class="fhir-data-value">interoperabilityteam@nhs.net</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="fhir-data-cell" colspan="4">
+              <span class="fhir-data-label">Copyright:</span>
+              <span class="fhir-data-value">This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.</span>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="fhir-panel">
+      <div class="fhir-panel-heading-box">
+        <h3 class="fhir-panel-heading-text">Value set concepts</h3>
+      </div>
+      <div class="fhir-panel-body">
+        <table class="fhir-table">
+          <thead>
+            <tr class="fhir-table-header-row">
+              <th title="System that the following concepts belong to" style="width: 25%" class="fhir-table-title">CodeSystem</th>
+              <th title="Identifier for this concept" style="width: 10%" class="fhir-table-title">Code</th>
+              <th title="Human-friendly name" style="width: 65%" class="fhir-table-title">Display</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">http://snomed.info/sct</td>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">104686004</td>
+              <td class="fhir-tree-cell fhir-data-cell">Glucose measurement, blood, test strip</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">105000003</td>
+              <td class="fhir-tree-cell fhir-data-cell">Troponin measurement</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">113091000</td>
+              <td class="fhir-tree-cell fhir-data-cell">Magnetic resonance imaging</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">117010004</td>
+              <td class="fhir-tree-cell fhir-data-cell">Urine culture</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">16254007</td>
+              <td class="fhir-tree-cell fhir-data-cell">Lipid panel</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">16310003</td>
+              <td class="fhir-tree-cell fhir-data-cell">Ultrasonography</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">164729009</td>
+              <td class="fhir-tree-cell fhir-data-cell">Tonometry</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">165320004</td>
+              <td class="fhir-tree-cell fhir-data-cell">Dementia test</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">167036008</td>
+              <td class="fhir-tree-cell fhir-data-cell">Bone profile</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">16830007</td>
+              <td class="fhir-tree-cell fhir-data-cell">Visual acuity testing</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">168537006</td>
+              <td class="fhir-tree-cell fhir-data-cell">Plain radiography</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">179929004</td>
+              <td class="fhir-tree-cell fhir-data-cell">Examination of joint under image intensifier</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">252167001</td>
+              <td class="fhir-tree-cell fhir-data-cell">Urea and electrolytes</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">252316009</td>
+              <td class="fhir-tree-cell fhir-data-cell">Group and save</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">252375001</td>
+              <td class="fhir-tree-cell fhir-data-cell">Immunology profile</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">26604007</td>
+              <td class="fhir-tree-cell fhir-data-cell">Complete blood count</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">26958001</td>
+              <td class="fhir-tree-cell fhir-data-cell">Hepatic function panel</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">269874008</td>
+              <td class="fhir-tree-cell fhir-data-cell">Serum paracetamol measurement</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">270982000</td>
+              <td class="fhir-tree-cell fhir-data-cell">Serum lactate measurement</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">271232007</td>
+              <td class="fhir-tree-cell fhir-data-cell">Serum lipase measurement</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">27171005</td>
+              <td class="fhir-tree-cell fhir-data-cell">Urinalysis</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">282096008</td>
+              <td class="fhir-tree-cell fhir-data-cell">Retinal photography</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">29303009</td>
+              <td class="fhir-tree-cell fhir-data-cell">Electrocardiographic procedure</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">29893006</td>
+              <td class="fhir-tree-cell fhir-data-cell">Peak expiratory flow measurement</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">30088009</td>
+              <td class="fhir-tree-cell fhir-data-cell">Blood culture</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">3116009</td>
+              <td class="fhir-tree-cell fhir-data-cell">Blood coagulation panel</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">35650009</td>
+              <td class="fhir-tree-cell fhir-data-cell">Thyroid panel</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">363255004</td>
+              <td class="fhir-tree-cell fhir-data-cell">Paracentesis of eye</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">392010000</td>
+              <td class="fhir-tree-cell fhir-data-cell">Optical coherence tomography</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">397798009</td>
+              <td class="fhir-tree-cell fhir-data-cell">Creatine kinase measurement</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">401294003</td>
+              <td class="fhir-tree-cell fhir-data-cell">Wound microscopy, culture and sensitivities</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">40701008</td>
+              <td class="fhir-tree-cell fhir-data-cell">Echocardiography</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">416838001</td>
+              <td class="fhir-tree-cell fhir-data-cell">Erythrocyte sedimentation rate measurement</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">43396009</td>
+              <td class="fhir-tree-cell fhir-data-cell">Hemoglobin A1c measurement</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">53115007</td>
+              <td class="fhir-tree-cell fhir-data-cell">Diagnostic dental procedure</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">55235003</td>
+              <td class="fhir-tree-cell fhir-data-cell">C-reactive protein measurement</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">56027003</td>
+              <td class="fhir-tree-cell fhir-data-cell">Thromboelastography</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">60170009</td>
+              <td class="fhir-tree-cell fhir-data-cell">Analysis of arterial blood gases and pH</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">61911006</td>
+              <td class="fhir-tree-cell fhir-data-cell">Blood gases, venous measurement</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">62847008</td>
+              <td class="fhir-tree-cell fhir-data-cell">Tryptase release from mast cell measurement</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">67900009</td>
+              <td class="fhir-tree-cell fhir-data-cell">Human chorionic gonadotropin measurement</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">68793005</td>
+              <td class="fhir-tree-cell fhir-data-cell">Serologic test</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">70648006</td>
+              <td class="fhir-tree-cell fhir-data-cell">D-dimer assay</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">74500006</td>
+              <td class="fhir-tree-cell fhir-data-cell">Cardiac enzymes/isoenzymes measurement</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">77477000</td>
+              <td class="fhir-tree-cell fhir-data-cell">Computerized axial tomography</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">86944008</td>
+              <td class="fhir-tree-cell fhir-data-cell">Visual field study</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">89659001</td>
+              <td class="fhir-tree-cell fhir-data-cell">Amylase measurement, serum</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

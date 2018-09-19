@@ -1,0 +1,3525 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <style>tr,
+.fhir-table-title {
+	font-size: 11px;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	vertical-align: top;
+	border: 0
+}
+.fhir-table-title {
+	padding: 0px 4px
+}
+td {
+	padding: 5px 4px
+}
+.fhir-panel-heading-box {
+	margin: -15px -15px 15px;
+	padding: 10px 15px;
+	background-color: #f0f0f0;
+	border-bottom: 1px solid #808080;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px
+}
+.fhir-panel-heading-text {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 17.5px;
+	font-weight: 500
+}
+tr {
+	padding: 3px;
+	line-height: 1.66em
+}
+.fhir-table-header-row {
+	border: 1px solid #f0f0f0
+}
+tr,
+fhir-table-title,
+td,
+tr,
+fhir-table-title,
+td {
+	text-align: left;
+	text-align: left
+}
+fhir-table-title,
+td,
+fhir-table-title,
+td {
+	vertical-align: top;
+	vertical-align: top
+}
+table {
+	width: 100%;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	border-collapse: collapse
+}
+.fhir-panel * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+.fhir-table.fhir-tree-table tbody:before {
+	content: '-';
+	display: block;
+	line-height: 1em;
+	color: transparent
+}
+.fhir-tree-table {
+	table-layout: fixed;
+	width: 100%
+}
+.fhir-panel {
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.4;
+	width: 95%;
+	max-width: 100%;
+	word-wrap: break-word
+}
+.fhir-panel {
+	padding: 15px;
+	margin-bottom: 20;
+	background-color: #ffffff;
+	border: 1px solid #808080;
+	border-radius: 4px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05)
+}
+.fhir-panel .fhir-link {
+	text-decoration: none;
+	color: #005eb8
+}
+.fhir-panel-subheading {
+	color: #474747;
+	font-weight: bold;
+	font-size: 13
+}
+.fhir-link {
+	text-decoration: none;
+	color: #005eb8
+}
+.fhir-text-faded {
+	opacity: 0.4
+}
+.fhir-text-strikethrough {
+	text-decoration: line-through
+}
+.fhir-data-cell {
+	border: 1px solid #f0f0f0
+}
+.fhir-data-label,
+.fhir-telecom-name {
+	color: #474747;
+	font-weight: bold;
+	font-size: 13
+}
+.fhir-data-label-empty {
+	color: #474747;
+	font-weight: normal
+}
+.fhir-data-value,
+.fhir-telecom-value {
+	color: #474747;
+	font-size: 13
+}
+.fhir-data-value-smalltext {
+	font-size: 10
+}
+.fhir-data-block-title {
+	color: #808080;
+	font-weight: bold;
+	text-decoration: underline;
+	font-size: 13
+}</style>
+  </head>
+  <body>
+    <div class="fhir-panel">
+      <div class="fhir-panel-heading-box">
+        <h3 class="fhir-panel-heading-text">ValueSet: eRS-ClinicType-1</h3>
+      </div>
+      <div class="fhir-panel-body">
+        <table class="fhir-table">
+          <colgroup>
+            <col width="25%" />
+            <col width="25%" />
+            <col width="25%" />
+            <col width="25%" />
+          </colgroup>
+          <tr>
+            <td class="fhir-data-cell" colspan="2">
+              <span class="fhir-data-label">Name:</span>
+              <span class="fhir-data-value">eRS-ClinicType-1</span>
+            </td>
+            <td class="fhir-data-cell" colspan="2">
+              <span class="fhir-data-label">URL:</span>
+              <span class="fhir-data-value">
+                <a class="fhir-link" href="/STU3/ValueSet/eRS-ClinicType-1">https://fhir.nhs.uk/STU3/ValueSet/eRS-ClinicType-1</a>
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td class="fhir-data-cell" colspan="1">
+              <span class="fhir-data-label">Version:</span>
+              <span class="fhir-data-value">1.0.0</span>
+            </td>
+            <td class="fhir-data-cell" colspan="1">
+              <span class="fhir-data-label">Status:</span>
+              <span class="fhir-data-value">Draft</span>
+            </td>
+            <td class="fhir-data-cell" colspan="1">
+              <span class="fhir-data-label">Last updated:</span>
+              <span class="fhir-data-value">05/10/17</span>
+            </td>
+            <td class="fhir-data-cell" colspan="1">
+              <span class="fhir-data-label fhir-data-label-empty">Experimental:</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="fhir-data-cell" colspan="4">
+              <span class="fhir-data-label">Description:</span>
+              <span class="fhir-data-value">A valueset to describe the clinic type</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="fhir-data-cell" colspan="4">
+              <span class="fhir-data-label">Publisher:</span>
+              <span class="fhir-data-value">NHS Digital</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="fhir-data-cell" colspan="4">
+              <span class="fhir-data-label">Contacts</span>
+              <br />
+              <span class="fhir-telecom-name">Interoperability Team</span>
+              <span class="fhir-telecom-name">:</span>
+              <span class="fhir-data-value">interoperabilityteam@nhs.net</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="fhir-data-cell" colspan="4">
+              <span class="fhir-data-label">Copyright:</span>
+              <span class="fhir-data-value">Copyright © 2017 NHS Digital</span>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="fhir-panel">
+      <div class="fhir-panel-heading-box">
+        <h3 class="fhir-panel-heading-text">Value set concepts</h3>
+      </div>
+      <div class="fhir-panel-body">
+        <table class="fhir-table">
+          <thead>
+            <tr class="fhir-table-header-row">
+              <th title="System that the following concepts belong to" style="width: 25%" class="fhir-table-title">CodeSystem</th>
+              <th title="Identifier for this concept" style="width: 10%" class="fhir-table-title">Code</th>
+              <th title="Human-friendly name" style="width: 65%" class="fhir-table-title">Display</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">
+                <a class="fhir-link" href="/STU3/CodeSystem/eRS-ClinicType-1">https://fhir.nhs.uk/STU3/CodeSystem/eRS-ClinicType-1</a>
+              </td>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">2WW_BONE</td>
+              <td class="fhir-tree-cell fhir-data-cell">2WW Bone</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">2WW_BRAIN</td>
+              <td class="fhir-tree-cell fhir-data-cell">2WW Brain</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">2WW_BREAST</td>
+              <td class="fhir-tree-cell fhir-data-cell">2WW Breast</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">2WW_CANCER_OF_UNKNOWN_PRIMARY</td>
+              <td class="fhir-tree-cell fhir-data-cell">2WW Cancer of Unknown Primary</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">2WW_CHILDREN_AND_YOUNG_PEOPLE</td>
+              <td class="fhir-tree-cell fhir-data-cell">2WW Children and Young People</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">2WW_GYNAECOLOGY</td>
+              <td class="fhir-tree-cell fhir-data-cell">2WW Gynaecology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">2WW_HAEMATOLOGY</td>
+              <td class="fhir-tree-cell fhir-data-cell">2WW Haematology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">2WW_HEAD_AND_NECK</td>
+              <td class="fhir-tree-cell fhir-data-cell">2WW Head and Neck</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">2WW_LOWER_GI</td>
+              <td class="fhir-tree-cell fhir-data-cell">2WW Lower GI</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">2WW_LUNG</td>
+              <td class="fhir-tree-cell fhir-data-cell">2WW Lung</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">2WW_OTHER</td>
+              <td class="fhir-tree-cell fhir-data-cell">2WW Other</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">2WW_SARCOMA</td>
+              <td class="fhir-tree-cell fhir-data-cell">2WW Sarcoma</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">2WW_SKIN</td>
+              <td class="fhir-tree-cell fhir-data-cell">2WW Skin</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">2WW_UPPER_GI</td>
+              <td class="fhir-tree-cell fhir-data-cell">2WW Upper GI</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">2WW_UROLOGY</td>
+              <td class="fhir-tree-cell fhir-data-cell">2WW Urology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ACNE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Acne</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ACUTE_ACCESS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Acute Access</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ACUTE_ACCESS_BURNS_CARE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Acute Access Burns Care</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ACUTE_ACCESS_CARDIOLOGY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Acute Access Cardiology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ACUTE_ACCESS_ENT</td>
+              <td class="fhir-tree-cell fhir-data-cell">Acute Access ENT</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ACUTE_BRAIN_INJURY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Acute Brain Injury</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ACUTE_RESPONSE_PHASING_OUT</td>
+              <td class="fhir-tree-cell fhir-data-cell">Acute Response (phasing out)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ADOLESCENT_GYNAECOLOGY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Adolescent Gynaecology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ADOLESCENT_MEDICINE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Adolescent Medicine</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ADRENAL_DISORDERS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Adrenal Disorders</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ALLERGY_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Allergy</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ALLERGY_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Allergy</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ALLERGY_3</td>
+              <td class="fhir-tree-cell fhir-data-cell">Allergy</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ALLERGY_4</td>
+              <td class="fhir-tree-cell fhir-data-cell">Allergy</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ANDROLOGY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Andrology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ANEURYSM</td>
+              <td class="fhir-tree-cell fhir-data-cell">Aneurysm</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ANTENATAL</td>
+              <td class="fhir-tree-cell fhir-data-cell">Antenatal</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ANTI_COAGULANT</td>
+              <td class="fhir-tree-cell fhir-data-cell">Anti Coagulant</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ANXIETY_DEPRESSION_STRESS_MILD_MODERATE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Anxiety/Depression/Stress: Mild/Moderate</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ANXIETY_DEPRESSION_STRESS_MILD_MODERATE_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Anxiety/Depression/Stress: Mild/Moderate</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ANXIETY_DEPRESSION_STRESS_SEVERE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Anxiety/Depression/Stress: Severe</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ANXIETY_DEPRESSION_STRESS_SEVERE_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Anxiety/Depression/Stress: Severe</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ARRHYTHMIA</td>
+              <td class="fhir-tree-cell fhir-data-cell">Arrhythmia</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ARTERIAL</td>
+              <td class="fhir-tree-cell fhir-data-cell">Arterial</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ASTHMA</td>
+              <td class="fhir-tree-cell fhir-data-cell">Asthma</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">AT_RISK_FOOT</td>
+              <td class="fhir-tree-cell fhir-data-cell">At Risk Foot</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">AUDIOLOGY_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Audiology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">AUDIOLOGY_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Audiology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">AUDIOLOGY_3</td>
+              <td class="fhir-tree-cell fhir-data-cell">Audiology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">AUDIOLOGY_BALANCE_DIZZINESS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Audiology - Balance / Dizziness</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">AUDIOLOGY_HEARING_AID_ASSESS_AND_FIT</td>
+              <td class="fhir-tree-cell fhir-data-cell">Audiology - Hearing Aid Assess and Fit</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">AUDIOLOGY_HEARING_AID_REVIEW</td>
+              <td class="fhir-tree-cell fhir-data-cell">Audiology - Hearing Aid Review</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">AUDIOLOGY_HEARING_ASSESS_REASSESS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Audiology - Hearing Assess / Reassess</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">AUDIOLOGY_PAEDIATRIC</td>
+              <td class="fhir-tree-cell fhir-data-cell">Audiology Paediatric</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">AUDIOLOGY_TINNITUS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Audiology - Tinnitus</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">AUTOIMMUNE_DISEASE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Autoimmune Disease</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">AUTOIMMUNE_DISEASES</td>
+              <td class="fhir-tree-cell fhir-data-cell">Autoimmune Diseases</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">AUTOIMMUNE_RHEUM_DISORDERS_PHASING_OUT</td>
+              <td class="fhir-tree-cell fhir-data-cell">Autoimmune Rheum Disorders (phasing out)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">BALANCE_DIZZINESS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Balance / Dizziness</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">BASAL_CELL_CARCINOMA_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Basal Cell Carcinoma</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">BASAL_CELL_CARCINOMA_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Basal Cell Carcinoma</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">BEHAVIOURAL_PROBLEMS_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Behavioural Problems</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">BEHAVIOURAL_PROBLEMS_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Behavioural Problems</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">BIOMECHANICAL</td>
+              <td class="fhir-tree-cell fhir-data-cell">Biomechanical</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">BLOOD_TEST</td>
+              <td class="fhir-tree-cell fhir-data-cell">Blood Test</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">BONE_AND_JOINT_INFECTION</td>
+              <td class="fhir-tree-cell fhir-data-cell">Bone and Joint Infection</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">BONE_DENSITY_SCAN_DEXA</td>
+              <td class="fhir-tree-cell fhir-data-cell">Bone Density Scan (DEXA)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">BONE_OSTEOPOROSIS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Bone / Osteoporosis</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">BOTULINUM_TOXIN</td>
+              <td class="fhir-tree-cell fhir-data-cell">Botulinum Toxin</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">BREAST_ONCOLOGY_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Breast Oncology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">BREAST_ONCOLOGY_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Breast Oncology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">BREAST_ONE_STOP_UNIT</td>
+              <td class="fhir-tree-cell fhir-data-cell">Breast One Stop Unit</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">BURNS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Burns</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">BURNS_CARE_REHABILITATION</td>
+              <td class="fhir-tree-cell fhir-data-cell">Burns Care Rehabilitation</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">CARDIAC_PHYSIOLOGY_BP_MONITORING</td>
+              <td class="fhir-tree-cell fhir-data-cell">Cardiac Physiology - BP Monitoring</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">CARDIAC_PHYSIOLOGY_ECG</td>
+              <td class="fhir-tree-cell fhir-data-cell">Cardiac Physiology - ECG</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">CARDIAC_PHYSIOLOGY_ECHOCARDIOGRAM</td>
+              <td class="fhir-tree-cell fhir-data-cell">Cardiac Physiology - Echocardiogram</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">CARDIAC_PHYSIOLOGY_EXERCISE_STRESS_TEST</td>
+              <td class="fhir-tree-cell fhir-data-cell">Cardiac Physiology-Exercise Stress Test</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">CARDIAC_RESPIRATORY_PHASING_OUT</td>
+              <td class="fhir-tree-cell fhir-data-cell">Cardiac / Respiratory (phasing out)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">CARDIAC_SURGERY_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Cardiac Surgery</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">CARDIAC_SURGERY_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Cardiac Surgery</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">CARDIOLOGY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Cardiology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">CARDIOLOGY_GENETICS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Cardiology Genetics</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">CARDIOVASCULAR</td>
+              <td class="fhir-tree-cell fhir-data-cell">Cardiovascular</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">CARDIOVASCULAR_DISEASE_RISK_MANAGEMENT</td>
+              <td class="fhir-tree-cell fhir-data-cell">Cardiovascular Disease Risk Management</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">CATARACT</td>
+              <td class="fhir-tree-cell fhir-data-cell">Cataract</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">CEREBROVASCULAR</td>
+              <td class="fhir-tree-cell fhir-data-cell">Cerebrovascular</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">CHANGING_LESIONS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Changing Lesions</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">CHRONIC_FATIGUE_SYNDROME</td>
+              <td class="fhir-tree-cell fhir-data-cell">Chronic Fatigue Syndrome</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">CHRONIC_MSK_PAIN_PHASING_OUT</td>
+              <td class="fhir-tree-cell fhir-data-cell">Chronic MSK Pain (phasing out)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">CLOTTING_DISORDERS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Clotting Disorders</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">COGNITIVE_DISORDERS_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Cognitive Disorders</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">COGNITIVE_DISORDERS_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Cognitive Disorders</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">COLONIC_IMAGING_ASSESSMENT_ADVICE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Colonic Imaging Assessment / Advice</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">COLONOSCOPY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Colonoscopy</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">COLORECTAL_SURGERY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Colorectal Surgery</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">COLPOSCOPY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Colposcopy</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">COMMUNICATION</td>
+              <td class="fhir-tree-cell fhir-data-cell">Communication</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">COMMUNITY_PAEDIATRIC</td>
+              <td class="fhir-tree-cell fhir-data-cell">Community Paediatric</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">CONGENITAL_HEART_DISEASE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Congenital Heart Disease</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">CONNECTIVE_TISSUE_DISEASE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Connective Tissue Disease</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">CONTACT_LENS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Contact Lens</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">CONTINENCE_INCONTINENCE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Continence/Incontinence</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">COPD</td>
+              <td class="fhir-tree-cell fhir-data-cell">COPD</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">CORNEA</td>
+              <td class="fhir-tree-cell fhir-data-cell">Cornea</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">COSMETIC_CAMOUFLAGE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Cosmetic Camouflage</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">CRANIOFACIAL_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Craniofacial</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">CRANIOFACIAL_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Craniofacial</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">CT</td>
+              <td class="fhir-tree-cell fhir-data-cell">CT</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">CYSTIC_FIBROSIS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Cystic Fibrosis</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">DENTISTRY_ORTHODONTICS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Dentistry / Orthodontics</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">DERMATOLOGICAL_ONCOLOGY_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Dermatological Oncology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">DERMATOLOGICAL_ONCOLOGY_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Dermatological Oncology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">DERMATOLOGY_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Dermatology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">DERMATOLOGY_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Dermatology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">DERMATOLOGY_3</td>
+              <td class="fhir-tree-cell fhir-data-cell">Dermatology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">DEVELOPMENTAL_LEARNING_DISABILITIES</td>
+              <td class="fhir-tree-cell fhir-data-cell">Developmental / Learning Disabilities</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">DIABETES_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Diabetes</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">DIABETES_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Diabetes</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">DIABETES_3</td>
+              <td class="fhir-tree-cell fhir-data-cell">Diabetes</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">DIABETES_NOT_ULCER</td>
+              <td class="fhir-tree-cell fhir-data-cell">Diabetes (not Ulcer)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">DIABETIC_MEDICAL_RETINA</td>
+              <td class="fhir-tree-cell fhir-data-cell">Diabetic Medical Retina</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">DIABETIC_MEDICINE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Diabetic Medicine</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">DIETETIC</td>
+              <td class="fhir-tree-cell fhir-data-cell">Dietetic</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">DIETETICS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Dietetics</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">DIETETICS_PHASING_OUT</td>
+              <td class="fhir-tree-cell fhir-data-cell">Dietetics (phasing out)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">DIRECT_ACCESS_GASTROSCOPY_OTHER</td>
+              <td class="fhir-tree-cell fhir-data-cell">Direct Access Gastroscopy (Other)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">DOPPLER_TEST</td>
+              <td class="fhir-tree-cell fhir-data-cell">Doppler Test</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">DO_NOT_USE_AFTER_30_01_09_DYSPEPSIA</td>
+              <td class="fhir-tree-cell fhir-data-cell">DO NOT USE AFTER 30/01/09 - Dyspepsia</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">DO_NOT_USE_AFTER_30_01_09_LOWER_GI</td>
+              <td class="fhir-tree-cell fhir-data-cell">DO NOT USE AFTER 30/01/09 - Lower GI</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">DO_NOT_USE_HEPATOLOGY_SPECIALIST</td>
+              <td class="fhir-tree-cell fhir-data-cell">DO NOT USE - Hepatology - Specialist</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">DRUG_ALCOHOL_PROBLEMS_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Drug/Alcohol Problems</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">DRUG_ALCOHOL_PROBLEMS_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Drug/Alcohol Problems</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">EAR</td>
+              <td class="fhir-tree-cell fhir-data-cell">Ear</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">EARLY_PREGNANCY_ASSESSMENT</td>
+              <td class="fhir-tree-cell fhir-data-cell">Early Pregnancy Assessment</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">EATING_DISORDERS_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Eating Disorders</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">EATING_DISORDERS_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Eating Disorders</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">EATING_DISORDERS_SEE_MENTAL_HEALTH</td>
+              <td class="fhir-tree-cell fhir-data-cell">Eating Disorders - see Mental Health</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ECZEMA_AND_DERMATITIS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Eczema and Dermatitis</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">EMOTIONAL_PROBLEMS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Emotional Problems</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ENDOCRINE_INCL_DIABETES_PHASING_OUT</td>
+              <td class="fhir-tree-cell fhir-data-cell">Endocrine (incl Diabetes) (phasing out)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ENDOCRINE_PREGNANCY_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Endocrine Pregnancy</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ENDOCRINE_PREGNANCY_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Endocrine Pregnancy</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ENDOCRINE_SURGERY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Endocrine Surgery</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ENDOCRINOLOGY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Endocrinology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ENDODONTICS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Endodontics</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ENDOSCOPY_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Endoscopy</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ENDOSCOPY_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Endoscopy</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ENDOSCOPY_LOWER_GI</td>
+              <td class="fhir-tree-cell fhir-data-cell">Endoscopy (Lower GI)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ENDOSCOPY_SEE_DIAGNOSTIC_ENDOSCOPY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Endoscopy - see Diagnostic Endoscopy</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ENDOSCOPY_UPPER_GI</td>
+              <td class="fhir-tree-cell fhir-data-cell">Endoscopy (Upper GI)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ENT</td>
+              <td class="fhir-tree-cell fhir-data-cell">ENT</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">EPILEPSY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Epilepsy</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ERECTILE_DYSFUNCTION_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Erectile Dysfunction</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ERECTILE_DYSFUNCTION_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Erectile Dysfunction</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ERECTILE_DYSFUNCTION_ANDROLOGY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Erectile Dysfunction/Andrology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">EXCESSIVE_INTRUSIVE_SLEEPINESS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Excessive / Intrusive Sleepiness</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">EXERCISE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Exercise</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">EXERCISE_MEDICINE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Exercise Medicine</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">EXTERNAL_EYE_DISEASE</td>
+              <td class="fhir-tree-cell fhir-data-cell">External Eye Disease</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">EYELID_ADNEXAL_DISORDER</td>
+              <td class="fhir-tree-cell fhir-data-cell">Eyelid (Adnexal) Disorder</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">EYE_SCREENING</td>
+              <td class="fhir-tree-cell fhir-data-cell">Eye Screening</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">FACIAL_DEFORMITY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Facial Deformity</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">FACIAL_PLASTICS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Facial Plastics</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">FACIAL_PLASTIC_AND_SKIN_LESIONS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Facial Plastic and Skin Lesions</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">FALLS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Falls</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">FALLS_SEE_GERIATRIC_MEDICINE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Falls - see Geriatric Medicine</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">FALLS_SEE_GERIATRIC_MEDICINE_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Falls - See Geriatric Medicine</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">FAMILY_PLANNING</td>
+              <td class="fhir-tree-cell fhir-data-cell">Family Planning</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">FEMALE_AND_RECONSTRUCTION</td>
+              <td class="fhir-tree-cell fhir-data-cell">Female and Reconstruction</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">FEVER</td>
+              <td class="fhir-tree-cell fhir-data-cell">Fever</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">FH_OF_BREAST_CANCER_NON_2WW</td>
+              <td class="fhir-tree-cell fhir-data-cell">FH of Breast Cancer (non 2WW)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">FLEXIBLE_SIGMOIDOSCOPY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Flexible Sigmoidoscopy</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">FLEXI_SIGMOIDOSCOPY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Flexi Sigmoidoscopy</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">FLUOROSCOPY_AND_BARIUM_STUDIES</td>
+              <td class="fhir-tree-cell fhir-data-cell">Fluoroscopy and Barium Studies</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">FOETAL_CARDIOLOGY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Foetal Cardiology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">FOOD_ALLERGY_AND_INTOLERANCE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Food Allergy and Intolerance</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">FOOD_AND_DRUG_ALLERGY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Food and Drug Allergy</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">FOOT_AND_ANKLE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Foot and Ankle</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">FRACTURE_NON_EMERGENCY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Fracture - Non Emergency</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">FUNCTIONAL_BOWEL_DISORDERS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Functional Bowel Disorders</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GALLSTONES</td>
+              <td class="fhir-tree-cell fhir-data-cell">Gallstones</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GASTROENTEROLOGY_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Gastroenterology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GASTROENTEROLOGY_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Gastroenterology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GASTROINTESTINAL_ONCOLOGY_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Gastrointestinal Oncology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GASTROINTESTINAL_ONCOLOGY_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Gastrointestinal Oncology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GASTROSCOPY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Gastroscopy</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENDER_REASSIGNMENT</td>
+              <td class="fhir-tree-cell fhir-data-cell">Gender Reassignment</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_ADULT_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Adult</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_ADULT_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Adult</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_ADULT_3</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Adult</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_ADULT_4</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Adult</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_ADULT_5</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Adult</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_ADULT_6</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Adult</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_ADULT_7</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Adult</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_ADULT_AUDIOLOGICAL_MEDICINE</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Adult Audiological Medicine</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_ADULT_MENTAL_ILLNESS</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Adult Mental Illness</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_ADULT_ORAL_SURGERY</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Adult Oral Surgery</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_ADULT_TRAUMA_ORTHOPAEDICS</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Adult Trauma &amp; Orthopaedics</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_AUDIOLOGICAL_MEDICINE</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Audiological Medicine</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_BABY_CLINIC</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Baby Clinic</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_BONE_AND_MARROW_TRANSPLANTATION</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Bone and Marrow Transplantation</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_BREAST_SURGERY</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Breast Surgery</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_BURNS_CARE</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Burns Care</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_CARDIAC_SURGERY</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Cardiac Surgery</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_CARDIOTHORACIC_SURGERY</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Cardiothoracic Surgery</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_CHEMICAL_PATHOLOGY</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Chemical Pathology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_CHILD_AND_ADOLESCENT_PSYCHIATRY</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Child and Adolescent Psychiatry</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_CLINICAL_IMMUNOLOGY</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Clinical Immunology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_CLINICAL_IMMUNOLOGY_AND_ALLERGY</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Clinical Immunology and Allergy</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_CLINICAL_MICROBIOLOGY</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Clinical Microbiology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_CLINICAL_ONCOLOGY</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Clinical Oncology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_CLINICAL_PHARMACOLOGY</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Clinical Pharmacology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_CLINICAL_PHYSIOLOGY</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Clinical Physiology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_COLORECTAL_SURGERY</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Colorectal Surgery</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_DENTAL_MEDICINE</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Dental Medicine</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_DIABETIC_MANAGEMENT</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Diabetic Management</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_DIABETIC_MEDICINE</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Diabetic Medicine</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_ENDOCRINOLOGY</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Endocrinology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_ENT</td>
+              <td class="fhir-tree-cell fhir-data-cell">General ENT</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_FORENSIC_PSYCHIATRY</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Forensic Psychiatry</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_GASTROENTEROLOGY</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Gastroenterology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_GERIATRIC_MEDICINE</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Geriatric Medicine</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_GYNAECOLOGICAL_ONCOLOGY</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Gynaecological Oncology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_HAEMATOLOGY</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Haematology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_HAEMOPHILIA</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Haemophilia</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_HEPATOLOGY</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Hepatology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_INFANT</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Infant</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_INFECTIOUS_DISEASES</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Infectious Diseases</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_INTERVENTIONAL_RADIOLOGY</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Interventional Radiology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_MEDICAL_ONCOLOGY</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Medical Oncology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_MEDICAL_OPHTHALMOLOGY</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Medical Ophthalmology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_MEDICINE_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Medicine</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_MEDICINE_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Medicine</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_NEONATOLOGY</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Neonatology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_NEUROSURGERY</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Neurosurgery</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_OBSTETRICS</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Obstetrics</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_OLD_AGE_PSYCHIATRY</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Old Age Psychiatry</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_ORTHODONTICS</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Orthodontics</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_PAEDIATRICS</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Paediatrics</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_PAEDIATRIC_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Paediatric</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_PAEDIATRIC_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Paediatric</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_PAEDIATRIC_AUDIOLOGICAL_MEDICINE</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Paediatric Audiological Medicine</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_PAEDIATRIC_CARDIOLOGY</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Paediatric Cardiology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_PAEDIATRIC_DENTISTRY</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Paediatric Dentistry</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_PAEDIATRIC_NEUROLOGY</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Paediatric Neurology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_PAEDIATRIC_ORAL_SURGERY</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Paediatric Oral Surgery</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_PAEDIATRIC_SURGERY</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Paediatric Surgery</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_PAEDIATRIC_TRAUMA_ORTHOPAEDICS</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Paediatric Trauma &amp; Orthopaedics</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_PLASTIC_SURGERY</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Plastic Surgery</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_PSYCHOTHERAPY</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Psychotherapy</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_RADIOLOGY</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Radiology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_RECTAL</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Rectal</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_REHABILITATION</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Rehabilitation</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_RESTORATIVE_DENTISTRY</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Restorative Dentistry</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_SLEEP_STUDIES</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Sleep Studies</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_SPINE</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Spine</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_SURGERY</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Surgery</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_THORACIC_MEDICINE</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Thoracic Medicine</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_THORACIC_SURGERY</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Thoracic Surgery</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_TRANSPLANTATION_SURGERY</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Transplantation Surgery</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_TROPICAL_MEDICINE</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Tropical Medicine</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_UPPER_GASTROINTESTINAL_SURGERY</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Upper Gastrointestinal Surgery</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_UROLOGY</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Urology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_VASCULAR_SURGERY</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Vascular Surgery</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENERAL_WELL_BABIES</td>
+              <td class="fhir-tree-cell fhir-data-cell">General Well Babies</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENETICS_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Genetics</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENETICS_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Genetics</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENETICS_3</td>
+              <td class="fhir-tree-cell fhir-data-cell">Genetics</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENETIC_DISORDERS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Genetic Disorders</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENETIC_EYE_DISORDER</td>
+              <td class="fhir-tree-cell fhir-data-cell">Genetic Eye Disorder</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENITAL_DERMATOLOGY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Genital Dermatology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GENITO_URINARY_MEDICINE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Genito-Urinary Medicine</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GEN_ADULT_CLINICAL_IMMUNOLOGY_ALLERGY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Gen Adult Clinical Immunology &amp; Allergy</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GEN_HEPATOBILARY_PANCREATIC_SURGERY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Gen. Hepatobilary &amp; Pancreatic Surgery</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GI_PHYSIOLOGY_UREA_BREATH_TEST</td>
+              <td class="fhir-tree-cell fhir-data-cell">GI Physiology - Urea Breath Test</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GLAUCOMA</td>
+              <td class="fhir-tree-cell fhir-data-cell">Glaucoma</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GYNAECOLOGICAL_ENDOCRINOLOGY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Gynaecological Endocrinology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GYNAECOLOGICAL_ONCOLOGY_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Gynaecological Oncology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GYNAECOLOGICAL_ONCOLOGY_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Gynaecological Oncology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GYNAECOLOGICAL_PHYSIOTHERAPY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Gynaecological Physiotherapy</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GYNAECOLOGY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Gynaecology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GYNAECOLOGY_AND_PERINEAL_RECONSTRUCTION</td>
+              <td class="fhir-tree-cell fhir-data-cell">Gynaecology and Perineal Reconstruction</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">GYNAECOLOGY_PREGNANCY_ADVICE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Gynaecology - Pregnancy Advice</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">HAEMATOLOGICAL_ONCOLOGY_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Haematological Oncology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">HAEMATOLOGICAL_ONCOLOGY_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Haematological Oncology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">HAEMATOLOGY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Haematology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">HAEMATURIA_NOT_2WW</td>
+              <td class="fhir-tree-cell fhir-data-cell">Haematuria (not 2WW)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">HAEMOGLOBINOPATHIES_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Haemoglobinopathies</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">HAEMOGLOBINOPATHIES_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Haemoglobinopathies</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">HAIR</td>
+              <td class="fhir-tree-cell fhir-data-cell">Hair</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">HAIR_AND_NAILS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Hair and Nails</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">HAND_AND_WRIST</td>
+              <td class="fhir-tree-cell fhir-data-cell">Hand and Wrist</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">HEADACHE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Headache</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">HEAD_AND_NECK_LUMPS_NOT_2WW</td>
+              <td class="fhir-tree-cell fhir-data-cell">Head and Neck Lumps (not 2WW)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">HEAD_AND_NECK_ONCOLOGY_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Head and Neck Oncology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">HEAD_AND_NECK_ONCOLOGY_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Head and Neck Oncology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">HEAD_INJURY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Head Injury</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">HEARING_TESTS_AIDS_SEE_DIAG_PHYS_MEAS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Hearing Tests/Aids - see Diag Phys Meas</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">HEART_FAILURE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Heart Failure</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">HEPATOLOGY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Hepatology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">HERNIAS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Hernias</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">HIP</td>
+              <td class="fhir-tree-cell fhir-data-cell">Hip</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">HIP_AND_KNEE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Hip and Knee</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">HIV</td>
+              <td class="fhir-tree-cell fhir-data-cell">HIV</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">HYPERTENSION_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Hypertension</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">HYPERTENSION_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Hypertension</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">HYPERTENSION_3</td>
+              <td class="fhir-tree-cell fhir-data-cell">Hypertension</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">IMMUNE_DEFICIENCY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Immune Deficiency</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">IMMUNISATION</td>
+              <td class="fhir-tree-cell fhir-data-cell">Immunisation</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">IMMUNODEFICIENCY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Immunodeficiency</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">IMMUNOLOGY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Immunology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">IMMUNOTHERAPY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Immunotherapy</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">INFECTIOUS_DISEASES_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Infectious Diseases</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">INFECTIOUS_DISEASES_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Infectious Diseases</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">INFERTILITY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Infertility</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">INFLAMMATORY_ARTHRITIS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Inflammatory Arthritis</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">INFLAMMATORY_BOWEL_DISEASE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Inflammatory Bowel Disease</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">INFLAMMATORY_BOWEL_DISEASE_IBD</td>
+              <td class="fhir-tree-cell fhir-data-cell">Inflammatory Bowel Disease (IBD)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">INJECTION_AND_DRAINAGE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Injection and Drainage</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">INSOMNIA</td>
+              <td class="fhir-tree-cell fhir-data-cell">Insomnia</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">INTERSTITIAL_LUNG_DISEASE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Interstitial Lung Disease</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">INTRAVENOUS_UROGRAM_IVU</td>
+              <td class="fhir-tree-cell fhir-data-cell">Intravenous Urogram (IVU)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">IN_CONTINENCE</td>
+              <td class="fhir-tree-cell fhir-data-cell">(In) Continence</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ISCHAEMIC_HEART_DISEASE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Ischaemic Heart Disease</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">KERATOPATHIES</td>
+              <td class="fhir-tree-cell fhir-data-cell">Keratopathies</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">KNEE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Knee</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">LACRIMAL</td>
+              <td class="fhir-tree-cell fhir-data-cell">Lacrimal</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">LASER</td>
+              <td class="fhir-tree-cell fhir-data-cell">Laser</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">LASER_CLINICS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Laser Clinics</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">LASER_YAG_CAPSULOTOMY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Laser (YAG capsulotomy)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">LEARNING_DISABILITIES</td>
+              <td class="fhir-tree-cell fhir-data-cell">Learning Disabilities</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">LEG_ULCER_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Leg Ulcer</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">LEG_ULCER_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Leg Ulcer</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">LEPROSY_LEISHMONIASIS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Leprosy/Leishmoniasis</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">LIMB_DEFORMITY_RECONSTRUCTION</td>
+              <td class="fhir-tree-cell fhir-data-cell">Limb Deformity/Reconstruction</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">LIPID_DISORDERS_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Lipid Disorders</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">LIPID_DISORDERS_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Lipid Disorders</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">LIPID_DISORDERS_3</td>
+              <td class="fhir-tree-cell fhir-data-cell">Lipid Disorders</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">LIPID_MANAGEMENT</td>
+              <td class="fhir-tree-cell fhir-data-cell">Lipid Management</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">LOWER_GI_MEDICAL_EXCL_IBD</td>
+              <td class="fhir-tree-cell fhir-data-cell">Lower GI (medical) excl IBD</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">LOWER_LIMB_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Lower Limb</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">LOWER_LIMB_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Lower Limb</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">LOW_VISION</td>
+              <td class="fhir-tree-cell fhir-data-cell">Low Vision</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">LOW_VISUAL_AID</td>
+              <td class="fhir-tree-cell fhir-data-cell">Low Visual Aid</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">LUMPS_AND_BUMPS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Lumps and Bumps</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">LYMPHOEDEMA</td>
+              <td class="fhir-tree-cell fhir-data-cell">Lymphoedema</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">MALE_GENITAL_SKIN_DISORDERS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Male Genital Skin Disorders</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">MALE_INFERTILITY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Male Infertility</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">MALE_RECONSTRUCTION</td>
+              <td class="fhir-tree-cell fhir-data-cell">Male Reconstruction</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">MALE_STERILISATION_REVERSAL</td>
+              <td class="fhir-tree-cell fhir-data-cell">Male Sterilisation/Reversal</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">MAMMOPLASTY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Mammoplasty</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">MAMMOPLASTY_NON_2WW</td>
+              <td class="fhir-tree-cell fhir-data-cell">Mammoplasty (non 2WW)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">MATERNAL_FOETAL_RISK</td>
+              <td class="fhir-tree-cell fhir-data-cell">Maternal/Foetal Risk</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">MATERNAL_MEDICINE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Maternal Medicine</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">MEDICAL_RETINA</td>
+              <td class="fhir-tree-cell fhir-data-cell">Medical Retina</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">MEDICAL_RETINAL</td>
+              <td class="fhir-tree-cell fhir-data-cell">Medical Retinal</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">MEMORY_PROBLEMS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Memory Problems</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">MENOPAUSE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Menopause</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">MENORRHAGIA</td>
+              <td class="fhir-tree-cell fhir-data-cell">Menorrhagia</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">MENSTRUAL_DISORDERS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Menstrual Disorders</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">METABOLIC_BONE_DISEASES</td>
+              <td class="fhir-tree-cell fhir-data-cell">Metabolic Bone Diseases</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">METABOLIC_BONE_DISORDERS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Metabolic Bone Disorders</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">METABOLIC_DISORDERS_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Metabolic Disorders</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">METABOLIC_DISORDERS_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Metabolic Disorders</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">METABOLIC_DISORDERS_3</td>
+              <td class="fhir-tree-cell fhir-data-cell">Metabolic Disorders</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">METABOLIC_DISORDERS_4</td>
+              <td class="fhir-tree-cell fhir-data-cell">Metabolic Disorders</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">METABOLIC_EYE_DISEASES_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Metabolic Eye Diseases</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">METABOLIC_EYE_DISEASES_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Metabolic Eye Diseases</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">METABOLIC_LIVER_DISEASES</td>
+              <td class="fhir-tree-cell fhir-data-cell">Metabolic Liver Diseases</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">METABOLIC_MEDICINE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Metabolic Medicine</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">MINOR_PLASTIC_SURGERY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Minor Plastic Surgery</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">MINOR_SURGERY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Minor Surgery</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">MINOR_SURGERY_PHASING_OUT</td>
+              <td class="fhir-tree-cell fhir-data-cell">Minor Surgery (phasing out)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">MOTOR_NEURONE_DISEASE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Motor Neurone Disease</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">MOVEMENT_DISORDERS_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Movement Disorders</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">MOVEMENT_DISORDERS_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Movement Disorders</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">MRI</td>
+              <td class="fhir-tree-cell fhir-data-cell">MRI</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">MULTIPLE_PREGNANCY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Multiple Pregnancy</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">MULTIPLE_SCLEROSIS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Multiple Sclerosis</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">MUSCULOSKELETAL_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Musculoskeletal</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">MUSCULOSKELETAL_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Musculoskeletal</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">MUSCULOSKELETAL_RHEUMATOLOGY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Musculoskeletal / Rheumatology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">NAILS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Nails</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">NAIL_SURGERY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Nail Surgery</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">NECK_LUMP_THYROID</td>
+              <td class="fhir-tree-cell fhir-data-cell">Neck Lump / Thyroid</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">NEONATAL</td>
+              <td class="fhir-tree-cell fhir-data-cell">Neonatal</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">NEPHROLOGY_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Nephrology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">NEPHROLOGY_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Nephrology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">NEUROLOGICAL</td>
+              <td class="fhir-tree-cell fhir-data-cell">Neurological</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">NEUROLOGY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Neurology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">NEUROMUSCULAR</td>
+              <td class="fhir-tree-cell fhir-data-cell">Neuromuscular</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">NEUROPHYSIOLOGY_EEG_ROUTINE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Neurophysiology - EEG (Routine)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">NEUROPHYSIOLOGY_NERVE_CONDUCTION_STUDIES</td>
+              <td class="fhir-tree-cell fhir-data-cell">Neurophysiology-Nerve Conduction Studies</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">NEUROPHYS_NERVE_CONDUCTION_FOR_CTS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Neurophys - Nerve Conduction for CTS</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">NEUROSURGERY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Neurosurgery</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">NEURO_ONCOLOGY_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Neuro-oncology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">NEURO_ONCOLOGY_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Neuro-oncology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">NEURO_OPHTHALMOLOGY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Neuro-Ophthalmology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">NEURO_REHABILITATION</td>
+              <td class="fhir-tree-cell fhir-data-cell">Neuro-rehabilitation</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">NON_SURGICAL_MUSCULOSKELETAL</td>
+              <td class="fhir-tree-cell fhir-data-cell">Non-Surgical Musculoskeletal</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">NOSE_SINUS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Nose / Sinus</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">NOT_OTHERWISE_SPECIFIED_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Not Otherwise Specified</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">NOT_OTHERWISE_SPECIFIED_10</td>
+              <td class="fhir-tree-cell fhir-data-cell">Not Otherwise Specified</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">NOT_OTHERWISE_SPECIFIED_11</td>
+              <td class="fhir-tree-cell fhir-data-cell">Not Otherwise Specified</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">NOT_OTHERWISE_SPECIFIED_12</td>
+              <td class="fhir-tree-cell fhir-data-cell">Not Otherwise Specified</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">NOT_OTHERWISE_SPECIFIED_13</td>
+              <td class="fhir-tree-cell fhir-data-cell">Not Otherwise Specified</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">NOT_OTHERWISE_SPECIFIED_14</td>
+              <td class="fhir-tree-cell fhir-data-cell">Not Otherwise Specified</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">NOT_OTHERWISE_SPECIFIED_15</td>
+              <td class="fhir-tree-cell fhir-data-cell">Not Otherwise Specified</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">NOT_OTHERWISE_SPECIFIED_16</td>
+              <td class="fhir-tree-cell fhir-data-cell">Not Otherwise Specified</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">NOT_OTHERWISE_SPECIFIED_17</td>
+              <td class="fhir-tree-cell fhir-data-cell">Not Otherwise Specified</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">NOT_OTHERWISE_SPECIFIED_18</td>
+              <td class="fhir-tree-cell fhir-data-cell">Not Otherwise Specified</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">NOT_OTHERWISE_SPECIFIED_19</td>
+              <td class="fhir-tree-cell fhir-data-cell">Not Otherwise Specified</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">NOT_OTHERWISE_SPECIFIED_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Not Otherwise Specified</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">NOT_OTHERWISE_SPECIFIED_20</td>
+              <td class="fhir-tree-cell fhir-data-cell">Not Otherwise Specified</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">NOT_OTHERWISE_SPECIFIED_21</td>
+              <td class="fhir-tree-cell fhir-data-cell">Not Otherwise Specified</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">NOT_OTHERWISE_SPECIFIED_22</td>
+              <td class="fhir-tree-cell fhir-data-cell">Not Otherwise Specified</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">NOT_OTHERWISE_SPECIFIED_23</td>
+              <td class="fhir-tree-cell fhir-data-cell">Not Otherwise Specified</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">NOT_OTHERWISE_SPECIFIED_24</td>
+              <td class="fhir-tree-cell fhir-data-cell">Not Otherwise Specified</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">NOT_OTHERWISE_SPECIFIED_25</td>
+              <td class="fhir-tree-cell fhir-data-cell">Not Otherwise Specified</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">NOT_OTHERWISE_SPECIFIED_26</td>
+              <td class="fhir-tree-cell fhir-data-cell">Not Otherwise Specified</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">NOT_OTHERWISE_SPECIFIED_3</td>
+              <td class="fhir-tree-cell fhir-data-cell">Not Otherwise Specified</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">NOT_OTHERWISE_SPECIFIED_4</td>
+              <td class="fhir-tree-cell fhir-data-cell">Not Otherwise Specified</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">NOT_OTHERWISE_SPECIFIED_5</td>
+              <td class="fhir-tree-cell fhir-data-cell">Not Otherwise Specified</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">NOT_OTHERWISE_SPECIFIED_6</td>
+              <td class="fhir-tree-cell fhir-data-cell">Not Otherwise Specified</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">NOT_OTHERWISE_SPECIFIED_7</td>
+              <td class="fhir-tree-cell fhir-data-cell">Not Otherwise Specified</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">NOT_OTHERWISE_SPECIFIED_8</td>
+              <td class="fhir-tree-cell fhir-data-cell">Not Otherwise Specified</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">NOT_OTHERWISE_SPECIFIED_9</td>
+              <td class="fhir-tree-cell fhir-data-cell">Not Otherwise Specified</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">NUCLEAR_MEDICINE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Nuclear Medicine</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">NUTRITIONAL_ADV_SUPPORT_PHASING_OUT</td>
+              <td class="fhir-tree-cell fhir-data-cell">Nutritional Adv / Support (phasing out)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">OBSTETRIC_PHYSIOTHERAPY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Obstetric Physiotherapy</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">OCCUPATIONAL_LUNG_DISEASE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Occupational Lung Disease</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">OCULOPLASTICS_ORBITS_LACRIMAL</td>
+              <td class="fhir-tree-cell fhir-data-cell">Oculoplastics/Orbits/Lacrimal</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ONCOLOGY_ESTABLISHED_DIAGNOSIS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Oncology (established diagnosis)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ONCOLOGY_ESTABLISHED_DIAGNOSIS_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Oncology (Established Diagnosis)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ONCOLOGY_ESTABLISHED_DIAGNOSIS_10</td>
+              <td class="fhir-tree-cell fhir-data-cell">Oncology (Established Diagnosis)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ONCOLOGY_ESTABLISHED_DIAGNOSIS_11</td>
+              <td class="fhir-tree-cell fhir-data-cell">Oncology (Established Diagnosis)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ONCOLOGY_ESTABLISHED_DIAGNOSIS_12</td>
+              <td class="fhir-tree-cell fhir-data-cell">Oncology (Established Diagnosis)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ONCOLOGY_ESTABLISHED_DIAGNOSIS_13</td>
+              <td class="fhir-tree-cell fhir-data-cell">Oncology (established diagnosis)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ONCOLOGY_ESTABLISHED_DIAGNOSIS_14</td>
+              <td class="fhir-tree-cell fhir-data-cell">Oncology (Established Diagnosis)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ONCOLOGY_ESTABLISHED_DIAGNOSIS_15</td>
+              <td class="fhir-tree-cell fhir-data-cell">Oncology (Established Diagnosis)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ONCOLOGY_ESTABLISHED_DIAGNOSIS_16</td>
+              <td class="fhir-tree-cell fhir-data-cell">Oncology (Established Diagnosis)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ONCOLOGY_ESTABLISHED_DIAGNOSIS_3</td>
+              <td class="fhir-tree-cell fhir-data-cell">Oncology (Established Diagnosis)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ONCOLOGY_ESTABLISHED_DIAGNOSIS_4</td>
+              <td class="fhir-tree-cell fhir-data-cell">Oncology (Established Diagnosis)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ONCOLOGY_ESTABLISHED_DIAGNOSIS_5</td>
+              <td class="fhir-tree-cell fhir-data-cell">Oncology (Established Diagnosis)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ONCOLOGY_ESTABLISHED_DIAGNOSIS_6</td>
+              <td class="fhir-tree-cell fhir-data-cell">Oncology (Established Diagnosis)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ONCOLOGY_ESTABLISHED_DIAGNOSIS_7</td>
+              <td class="fhir-tree-cell fhir-data-cell">Oncology (Established Diagnosis)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ONCOLOGY_ESTABLISHED_DIAGNOSIS_8</td>
+              <td class="fhir-tree-cell fhir-data-cell">Oncology (Established Diagnosis)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ONCOLOGY_ESTABLISHED_DIAGNOSIS_9</td>
+              <td class="fhir-tree-cell fhir-data-cell">Oncology (Established Diagnosis)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ONCOLOGY_ESTABLISHED_DIAGNOSIS_NON_2WW</td>
+              <td class="fhir-tree-cell fhir-data-cell">Oncology Established Diagnosis (non 2WW)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">OPHTHALMIC_URGENT</td>
+              <td class="fhir-tree-cell fhir-data-cell">Ophthalmic Urgent</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">OPHTHALMOLOGY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Ophthalmology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">OPHTHALMOLOGY_CATARACT_ASSESSMENT</td>
+              <td class="fhir-tree-cell fhir-data-cell">Ophthalmology - Cataract Assessment</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">OPHTHALMOLOGY_GLAUCOMA_ASSESSMENT</td>
+              <td class="fhir-tree-cell fhir-data-cell">Ophthalmology - Glaucoma Assessment</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">OPHTHAL_NOT_OTHERWISE_SPECIFIED</td>
+              <td class="fhir-tree-cell fhir-data-cell">Ophthal - Not Otherwise Specified</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">OPHTHAL_ORTHOPTICS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Ophthal - Orthoptics</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">OPHTHAL_STRABISMUS_OCULAR_MOTILITY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Ophthal - Strabismus / Ocular Motility</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ORAL_AND_MAXILLOFACIAL_SURGERY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Oral and Maxillofacial Surgery</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ORAL_DERMATOLOGY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Oral Dermatology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ORAL_SURGERY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Oral Surgery</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ORTHODONTICS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Orthodontics</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ORTHOPAEDICS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Orthopaedics</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ORTHOPAEDIC_ONCOLOGY_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Orthopaedic Oncology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ORTHOPAEDIC_ONCOLOGY_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Orthopaedic Oncology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ORTHOPAEDIC_RHEUMATOID</td>
+              <td class="fhir-tree-cell fhir-data-cell">Orthopaedic Rheumatoid</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ORTHOPTICS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Orthoptics</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ORTHOTICS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Orthotics</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">OSTEOPOROSIS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Osteoporosis</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">OTHER_AUTOIMMUNE_RHEUMATIC_DISEASE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Other Autoimmune Rheumatic Disease</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">OTHER_MEDICAL</td>
+              <td class="fhir-tree-cell fhir-data-cell">Other Medical</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">OTHER_MEDICAL_RETINA</td>
+              <td class="fhir-tree-cell fhir-data-cell">Other Medical Retina</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">OTHER_SYMPTOMATIC_BREAST_2WW</td>
+              <td class="fhir-tree-cell fhir-data-cell">Other symptomatic Breast (2WW)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">OTOLOGY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Otology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PAEDIATRICS_DIABETES</td>
+              <td class="fhir-tree-cell fhir-data-cell">Paediatrics Diabetes</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PAEDIATRIC_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Paediatric</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PAEDIATRIC_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Paediatric</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PAEDIATRIC_3</td>
+              <td class="fhir-tree-cell fhir-data-cell">Paediatric</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PAEDIATRIC_CARDIAC_SURGERY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Paediatric Cardiac Surgery</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PAEDIATRIC_DERMATOLOGY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Paediatric Dermatology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PAEDIATRIC_FACIAL_DEFORMITY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Paediatric Facial Deformity</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PAEDIATRIC_HAEMOPHILIA_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Paediatric Haemophilia</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PAEDIATRIC_HAEMOPHILIA_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Paediatric Haemophilia</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PAEDIATRIC_NOT_OTHERWISE_SPECIFIED</td>
+              <td class="fhir-tree-cell fhir-data-cell">Paediatric Not Otherwise Specified</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PAEDIATRIC_ONCOLOGY_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Paediatric Oncology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PAEDIATRIC_ONCOLOGY_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Paediatric Oncology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PAEDIATRIC_ORAL_SURGERY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Paediatric Oral Surgery</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PAEDIATRIC_ORTHODONTICS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Paediatric Orthodontics</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PAEDIATRIC_PLASTIC_SURGERY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Paediatric Plastic Surgery</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PAEDIATRIC_TRANSITIONAL</td>
+              <td class="fhir-tree-cell fhir-data-cell">Paediatric Transitional</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PAIN_MANAGEMENT_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Pain Management</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PAIN_MANAGEMENT_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Pain Management</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PAIN_MANAGEMENT_3</td>
+              <td class="fhir-tree-cell fhir-data-cell">Pain Management</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PALLIATIVE_MEDICINE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Palliative Medicine</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PARASOMNIA_AND_OTHER_SLEEP_DISORDERS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Parasomnia and Other Sleep Disorders</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PARKINSONS_MOVEMENT_DISORDERS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Parkinsons / Movement Disorders</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PATCH_TESTING_FOR_CONTACT_DERMATITIS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Patch Testing for Contact Dermatitis</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PELVIC_FLOOR</td>
+              <td class="fhir-tree-cell fhir-data-cell">Pelvic Floor</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PELVIC_PAIN</td>
+              <td class="fhir-tree-cell fhir-data-cell">Pelvic Pain</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PERINEAL_REPAIR</td>
+              <td class="fhir-tree-cell fhir-data-cell">Perineal Repair</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PERIODONTICS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Periodontics</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PERI_AND_POST_NATAL_ISSUES</td>
+              <td class="fhir-tree-cell fhir-data-cell">Peri and Post-Natal Issues</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PET_CT</td>
+              <td class="fhir-tree-cell fhir-data-cell">PET CT</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PHLEBOTOMY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Phlebotomy</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PHYSIOTHERAPY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Physiotherapy</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PITUITARY_HYPOTHALAMIC</td>
+              <td class="fhir-tree-cell fhir-data-cell">Pituitary &amp; Hypothalamic</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PLASTIC_SURGERY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Plastic Surgery</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PODIATRIC_DERMATOLOGY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Podiatric Dermatology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PODIATRIC_HEALTH_EDUCATION</td>
+              <td class="fhir-tree-cell fhir-data-cell">Podiatric Health Education</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PODIATRIC_MSK_INCL_RHEUMATOLOGY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Podiatric MSK - incl rheumatology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PODIATRIC_SURGERY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Podiatric Surgery</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PODIATRIC_SURGERY_EXCL_NAIL_SURGERY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Podiatric Surgery - excl nail surgery</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PODIATRY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Podiatry</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PODIATRY_AND_FOOT</td>
+              <td class="fhir-tree-cell fhir-data-cell">Podiatry and Foot</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">POST_MENOPAUSAL_BLEEDING</td>
+              <td class="fhir-tree-cell fhir-data-cell">Post Menopausal Bleeding</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PREGNANCY_ADVISORY_SERVICE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Pregnancy Advisory Service</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PREGNANCY_AND_MATERNAL</td>
+              <td class="fhir-tree-cell fhir-data-cell">Pregnancy and Maternal</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PRE_AND_POST_EXERCISE_ABPI</td>
+              <td class="fhir-tree-cell fhir-data-cell">Pre and Post Exercise ABPI</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PROSTATE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Prostate</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PROSTHETICS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Prosthetics</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PROSTHODONTICS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Prosthodontics</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PSORIASIS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Psoriasis</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PSYCHOLOGICAL_DISORDERS_DIFFICULTIES</td>
+              <td class="fhir-tree-cell fhir-data-cell">Psychological Disorders/Difficulties</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PSYCHOLOGICAL_MEDICINE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Psychological Medicine</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PSYCHOSEXUAL</td>
+              <td class="fhir-tree-cell fhir-data-cell">Psychosexual</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PSYCHOTIC_DISORDERS_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Psychotic Disorders</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PSYCHOTIC_DISORDERS_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Psychotic Disorders</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">PULMONARY_HYPERTENSION</td>
+              <td class="fhir-tree-cell fhir-data-cell">Pulmonary Hypertension</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">RAPID_ACCESS_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Rapid Access</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">RAPID_ACCESS_10</td>
+              <td class="fhir-tree-cell fhir-data-cell">Rapid Access</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">RAPID_ACCESS_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Rapid Access</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">RAPID_ACCESS_3</td>
+              <td class="fhir-tree-cell fhir-data-cell">Rapid Access</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">RAPID_ACCESS_4</td>
+              <td class="fhir-tree-cell fhir-data-cell">Rapid Access</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">RAPID_ACCESS_5</td>
+              <td class="fhir-tree-cell fhir-data-cell">Rapid Access</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">RAPID_ACCESS_6</td>
+              <td class="fhir-tree-cell fhir-data-cell">Rapid Access</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">RAPID_ACCESS_7</td>
+              <td class="fhir-tree-cell fhir-data-cell">Rapid Access</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">RAPID_ACCESS_8</td>
+              <td class="fhir-tree-cell fhir-data-cell">Rapid Access</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">RAPID_ACCESS_9</td>
+              <td class="fhir-tree-cell fhir-data-cell">Rapid Access</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">RAPID_ACCESS_CHEST_PAIN_INC_EXERCISE_ECG</td>
+              <td class="fhir-tree-cell fhir-data-cell">Rapid Access Chest Pain inc Exercise ECG</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">RAPID_ACCESS_FACIAL_SKIN</td>
+              <td class="fhir-tree-cell fhir-data-cell">Rapid Access Facial Skin</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">RAPID_ACCESS_GENERAL_SURGERY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Rapid Access General Surgery</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">RAPID_ACCESS_GYNAECOLOGY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Rapid Access Gynaecology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">RAPID_ACCESS_NECK_LUMPS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Rapid Access Neck Lumps</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">RAPID_ACCESS_RHEUMATOLOGY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Rapid Access Rheumatology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">RAPID_ACCESS_TRAUMA_ORTHOPAEDICS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Rapid Access Trauma &amp; Orthopaedics</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">RAPID_ACCESS_UROLOGY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Rapid Access Urology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">RECURRENT_MISCARRIAGE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Recurrent Miscarriage</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">RENAL</td>
+              <td class="fhir-tree-cell fhir-data-cell">Renal</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">RENAL_DIABETES_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Renal Diabetes</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">RENAL_DIABETES_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Renal Diabetes</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">REPRODUCTIVE_ENDOCRINE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Reproductive Endocrine</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">REPRODUCTIVE_MEDICINE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Reproductive Medicine</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">RESPIRATORY_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Respiratory</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">RESPIRATORY_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Respiratory</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">RESPIRATORY_BLOOD_GAS_ANALYSIS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Respiratory - Blood Gas Analysis</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">RESPIRATORY_BRONCHODILATOR_ASSESSMENT</td>
+              <td class="fhir-tree-cell fhir-data-cell">Respiratory - Bronchodilator Assessment</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">RESPIRATORY_CPAP_ASSESSMENT</td>
+              <td class="fhir-tree-cell fhir-data-cell">Respiratory - CPAP Assessment</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">RESPIRATORY_FULL_LUNG_FUNCTION</td>
+              <td class="fhir-tree-cell fhir-data-cell">Respiratory - Full Lung Function</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">RESPIRATORY_OXYGEN_ASSESSMENT</td>
+              <td class="fhir-tree-cell fhir-data-cell">Respiratory - Oxygen Assessment</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">RESPIRATORY_SLEEP_APNOEA_SCREENING</td>
+              <td class="fhir-tree-cell fhir-data-cell">Respiratory - Sleep Apnoea Screening</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">RESPIRATORY_SPIROMETRY_BRONCHODILATOR</td>
+              <td class="fhir-tree-cell fhir-data-cell">Respiratory - Spirometry Bronchodilator</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">RHEUMATIC_DISEASES_PHASING_OUT</td>
+              <td class="fhir-tree-cell fhir-data-cell">Rheumatic Diseases (phasing out)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">RHEUMATOLOGY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Rheumatology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">SALIVARY_GLAND</td>
+              <td class="fhir-tree-cell fhir-data-cell">Salivary Gland</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">SALIVARY_GLAND_DISEASE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Salivary Gland Disease</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">SCHOOL_REFUSAL</td>
+              <td class="fhir-tree-cell fhir-data-cell">School Refusal</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">SELF_HARM_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Self Harm</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">SELF_HARM_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Self Harm</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">SEXUAL_ISSUES</td>
+              <td class="fhir-tree-cell fhir-data-cell">Sexual Issues</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">SHOULDER_AND_ELBOW</td>
+              <td class="fhir-tree-cell fhir-data-cell">Shoulder and Elbow</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">SKIN_LYMPHOMA</td>
+              <td class="fhir-tree-cell fhir-data-cell">Skin Lymphoma</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">SKIN_PHOTOSENSITIVITY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Skin photosensitivity</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">SKIN_SURGERY_FOR_BENIGN_SKIN_LESIONS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Skin Surgery for Benign Skin Lesions</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">SLEEP_APNOEA_SEE_SLEEP_MEDICINE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Sleep Apnoea - see Sleep Medicine</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">SLEEP_APNOEA_SLEEP_DISORDERED_BREATHING</td>
+              <td class="fhir-tree-cell fhir-data-cell">Sleep Apnoea/Sleep Disordered Breathing</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">SLEEP_FATIGUE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Sleep/Fatigue</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">SLEEP_PROBLEMS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Sleep Problems</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">SLEEP_SEE_SLEEP_MEDICINE_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Sleep - see Sleep Medicine</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">SLEEP_SEE_SLEEP_MEDICINE_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Sleep - see Sleep Medicine</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">SMOKING_CESSATION</td>
+              <td class="fhir-tree-cell fhir-data-cell">Smoking Cessation</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">SNORING_NOT_SLEEP_APNOEA</td>
+              <td class="fhir-tree-cell fhir-data-cell">Snoring (not Sleep Apnoea)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">SOFT_TISSUE_CLINIC</td>
+              <td class="fhir-tree-cell fhir-data-cell">Soft Tissue Clinic</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">SOFT_TISSUE_INJURY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Soft Tissue Injury</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">SPINAL_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Spinal</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">SPINAL_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Spinal</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">SPINAL_DISORDERS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Spinal Disorders</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">SPINE_BACK_PAIN_NOT_SCOLIOSIS_DEFORM</td>
+              <td class="fhir-tree-cell fhir-data-cell">Spine - Back Pain (not Scoliosis/Deform)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">SPINE_NECK_PAIN</td>
+              <td class="fhir-tree-cell fhir-data-cell">Spine - Neck Pain</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">SPINE_SCOLIOSIS_AND_DEFORMITY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Spine - Scoliosis and Deformity</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">SPORTS_INJURY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Sports Injury</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">SPORTS_MEDICINE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Sports Medicine</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">SPORTS_TRAUMA</td>
+              <td class="fhir-tree-cell fhir-data-cell">Sports Trauma</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">SQUINT_OCULAR_MOTILITY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Squint / Ocular Motility</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">STRABISMUS_OCULAR_MOTILITY_PAEDIATRICS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Strabismus/Ocular Motility (Paediatrics)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">STROKE_NOT_TIA_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Stroke (not TIA)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">STROKE_NOT_TIA_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Stroke (not TIA)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">STROKE_TIA</td>
+              <td class="fhir-tree-cell fhir-data-cell">Stroke/TIA</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">SURGERY_NOT_OTHERWISE_SPECIFIED</td>
+              <td class="fhir-tree-cell fhir-data-cell">Surgery - Not otherwise specified</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">SURGICAL_DENTISTRY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Surgical Dentistry</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">SWALLOWING_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Swallowing</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">SWALLOWING_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Swallowing</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">THORACIC_ONCOLOGY_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Thoracic Oncology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">THORACIC_ONCOLOGY_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Thoracic Oncology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">THORACIC_SURGERY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Thoracic Surgery</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">THROAT_INCL_VOICE_SWALLOWING</td>
+              <td class="fhir-tree-cell fhir-data-cell">Throat (incl Voice / Swallowing)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">THYROID_PARATHYROID_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Thyroid / Parathyroid</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">THYROID_PARATHYROID_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Thyroid / Parathyroid</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">TINNITUS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Tinnitus</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">TRANSIENT_ISCHAEMIC_ATTACK</td>
+              <td class="fhir-tree-cell fhir-data-cell">Transient Ischaemic Attack</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">TRANSIENT_ISCHAEMIC_ATTACK_STROKE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Transient Ischaemic Attack/Stroke</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">TRANSIENT_ISCHEMIC_ATTACK</td>
+              <td class="fhir-tree-cell fhir-data-cell">Transient Ischemic Attack</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">TRAVEL_ADVICE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Travel Advice</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">TROPICAL_INFECTIONS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Tropical Infections</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">TUBERCULOSIS_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Tuberculosis</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">TUBERCULOSIS_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Tuberculosis</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">TUMOUR_ABLATION</td>
+              <td class="fhir-tree-cell fhir-data-cell">Tumour Ablation</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ULTRASOUND_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Ultrasound</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">ULTRASOUND_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Ultrasound</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">UNDERNUTRITION</td>
+              <td class="fhir-tree-cell fhir-data-cell">Undernutrition</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">UPPER_GI_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Upper GI</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">UPPER_GI_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Upper GI</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">UPPER_GI_INCL_DYSPEPSIA</td>
+              <td class="fhir-tree-cell fhir-data-cell">Upper GI incl Dyspepsia</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">UPPER_LIMB_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Upper Limb</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">UPPER_LIMB_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Upper Limb</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">UPPER_LIMB_3</td>
+              <td class="fhir-tree-cell fhir-data-cell">Upper Limb</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">UPPER_LIMB_SPLINTING</td>
+              <td class="fhir-tree-cell fhir-data-cell">Upper Limb / Splinting</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">URINARY_CALCULUS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Urinary Calculus</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">URODYNAMICS_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Urodynamics</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">URODYNAMICS_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Urodynamics</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">URODYNAMICS_FREE_FLOW_RESIDUAL_URINE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Urodynamics - Free Flow / Residual Urine</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">URODYNAMICS_PAD_TESTS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Urodynamics - Pad Tests</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">URODYNAMICS_RESIDUAL_URINE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Urodynamics - Residual Urine</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">UROGYNAECOLOGY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Urogynaecology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">UROGYNAECOLOGY_PROLAPSE</td>
+              <td class="fhir-tree-cell fhir-data-cell">Urogynaecology / Prolapse</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">UROLOGICAL_ONCOLOGY_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Urological Oncology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">UROLOGICAL_ONCOLOGY_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Urological Oncology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">UROLOGICAL_PHYSIOTHERAPY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Urological Physiotherapy</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">UROLOGY_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Urology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">UROLOGY_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Urology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">USS_GYNAECOLOGY</td>
+              <td class="fhir-tree-cell fhir-data-cell">USS Gynaecology</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">USS_OBSTETRICS</td>
+              <td class="fhir-tree-cell fhir-data-cell">USS Obstetrics</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">VALVE_DISORDERS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Valve Disorders</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">VARICOSE_VEINS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Varicose Veins</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">VASCULAR</td>
+              <td class="fhir-tree-cell fhir-data-cell">Vascular</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">VASCULAR_ABPI_MEASUREMENT</td>
+              <td class="fhir-tree-cell fhir-data-cell">Vascular - ABPI Measurement</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">VASCULAR_AND_STENT</td>
+              <td class="fhir-tree-cell fhir-data-cell">Vascular and Stent</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">VASCULAR_AORTIC_ANEURYSM_ASSESSMENT</td>
+              <td class="fhir-tree-cell fhir-data-cell">Vascular - Aortic Aneurysm Assessment</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">VASCULAR_MALFORMATION</td>
+              <td class="fhir-tree-cell fhir-data-cell">Vascular Malformation</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">VASCULITIS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Vasculitis</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">VASECTOMY</td>
+              <td class="fhir-tree-cell fhir-data-cell">Vasectomy</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">VIRAL_HEPATITIS_NOT_HEP_A</td>
+              <td class="fhir-tree-cell fhir-data-cell">Viral Hepatitis (not Hep A)</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">VITREORETINAL</td>
+              <td class="fhir-tree-cell fhir-data-cell">Vitreoretinal</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">VOICE_DISORDER</td>
+              <td class="fhir-tree-cell fhir-data-cell">Voice Disorder</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">VULVAL_AND_PERINEAL_LESIONS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Vulval and Perineal Lesions</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">VULVAL_SKIN_DISORDERS</td>
+              <td class="fhir-tree-cell fhir-data-cell">Vulval Skin Disorders</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">WEIGHT_MANAGEMENT_1</td>
+              <td class="fhir-tree-cell fhir-data-cell">Weight Management</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">WEIGHT_MANAGEMENT_2</td>
+              <td class="fhir-tree-cell fhir-data-cell">Weight Management</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">WELL_WOMAN</td>
+              <td class="fhir-tree-cell fhir-data-cell">Well Woman</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">WHEELCHAIR_SEATING</td>
+              <td class="fhir-tree-cell fhir-data-cell">Wheelchair / Seating</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">WOMENNULLS_HEALTH</td>
+              <td class="fhir-tree-cell fhir-data-cell">Women's Health</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">XXXDO_NOT_USE_XXX</td>
+              <td class="fhir-tree-cell fhir-data-cell">XXXDO NOT USE XXX</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">XXX_DO_NOT_USE_XXX</td>
+              <td class="fhir-tree-cell fhir-data-cell">XXX DO NOT USE XXX</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">X_RAY_PLAIN_FILM</td>
+              <td class="fhir-tree-cell fhir-data-cell">X Ray Plain Film</td>
+            </tr>
+            <tr>
+              <td class="fhir-tree-cell fhir-data-cell">&#8203;</td>
+              <td class="fhir-tree-cell fhir-data-cell">YOUNG_ADULT</td>
+              <td class="fhir-tree-cell fhir-data-cell">Young Adult</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

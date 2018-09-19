@@ -1,0 +1,588 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <style>.fhir-data-cell {
+	border: 1px solid #f0f0f0
+}
+.fhir-data-label,
+.fhir-telecom-name {
+	color: #474747;
+	font-weight: bold;
+	font-size: 13
+}
+.fhir-data-label-empty {
+	color: #474747;
+	font-weight: normal
+}
+.fhir-data-value,
+.fhir-telecom-value {
+	color: #474747;
+	font-size: 13
+}
+.fhir-data-value-smalltext {
+	font-size: 10
+}
+.fhir-data-block-title {
+	color: #808080;
+	font-weight: bold;
+	text-decoration: underline;
+	font-size: 13
+}
+tr,
+.fhir-table-title {
+	font-size: 11px;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	vertical-align: top;
+	border: 0
+}
+.fhir-table-title {
+	padding: 0px 4px
+}
+td {
+	padding: 5px 4px
+}
+.fhir-panel-heading-box {
+	margin: -15px -15px 15px;
+	padding: 10px 15px;
+	background-color: #f0f0f0;
+	border-bottom: 1px solid #808080;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px
+}
+.fhir-panel-heading-text {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 17.5px;
+	font-weight: 500
+}
+tr {
+	padding: 3px;
+	line-height: 1.66em
+}
+.fhir-table-header-row {
+	border: 1px solid #f0f0f0
+}
+tr,
+fhir-table-title,
+td,
+tr,
+fhir-table-title,
+td {
+	text-align: left;
+	text-align: left
+}
+fhir-table-title,
+td,
+fhir-table-title,
+td {
+	vertical-align: top;
+	vertical-align: top
+}
+table {
+	width: 100%;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	border-collapse: collapse
+}
+.fhir-panel * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+.fhir-table.fhir-tree-table tbody:before {
+	content: '-';
+	display: block;
+	line-height: 1em;
+	color: transparent
+}
+.fhir-tree-table {
+	table-layout: fixed;
+	width: 100%
+}
+.fhir-panel {
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.4;
+	width: 95%;
+	max-width: 100%;
+	word-wrap: break-word
+}
+.fhir-panel {
+	padding: 15px;
+	margin-bottom: 20;
+	background-color: #ffffff;
+	border: 1px solid #808080;
+	border-radius: 4px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05)
+}
+.fhir-panel .fhir-link {
+	text-decoration: none;
+	color: #005eb8
+}
+.fhir-panel-subheading {
+	color: #474747;
+	font-weight: bold;
+	font-size: 13
+}
+.fhir-link {
+	text-decoration: none;
+	color: #005eb8
+}
+.fhir-text-faded {
+	opacity: 0.4
+}
+.fhir-text-strikethrough {
+	text-decoration: line-through
+}</style>
+  </head>
+  <body>
+    <div class="fhir-panel">
+      <div class="fhir-panel-heading-box">
+        <h3 class="fhir-panel-heading-text">CodeSystem definition: NHS Data Dictionary Main Specialty Code</h3>
+      </div>
+      <div class="fhir-panel-body">
+        <table class="fhir-table">
+          <colgroup>
+            <col width="25%" />
+            <col width="25%" />
+            <col width="25%" />
+            <col width="25%" />
+          </colgroup>
+          <tr>
+            <td class="fhir-data-cell" colspan="2">
+              <span class="fhir-data-label">Name:</span>
+              <span class="fhir-data-value">NHS Data Dictionary Main Specialty Code</span>
+            </td>
+            <td class="fhir-data-cell" colspan="2">
+              <span class="fhir-data-label">URL:</span>
+              <span class="fhir-data-value">
+                <a class="fhir-link" href="/STU3/NHSDataDictionary-MainSpecialtyCode-1">https://fhir.nhs.uk/STU3/NHSDataDictionary-MainSpecialtyCode-1</a>
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td class="fhir-data-cell" colspan="1">
+              <span class="fhir-data-label">Version:</span>
+              <span class="fhir-data-value">0.0.1</span>
+            </td>
+            <td class="fhir-data-cell" colspan="1">
+              <span class="fhir-data-label">Status:</span>
+              <span class="fhir-data-value">Draft</span>
+            </td>
+            <td class="fhir-data-cell" colspan="2">
+              <span class="fhir-data-label fhir-data-label-empty">Purpose:</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="fhir-data-cell" colspan="4">
+              <span class="fhir-data-label">Description:</span>
+              <span class="fhir-data-value">A unique code identifying each main specialty designated by Royal Colleges. This is the same as the NHS OCCUPATION CODES describing specialties. This CodeSystem is comprised of codes from the NHS Data Model and Dictionary: Main Specialty Code.</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="fhir-data-cell" colspan="1">
+              <span class="fhir-data-label">Last updated:</span>
+              <span class="fhir-data-value">20/10/17</span>
+            </td>
+            <td class="fhir-data-cell" colspan="1">
+              <span class="fhir-data-label">Published by:</span>
+              <span class="fhir-data-value">NHS Digital</span>
+            </td>
+            <td class="fhir-data-cell" colspan="1">
+              <span class="fhir-data-label fhir-data-label-empty">Identifier system:</span>
+            </td>
+            <td class="fhir-data-cell" colspan="1">
+              <span class="fhir-data-label fhir-data-label-empty">Identifier:</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="fhir-data-cell" colspan="1">
+              <span class="fhir-data-label fhir-data-label-empty">Compositional:</span>
+            </td>
+            <td class="fhir-data-cell" colspan="1">
+              <span class="fhir-data-label">Content:</span>
+              <span class="fhir-data-value">Complete</span>
+            </td>
+            <td class="fhir-data-cell" colspan="1">
+              <span class="fhir-data-label">Experimental:</span>
+              <span class="fhir-data-value">no</span>
+            </td>
+            <td class="fhir-data-cell" colspan="1">
+              <span class="fhir-data-label">Case Sensitive:</span>
+              <span class="fhir-data-value">yes</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="fhir-data-cell" colspan="4">
+              <span class="fhir-data-label">Contacts</span>
+              <br />
+              <span class="fhir-telecom-name">Interoperability Team</span>
+              <span class="fhir-telecom-name">:</span>
+              <span class="fhir-data-value">interoperabilityteam@nhs.net</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="fhir-data-cell" colspan="4">
+              <span class="fhir-data-value fhir-data-value-smalltext">Copyright © 2017 Health and Social Care Information Centre. NHS Digital is the trading name of the Health and Social Care Information Centre.</span>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="fhir-panel">
+      <div class="fhir-panel-heading-box">
+        <h3 class="fhir-panel-heading-text">Codes defined by NHS Data Dictionary Main Specialty Code</h3>
+      </div>
+      <div class="fhir-panel-body">
+        <div>
+          <div>System: https://fhir.nhs.uk/STU3/NHSDataDictionary-MainSpecialtyCode-1</div>
+          <br />
+          <table class="fhir-table">
+            <thead>
+              <tr class="fhir-table-header-row">
+                <th title="Code that identifies the concept." style="width: 25%" class="fhir-table-title">Code</th>
+                <th title="User-friendly name" style="width: 75%" class="fhir-table-title">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">100</td>
+                <td class="fhir-tree-cell fhir-data-cell">GENERAL SURGERY</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">101</td>
+                <td class="fhir-tree-cell fhir-data-cell">UROLOGY</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">110</td>
+                <td class="fhir-tree-cell fhir-data-cell">TRAUMA &amp; ORTHOPAEDICS</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">120</td>
+                <td class="fhir-tree-cell fhir-data-cell">ENT</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">130</td>
+                <td class="fhir-tree-cell fhir-data-cell">OPHTHALMOLOGY</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">140</td>
+                <td class="fhir-tree-cell fhir-data-cell">ORAL SURGERY</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">141</td>
+                <td class="fhir-tree-cell fhir-data-cell">RESTORATIVE DENTISTRY</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">142</td>
+                <td class="fhir-tree-cell fhir-data-cell">PAEDIATRIC DENTISTRY</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">143</td>
+                <td class="fhir-tree-cell fhir-data-cell">ORTHODONTICS</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">145</td>
+                <td class="fhir-tree-cell fhir-data-cell">ORAL &amp; MAXILLO FACIAL SURGERY</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">146</td>
+                <td class="fhir-tree-cell fhir-data-cell">ENDODONTICS</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">147</td>
+                <td class="fhir-tree-cell fhir-data-cell">PERIODONTICS</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">148</td>
+                <td class="fhir-tree-cell fhir-data-cell">PROSTHODONTICS</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">149</td>
+                <td class="fhir-tree-cell fhir-data-cell">SURGICAL DENTISTRY</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">150</td>
+                <td class="fhir-tree-cell fhir-data-cell">NEUROSURGERY</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">160</td>
+                <td class="fhir-tree-cell fhir-data-cell">PLASTIC SURGERY</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">170</td>
+                <td class="fhir-tree-cell fhir-data-cell">CARDIOTHORACIC SURGERY</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">171</td>
+                <td class="fhir-tree-cell fhir-data-cell">PAEDIATRIC SURGERY</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">180</td>
+                <td class="fhir-tree-cell fhir-data-cell">ACCIDENT &amp; EMERGENCY</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">190</td>
+                <td class="fhir-tree-cell fhir-data-cell">ANAESTHETICS</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">192</td>
+                <td class="fhir-tree-cell fhir-data-cell">CRITICAL CARE MEDICINE</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">300</td>
+                <td class="fhir-tree-cell fhir-data-cell">GENERAL MEDICINE</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">301</td>
+                <td class="fhir-tree-cell fhir-data-cell">GASTROENTEROLOGY</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">302</td>
+                <td class="fhir-tree-cell fhir-data-cell">ENDOCRINOLOGY</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">303</td>
+                <td class="fhir-tree-cell fhir-data-cell">CLINICAL HAEMATOLOGY</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">304</td>
+                <td class="fhir-tree-cell fhir-data-cell">CLINICAL PHYSIOLOGY</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">305</td>
+                <td class="fhir-tree-cell fhir-data-cell">CLINICAL PHARMACOLOGY</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">310</td>
+                <td class="fhir-tree-cell fhir-data-cell">AUDIOLOGICAL MEDICINE</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">311</td>
+                <td class="fhir-tree-cell fhir-data-cell">CLINICAL GENETICS</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">313</td>
+                <td class="fhir-tree-cell fhir-data-cell">CLINICAL IMMUNOLOGY and ALLERGY</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">314</td>
+                <td class="fhir-tree-cell fhir-data-cell">REHABILITATION</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">315</td>
+                <td class="fhir-tree-cell fhir-data-cell">PALLIATIVE MEDICINE</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">320</td>
+                <td class="fhir-tree-cell fhir-data-cell">CARDIOLOGY</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">321</td>
+                <td class="fhir-tree-cell fhir-data-cell">PAEDIATRIC CARDIOLOGY</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">325</td>
+                <td class="fhir-tree-cell fhir-data-cell">SPORT AND EXERCISE MEDICINE</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">326</td>
+                <td class="fhir-tree-cell fhir-data-cell">ACUTE INTERNAL MEDICINE</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">330</td>
+                <td class="fhir-tree-cell fhir-data-cell">DERMATOLOGY</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">340</td>
+                <td class="fhir-tree-cell fhir-data-cell">RESPIRATORY MEDICINE (also known as thoracic medicine)</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">350</td>
+                <td class="fhir-tree-cell fhir-data-cell">INFECTIOUS DISEASES</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">352</td>
+                <td class="fhir-tree-cell fhir-data-cell">TROPICAL MEDICINE</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">360</td>
+                <td class="fhir-tree-cell fhir-data-cell">GENITOURINARY MEDICINE</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">361</td>
+                <td class="fhir-tree-cell fhir-data-cell">NEPHROLOGY</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">370</td>
+                <td class="fhir-tree-cell fhir-data-cell">MEDICAL ONCOLOGY</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">371</td>
+                <td class="fhir-tree-cell fhir-data-cell">NUCLEAR MEDICINE</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">400</td>
+                <td class="fhir-tree-cell fhir-data-cell">NEUROLOGY</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">401</td>
+                <td class="fhir-tree-cell fhir-data-cell">CLINICAL NEURO-PHYSIOLOGY</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">410</td>
+                <td class="fhir-tree-cell fhir-data-cell">RHEUMATOLOGY</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">420</td>
+                <td class="fhir-tree-cell fhir-data-cell">PAEDIATRICS</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">421</td>
+                <td class="fhir-tree-cell fhir-data-cell">PAEDIATRIC NEUROLOGY</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">430</td>
+                <td class="fhir-tree-cell fhir-data-cell">GERIATRIC MEDICINE</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">450</td>
+                <td class="fhir-tree-cell fhir-data-cell">DENTAL MEDICINE SPECIALTIES</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">451</td>
+                <td class="fhir-tree-cell fhir-data-cell">SPECIAL CARE DENTISTRY</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">460</td>
+                <td class="fhir-tree-cell fhir-data-cell">MEDICAL OPHTHALMOLOGY</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">500</td>
+                <td class="fhir-tree-cell fhir-data-cell">OBSTETRICS and GYNAECOLOGY</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">501</td>
+                <td class="fhir-tree-cell fhir-data-cell">OBSTETRICS</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">502</td>
+                <td class="fhir-tree-cell fhir-data-cell">GYNAECOLOGY</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">504</td>
+                <td class="fhir-tree-cell fhir-data-cell">COMMUNITY SEXUAL AND REPRODUCTIVE HEALTH</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">560</td>
+                <td class="fhir-tree-cell fhir-data-cell">MIDWIFE EPISODE</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">600</td>
+                <td class="fhir-tree-cell fhir-data-cell">GENERAL MEDICAL PRACTICE</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">601</td>
+                <td class="fhir-tree-cell fhir-data-cell">GENERAL DENTAL PRACTICE</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">700</td>
+                <td class="fhir-tree-cell fhir-data-cell">LEARNING DISABILITY</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">710</td>
+                <td class="fhir-tree-cell fhir-data-cell">ADULT MENTAL ILLNESS</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">711</td>
+                <td class="fhir-tree-cell fhir-data-cell">CHILD and ADOLESCENT PSYCHIATRY</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">712</td>
+                <td class="fhir-tree-cell fhir-data-cell">FORENSIC PSYCHIATRY</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">713</td>
+                <td class="fhir-tree-cell fhir-data-cell">PSYCHOTHERAPY</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">715</td>
+                <td class="fhir-tree-cell fhir-data-cell">OLD AGE PSYCHIATRY</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">800</td>
+                <td class="fhir-tree-cell fhir-data-cell">CLINICAL ONCOLOGY (previously RADIOTHERAPY)</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">810</td>
+                <td class="fhir-tree-cell fhir-data-cell">RADIOLOGY</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">820</td>
+                <td class="fhir-tree-cell fhir-data-cell">GENERAL PATHOLOGY</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">821</td>
+                <td class="fhir-tree-cell fhir-data-cell">BLOOD TRANSFUSION</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">822</td>
+                <td class="fhir-tree-cell fhir-data-cell">CHEMICAL PATHOLOGY</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">823</td>
+                <td class="fhir-tree-cell fhir-data-cell">HAEMATOLOGY</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">824</td>
+                <td class="fhir-tree-cell fhir-data-cell">HISTOPATHOLOGY</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">830</td>
+                <td class="fhir-tree-cell fhir-data-cell">IMMUNOPATHOLOGY</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">831</td>
+                <td class="fhir-tree-cell fhir-data-cell">MEDICAL MICROBIOLOGY AND VIROLOGY</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">833</td>
+                <td class="fhir-tree-cell fhir-data-cell">MEDICAL MICROBIOLOGY (also known as MICROBIOLOGY AND BACTERIOLOGY)</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">834</td>
+                <td class="fhir-tree-cell fhir-data-cell">MEDICAL VIROLOGY</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">900</td>
+                <td class="fhir-tree-cell fhir-data-cell">COMMUNITY MEDICINE</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">901</td>
+                <td class="fhir-tree-cell fhir-data-cell">OCCUPATIONAL MEDICINE</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">902</td>
+                <td class="fhir-tree-cell fhir-data-cell">COMMUNITY HEALTH SERVICES DENTAL</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">903</td>
+                <td class="fhir-tree-cell fhir-data-cell">PUBLIC HEALTH MEDICINE</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">904</td>
+                <td class="fhir-tree-cell fhir-data-cell">PUBLIC HEALTH DENTAL</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">950</td>
+                <td class="fhir-tree-cell fhir-data-cell">NURSING EPISODE</td>
+              </tr>
+              <tr>
+                <td class="fhir-tree-cell fhir-data-cell">960</td>
+                <td class="fhir-tree-cell fhir-data-cell">ALLIED HEALTH PROFESSIONAL EPISODE</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
